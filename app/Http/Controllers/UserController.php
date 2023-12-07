@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Yajra\Datatables\Datatables;
 use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -38,9 +39,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $user = User::Create($request->only('name', 'email') +
+        $user = User::Create($request->only('name','email') +
             [
-                'password' => bcrypt($request->input('password')),
+                'username' => $request->input('email'),
+                'password' => Hash::make($request->input('password')),
             ]);
         $roles = $request->input('rol_user');
         $user->syncRoles($roles);
@@ -84,7 +86,8 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $user->name = $request->input('edit_name');
         $user->email = $request->input('edit_email');
-        $user->password = bcrypt($request->input('password'));
+        $user->username = $request->input('edit_email');
+        $user->password = Hash::make($request->input('password'));
         $user->updated_at = date("Y-m-d H:i:s");
         $user->save();
         $roles = $request->input('edit_rol_user');
@@ -129,11 +132,11 @@ class UserController extends Controller
                 
                 
                     <button class="btn btn-outline-primary dropdown-toggle mb-1" type="button" id="dropdownMenuButtonUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Opciones
+                        Options
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonUser" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">  
-                        <a class="dropdown-item" onclick="edit(this)" id="' . $User->id . '">Editar</a>
-                        <a class="dropdown-item" onclick="drop(this)" id="' . $User->id . '">Eliminar</a>
+                        <a class="dropdown-item" onclick="edit(this)" id="' . $User->id . '">Edit</a>
+                        <a class="dropdown-item" onclick="drop(this)" id="' . $User->id . '">Delete</a>
                     </div>
                 </div>';
             })

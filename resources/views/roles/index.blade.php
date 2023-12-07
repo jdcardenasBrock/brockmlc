@@ -5,14 +5,14 @@
     <div class="row app-row">
         <div class="col-12">
             <div class="mb-2">
-                <h1>Listado de Roles</h1>
+                <h1>Role List</h1>
                 <div class="top-right-button-container">
-                    <button type="button" class="btn btn-outline-primary btn-lg top-right-button  mr-1" data-toggle="modal" data-backdrop="static" data-target="#addRoles">Agregar Nuevo Rol</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg top-right-button  mr-1" data-toggle="modal" data-backdrop="static" data-target="#addRoles">Create a new Role</button>
                     <div class="modal fade modal-right" id="addRoles" tabindex="-1" role="dialog" aria-labelledby="addRolesLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="addRolesLabel">Formulario Nuevo Rol</h5>
+                                    <h5 class="modal-title" id="addRolesLabel">Add New Role Form</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
@@ -24,11 +24,11 @@
                                         <input type="hidden" id="_token" value="{{ csrf_token() }}">
                                         @csrf
                                         <div class="form-group">
-                                            <label>Nombre del Rol</label>
+                                            <label>Role</label>
                                             <input type="text" class="form-control"  id="name" name="name" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Permisos</label>
+                                            <label>Permissions</label>
                                             <div class="mb-4">
                                                     @foreach($permissions as $id => $permission)
                                                         <div class="custom-control custom-checkbox mb-4">
@@ -38,8 +38,8 @@
                                                     @endforeach
                                                 </div>
                                         </div>
-                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit"  class="btn btn-primary">Guardar</button>
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit"  class="btn btn-primary">Save</button>
                                     </form>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="EditRoleLabel">Formulario Edición de Roles</h5>
+                                    <h5 class="modal-title" id="EditRoleLabel">Edit Rol Form</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
@@ -64,11 +64,11 @@
                                         <input type="hidden" id="_token" value="{{ csrf_token() }}">
                                         @csrf
                                         <div class="form-group">
-                                            <label>Nombre del rol</label>
+                                            <label>Role</label>
                                             <input type="text" class="form-control"  id="edit_name_role" name="edit_name_role" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Permisos</label>
+                                            <label>Permissions</label>
                                             <div class="mb-4">
                                                     @foreach($permissions as $id => $permission)
                                                         <div class="custom-control custom-checkbox mb-4">
@@ -79,8 +79,8 @@
                                                 </div>
                                         </div>
                                        
-                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit"  class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit"  class="btn btn-primary">Edit</button>
                                     </form>
                                 </div>
                             </div>
@@ -96,9 +96,9 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Permisos</th>
-                        <th>Fecha de Creación</th>
+                        <th>Role</th>
+                        <th>Permissions</th>
+                        <th>Created At</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -110,8 +110,8 @@
 <div class="app-menu">
     <div class="p-4 h-100">
         <div class="scroll ps">
-            <p class="text-muted text-small">Descripcion</p>
-            <p class=" text-small">Aqui puedes encontrara todos los Roles con las fechas de creación correspondiente, y las acciones para editar o eliminar un registro, el realizar una acción puede alterar el funcionamiento del aplicativo web y sus componentes</p>
+            <p class="text-muted text-small">Description</p>
+            <p class=" text-small">Here you can find all the Roles with their corresponding creation dates, and the actions to edit or delete a record. Performing an action may alter the functioning of the web application and its components.</p>
 
         <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
     </div>
@@ -125,26 +125,6 @@
    <script>
        $(function do_roles_table() {
             $('#roles_table').DataTable({
-                "language": {
-                "decimal": "",
-                "emptyTable": "No hay información",
-                "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                "infoPostFix": "",
-                "thousands": ",",
-                "lengthMenu": "Mostrar _MENU_ Entradas",
-                "loadingRecords": "Cargando...",
-                "processing": "Procesando...",
-                "search": "Buscar:",
-                "zeroRecords": "Sin resultados encontrados",
-                    "paginate": {
-                        "first": "Primero",
-                        "last": "Ultimo",
-                        "next": "Siguiente",
-                        "previous": "Anterior"
-                    }
-                },
                 processing: true,
                 responsive: true,
                 serverSide: true,
@@ -192,7 +172,7 @@
                     }
                 }
               }).fail( function( response ) {
-                alert( 'Error 101-1 : Ha ocurrido un error!' );
+                alert( 'Error 101-1 : Error!' );
             });
             return false;
     }
@@ -200,7 +180,7 @@
      //metodo para eliminar registro
      function drop(event){
         var ID =event.id;
-        let confirmacion=confirm("¿Esta seguro de eliminar? No puede reversar esta accion.");
+        let confirmacion=confirm("Are you sure you want to delete? You cannot reverse this action.");
         if(confirmacion){
             $.ajax({
                 url: $("#form_edit_role #_url").val() +"/"+ ID,
@@ -210,13 +190,13 @@
                   var json = $.parseJSON(response);
                   if(json.success){
                     $('#roles_table').DataTable().ajax.reload();
-                    alert('Rol eliminado exitosamente');
+                    alert('Role deleted successfully.');
                     }else{
                     alert(json.data);
                     }
                 }
               }).fail( function( response ) {
-                alert( 'Error 101-1 : No se puede Eliminar - Verifique Llaves Foraneas!' );
+                alert( 'Error 101-1 :Cannot delete - Check Foreign Keys!' );
             });
             return false;
                 

@@ -7,8 +7,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'MECONS') }}</title>
-
+    <title>{{ config('app.name', 'ProHound') }}</title>
+	<meta name="description" content="ProHound App">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('font/iconsmind-s/css/iconsminds.css')}}" />
 
@@ -85,12 +88,10 @@
                 </button>
 
                 <div class="dropdown-menu dropdown-menu-right mt-3">
-                    <a class="dropdown-item" href="{{route('references.index')}}">Referencias</a>
-                    {{-- <a class="dropdown-item" href="#">Maestro de ...</a>  --}}
                     <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
-                     {{ __('Cerrar Sesión') }}
+                     {{ __('Log Out') }}
                  </a>
 
                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -106,55 +107,41 @@
                 <ul class="list-unstyled">
                     <li class="active">
                         <a href="{{route('home')}}">
-                            <i class="iconsminds-shop-4"></i>
+                            <i class="iconsminds-tablet-3"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    @can('crear_referencia')
+
+                    @can('view_projects')
                     <li>
-                        <a href="#references" style="text-align: center">
-                            <i class="iconsminds-digital-drawing"></i> Maestro de Referencias
+                        <a href="{{route('project.index')}}" style="text-align: center">
+                            <i class="simple-icon-layers"></i> Projects
                         </a>
                     </li>
                     @endcan
-                    {{-- <li>
-                        <a href="#components" style="text-align: center">
-                            <i class="iconsminds-air-balloon-1"></i> Administrador de Componentes
+                  
+                    @can('view_clients')
+                    <li>
+                        <a href="{{route('clients.index')}}" style="text-align: center">
+                            <i class="iconsminds-business-mens"></i> Clients
                         </a>
-                    </li> --}}
-                    @can('crear_usuarios')
+                    </li>
+                    @endcan
+                    @can('create_user')
                     <li>
                         <a href="#permissions">
-                            <i class="iconsminds-pantone"></i> Permisos y<br> Usuarios
+                            <i class="simple-icon-wrench"></i> Permissions <br> & Users
                         </a>
                     </li>
                     @endcan
+
                 </ul>
             </div>
         </div>
 
         <div class="sub-menu">
             <div class="scroll">
-                
-                <ul class="list-unstyled" data-link="components" id="components">
-                    <li>
-                        <a href="#" data-toggle="collapse" data-target="#collapseAuthorization" aria-expanded="true"
-                            aria-controls="collapseAuthorization" class="rotate-arrow-icon opacity-50">
-                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Componentes</span>
-                        </a>
-                        <div id="collapseAuthorization" class="collapse show">
-                            <ul class="list-unstyled inner-level-menu">
-                                <li>
-                                    <a href="#">
-                                        <i class="simple-icon-user-following"></i> <span
-                                            class="d-inline-block">Agregar</span>
-                                    </a>
-                                </li>
-                                <li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+              
                   
                 <ul class="list-unstyled" data-link="permissions">
 
@@ -162,28 +149,28 @@
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#collapseForms" aria-expanded="true"
                             aria-controls="collapseForms" class="rotate-arrow-icon opacity-50">
-                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Permisos y Usuarios</span>
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Permissions and User List</span>
                         </a>
                         <div id="collapseForms" class="collapse show">
                             <ul class="list-unstyled inner-level-menu">
-                                @can('crear_permisos')
+                                @can('view_permissions')
                                 <li>
                                     <a href="{{route('permissions.index')}}">
-                                        <i class="simple-icon-event"></i> <span class="d-inline-block">Permisos</span>
+                                        <i class="simple-icon-event"></i> <span class="d-inline-block">Permissions</span>
                                     </a>
                                 </li>
                                 @endcan
-                                @can('crear_roles')
+                                @can('view_role')
                                 <li>
                                     <a href="{{route('roles.index')}}">
                                         <i class="simple-icon-doc"></i> <span class="d-inline-block">Roles</span>
                                     </a>
                                 </li>
                                 @endcan
-                                @can('crear_usuarios')
+                                @can('create_user')
                                 <li>
                                     <a href="{{route('users.index')}}">
-                                        <i class="simple-icon-check"></i> <span class="d-inline-block">Usuarios</span>
+                                        <i class="simple-icon-check"></i> <span class="d-inline-block">Users</span>
                                     </a>
                                 </li>
                                 @endcan
@@ -209,12 +196,12 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <p class="mb-0 text-muted">MECONS 2022</p>
+                        <p class="mb-0 text-muted">PRO HOUND</p>
                     </div>
                     <div class="col-sm-6 d-none d-sm-block">
                         <ul class="breadcrumb pt-0 pr-0 float-right">
                             <li class="breadcrumb-item mb-0">
-                                <a href="https://www.mcardi.com" class="btn-link" target="_blank">Develop By Mcardi</a>
+                                <a href="https://newbrockmlc.mcardi.com/" class="btn-link" target="_blank">Brock MLC</a>
                             </li>
                         </ul>
                     </div>

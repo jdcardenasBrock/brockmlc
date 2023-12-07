@@ -10,18 +10,18 @@ $(document).ready(function(){
     //metodo para ingresar registro
     $('#form_add_roles').submit(function(event){
         if ($('#name').val() === "") {
-            alert('Debe ingresar el nombre del rol','Atencion!');
+            alert('You must enter the role name.','Warning!');
             $('#name').focus();
             return false;
         }
         if ($('input[type=checkbox]:checked').length==0){       
-          alert("Indique al menos un permiso");
+          alert("Specify at least one permission");
           return false;
        }
        
       
 
-        let confirmacion=confirm("¿Esta seguro de agregar esta información?");
+        let confirmacion=confirm("Are you sure you want to add this information?");
           if(confirmacion){
 
             var data = $('#form_add_roles').serialize();
@@ -38,7 +38,7 @@ $(document).ready(function(){
                 $("#addRoles").modal('hide');
                 vaciar_Inputs_Add();
                 $('#roles_table').DataTable().ajax.reload();
-                 alert('Rol creado exitosamente');
+                 alert('Role created successfully');
                   
                 }else{
                   alert(json.data);
@@ -55,13 +55,13 @@ $(document).ready(function(){
     }
     $('#form_edit_role').submit(function(event){
         if ($('#edit_name_role').val() === "") {
-            alert('Debe ingresar el nombre del rol','Atencion!');
+            alert('You must enter the Role Name','Warning!');
             $('#edit_name_role').focus();
             return false;
         }
       
 
-        let confirmacion=confirm("¿Esta seguro de editar esta información?");
+        let confirmacion=confirm("Are you sure you want to edit this information?");
           if(confirmacion){
             let ID= document.getElementById("_edit_id").value;
             var data = $('#form_edit_role').serialize();
@@ -77,7 +77,7 @@ $(document).ready(function(){
                 $("#EditRole").modal('hide');
                 Empty_Inputs_Edit();
                 $('#roles_table').DataTable().ajax.reload();
-                 alert('Rol editado exitosamente');
+                 alert('Role edited Successfully exitosamente');
                   
                 }else{
                   alert(json.data);

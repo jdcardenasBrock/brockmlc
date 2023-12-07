@@ -12,28 +12,28 @@ $(document).ready(function(){
     //metodo para ingresar registro
     $('#form_add_users').submit(function(event){
         if ($('#name').val() === "") {
-            alert('Debe ingresar el nombre completo','Atencion!');
+            alert('You must enter the full name','Warning!');
             $('#name').focus();
             return false;
         }
         if ($('#email').val() === "") {
-          alert('Debe ingresar el correo','Atencion!');
+          alert('You must enter the username','Warning!');
           $('#email').focus();
           return false;
         }
         if ($('#password').val() === "") {
-          alert('Debe ingresar la contraseña','Atencion!');
+          alert('You must enter the password','Warning!');
           $('#password').focus();
           return false;
         }
        
       
 
-        let confirmacion=confirm("¿Esta seguro de agregar esta información?");
+        let confirmacion=confirm("Are you sure you want to add this information?");
           if(confirmacion){
 
             var data = $('#form_add_users').serialize();
-            console.log(data);
+
             $.ajax({
               url: $('#form_add_users #_url').val(),
               headers: {'X-CSRF-TOKEN': $('#form_add_users #_token').val()},
@@ -46,7 +46,7 @@ $(document).ready(function(){
                 $("#addUser").modal('hide');
                 vaciar_Inputs_Add();
                 $('#users_table').DataTable().ajax.reload();
-                 alert('Usuario creado exitosamente');
+                 alert('User created Successfully');
                   
                 }else{
                   alert(json.data);
@@ -65,23 +65,23 @@ $(document).ready(function(){
     }
     $('#form_edit_users').submit(function(event){
         if ($('#edit_name').val() === "") {
-            alert('Debe ingresar el nombre del usuario','Atencion!');
+            alert('You must enter the full name','Atencion!');
             $('#edit_name').focus();
             return false;
         }
       
         if ($('#edit_email').val() === "") {
-          alert('Debe ingresar el email','Atencion!');
+          alert('You must enter the username','Atencion!');
           $('#edit_email').focus();
           return false;
         }
         if ($('#edit_password').val() === "") {
-          alert('Debe ingresar la contraseña','Atencion!');
+          alert('You must enter the password','Atencion!');
           $('#edit_password').focus();
           return false;
         }
 
-        let confirmacion=confirm("¿Esta seguro de editar esta información?");
+        let confirmacion=confirm("Are you sure you want to edit this information?");
           if(confirmacion){
             let ID= document.getElementById("_edit_id").value;
             var data = $('#form_edit_users').serialize();
@@ -97,7 +97,7 @@ $(document).ready(function(){
                 $("#EditUser").modal('hide');
                 Empty_Inputs_Edit();
                 $('#users_table').DataTable().ajax.reload();
-                 alert('Usuario editado exitosamente');
+                 alert('User edited successfully');
                   
                 }else{
                   alert(json.data);

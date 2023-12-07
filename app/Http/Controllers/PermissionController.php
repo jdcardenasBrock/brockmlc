@@ -19,7 +19,7 @@ class PermissionController extends Controller
     {
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
         $permissions = Permission::select('name', 'created_at');
-        return view("permissions.index", compact($permissions));
+        return view("permissions.index", compact('permissions'));
     }
 
 

@@ -1586,7 +1586,7 @@ button {
 .logo {
     width: 178px;
     height: 68px;
-    background: url(../logos/small_center.jpeg) no-repeat;
+    background: url(../logo_app.png) no-repeat;
     background-position: center center;
     margin: 0 auto;
 }

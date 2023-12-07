@@ -5,14 +5,14 @@
     <div class="row app-row">
         <div class="col-12">
             <div class="mb-2">
-                <h1>Listado de Usuarios</h1>
+                <h1>User List</h1>
                 <div class="top-right-button-container">
-                    <button type="button" class="btn btn-outline-primary btn-lg top-right-button  mr-1" data-toggle="modal" data-backdrop="static" data-target="#addUser">Agregar Nuevo Usuario</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg top-right-button  mr-1" data-toggle="modal" data-backdrop="static" data-target="#addUser">Create User</button>
                     <div class="modal fade modal-right" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="addUserLabel">Formulario Nuevo Usuario</h5>
+                                    <h5 class="modal-title" id="addUserLabel">New User Form</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
@@ -24,19 +24,19 @@
                                         <input type="hidden" id="_token" value="{{ csrf_token() }}">
                                         @csrf
                                         <div class="form-group">
-                                            <label>Nombre Completo</label>
+                                            <label>Full Name</label>
                                             <input type="text" class="form-control"  id="name" name="name" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Correo Electronico</label>
-                                            <input type="email" class="form-control"  id="email" name="email" placeholder="">
+                                            <label>Username</label>
+                                            <input type="text" class="form-control"  id="email" name="email" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Contraseña</label>
+                                            <label>Password</label>
                                             <input type="password" class="form-control"  id="password" name="password" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Seleccione un Rol</label>
+                                            <label>Select a Rol</label>
                                                 <div class="mb-4">
                                                     @foreach ($roles as $id => $role)
                                                         <div class="custom-control custom-radio">
@@ -46,8 +46,8 @@
                                                     @endforeach
                                                 </div>
                                         </div>
-                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit"  class="btn btn-primary">Guardar</button>
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit"  class="btn btn-primary">Save</button>
                                     </form>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="EditUserLabel">Formulario Edición de Usuarios</h5>
+                                    <h5 class="modal-title" id="EditUserLabel">Form Edit User</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
@@ -73,19 +73,19 @@
                                         <input type="hidden" id="_token" value="{{ csrf_token() }}">
                                         @csrf
                                         <div class="form-group">
-                                            <label>Nombre Completo</label>
+                                            <label>Full Name</label>
                                             <input type="text" class="form-control"  id="edit_name" name="edit_name" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Correo Electronico</label>
-                                            <input type="email" class="form-control"  id="edit_email" name="edit_email" placeholder="">
+                                            <label>Username</label>
+                                            <input type="text" class="form-control"  id="edit_email" name="edit_email" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Contraseña</label>
+                                            <label>Password</label>
                                             <input type="password" class="form-control"  id="edit_password" name="edit_password" placeholder="">
                                         </div>
                                         <div class="form-group">
-                                            <label>Seleccione un Rol</label>
+                                            <label>Select a Rol</label>
                                                 <div class="mb-4">
                                                     @foreach ($roles as $id => $role)
                                                         <div class="custom-control custom-radio">
@@ -96,8 +96,8 @@
                                                 </div>
                                         </div>
                                        
-                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit"  class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit"  class="btn btn-primary">Save</button>
                                     </form>
                                 </div>
                             </div>
@@ -113,10 +113,10 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Email</th>
-                        <th>Rol Asignado</th>
-                        <th>Fecha de Creación</th>
+                        <th>Full Name</th>
+                        <th>Username</th>
+                        <th>Rol Assigned</th>
+                        <th>Created At</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -128,8 +128,8 @@
 <div class="app-menu">
     <div class="p-4 h-100">
         <div class="scroll ps">
-            <p class="text-muted text-small">Descripcion</p>
-            <p class=" text-small">Aqui puedes encontrara todos los Usuarios con las fechas de creación correspondiente, y las acciones para editar o eliminar un registro, el realizar una acción puede alterar el funcionamiento del aplicativo web y sus componentes</p>
+            <p class="text-muted text-small">Description</p>
+            <p class=" text-small">Here you can find all users with their corresponding creation dates, and actions to edit or delete a record. Performing an action can affect the functionality of the web application and its components.</p>
 
         <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
     </div>
@@ -143,26 +143,7 @@
    <script>
        $(function do_users_table() {
             $('#users_table').DataTable({
-                "language": {
-                "decimal": "",
-                "emptyTable": "No hay información",
-                "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                "infoPostFix": "",
-                "thousands": ",",
-                "lengthMenu": "Mostrar _MENU_ Entradas",
-                "loadingRecords": "Cargando...",
-                "processing": "Procesando...",
-                "search": "Buscar:",
-                "zeroRecords": "Sin resultados encontrados",
-                    "paginate": {
-                        "first": "Primero",
-                        "last": "Ultimo",
-                        "next": "Siguiente",
-                        "previous": "Anterior"
-                    }
-                },
+                
                 processing: true,
                 responsive: true,
                 serverSide: true,
@@ -208,11 +189,11 @@
                     $("#edit_email").val(json['users'].email);
                     rellenarRoles(json['roles']);
                     }else{
-                    alert("Ha ocurrido un error");
+                    alert("Error");
                     }
                 }
               }).fail( function( response ) {
-                alert( 'Error 101-1 : Ha ocurrido un error!' );
+                alert( 'Error 101-1 : Error!' );
             });
             return false;
     }
@@ -220,7 +201,7 @@
      //metodo para eliminar registro
      function drop(event){
         var ID =event.id;
-        let confirmacion=confirm("¿Esta seguro de eliminar? No puede reversar esta accion.");
+        let confirmacion=confirm("Are you sure you want to delete? You cannot reverse this action");
         if(confirmacion){
             $.ajax({
                 url: $("#form_edit_users #_url").val() +"/"+ ID,
@@ -230,13 +211,13 @@
                   var json = $.parseJSON(response);
                   if(json.success){
                     $('#EditUser').DataTable().ajax.reload();
-                    alert('Usuario eliminado exitosamente');
+                    alert('User deleted successfully.');
                     }else{
                     alert(json.data);
                     }
                 }
               }).fail( function( response ) {
-                alert( 'Error 101-1 : No se puede Eliminar - Verifique Llaves Foraneas!' );
+                alert( 'Error 101-1 : Cannot delete - Check foreign keys!' );
             });
             return false;
                 

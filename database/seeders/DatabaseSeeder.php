@@ -17,24 +17,35 @@ class DatabaseSeeder extends Seeder
     {
         app()[\Spatie\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
 
-        // create permissions
-        Permission::create(['name' => 'crear_referencia']);
-        Permission::create(['name' => 'editar_referencia']);
-        Permission::create(['name' => 'asignar_referencia']);
-        Permission::create(['name' => 'eliminar_referencia']);
+        Permission::create(['name' => 'create_user']);
+        Permission::create(['name' => 'edit_user']);
+        Permission::create(['name' => 'delete_user']);
 
-        Permission::create(['name' => 'crear_usuarios']);
-        Permission::create(['name' => 'editar_usuarios']);
-        Permission::create(['name' => 'eliminar_usuarios']);
+        Permission::create(['name' => 'view_permissions']);
+        Permission::create(['name' => 'create_permissions']);
+        Permission::create(['name' => 'edit_permissions']);
+        Permission::create(['name' => 'delete_permissions']);
+
+        Permission::create(['name' => 'view_role']);
+        Permission::create(['name' => 'create_role']);
+        Permission::create(['name' => 'edit_role']);
+        Permission::create(['name' => 'delete_role']);
 
 
-        Permission::create(['name' => 'crear_permisos']);
-        Permission::create(['name' => 'editar_permisos']);
-        Permission::create(['name' => 'eliminar_permisos']);
+        Permission::create(['name' => 'view_clients']);
+        Permission::create(['name' => 'create_clients']);
+        Permission::create(['name' => 'edit_clients']);
+        Permission::create(['name' => 'delete_clients']);
 
-        Permission::create(['name' => 'crear_roles']);
-        Permission::create(['name' => 'editar_roles']);
-        Permission::create(['name' => 'eliminar_roles']);
+
+        Permission::create(['name' => 'view_projects']);
+        Permission::create(['name' => 'create_projects']);
+        Permission::create(['name' => 'edit_projects']);
+        Permission::create(['name' => 'delete_projects']);
+        
+
+        Permission::create(['name' => 'view_projects_client']);
+        
 
         // create roles and assign created permissions
 
@@ -42,21 +53,25 @@ class DatabaseSeeder extends Seeder
         $role_super_admin = Role::create(['name' => 'SuperAdmin']);
         $role_super_admin->givePermissionTo(Permission::all());
 
-        $role_admin = Role::create(['name' => 'administrador']);
-        $role_admin->givePermissionTo(['crear_referencia', 'editar_referencia', 'asignar_referencia', 'eliminar_referencia', 'crear_usuarios', 'editar_usuarios', 'eliminar_usuarios', 'crear_roles', 'editar_roles', 'eliminar_roles']);
+        $role_admin = Role::create(['name' => 'Admin']);
+        $role_admin->givePermissionTo(['create_user', 'edit_user', 'delete_user', 'create_role', 'edit_role', 'delete_role']);
+
+        $role_client = Role::create(['name' => 'Client']);
+        $role_client->givePermissionTo(['view_projects_client']);
 
         $user_superAdmin = \App\Models\User::factory()->create([
-            'name' => 'Administrator',
-            'email' => 'admin@root.com',
+            'name' => 'Juan David Cardenas',
+            'email' => 'superadmin',
             'password' => bcrypt('A.123456')
         ]);
         $user_superAdmin->assignRole($role_super_admin);
 
         $user_admin = \App\Models\User::factory()->create([
-            'name' => 'Administrator',
-            'email' => 'admin@refers.com',
+            'name' => 'Bo Cheek',
+            'email' => 'admin',
             'password' => bcrypt('A.123456')
         ]);
         $user_admin->assignRole($role_admin);
+
     }
 }
