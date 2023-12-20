@@ -108,7 +108,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::post('project_floorplan',[App\Http\Controllers\ProjectsController::class, 'UploadFloorplans']);
 
-    
+    Route::get('project_showData/{id}', [App\Http\Controllers\HomeController::class, 'GetData'])->name('project_showData');
 
     // Resources para el modulo de clientes
     Route::resource('clients', ClientsController::class);

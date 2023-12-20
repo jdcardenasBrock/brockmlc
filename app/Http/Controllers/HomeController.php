@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\clients;
 use App\Models\projects;
+use App\Models\ProjectPhases;
+use App\Models\ProjectFloorplans;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -44,5 +46,12 @@ class HomeController extends Controller
 
            
         }
+    }
+
+    public function GetData ($idProject){
+        $projectPhases=ProjectPhases::select('id','date_initiate','url_matterport','phase_name')->where('project_id','=',$idProject)->get();
+        $Floorplans=ProjectFloorplans::select('id','url_floorplan','floor_label','name')->where('project_id','=',$idProject)->get();
+
+        return json_encode(['success' => true,'projectPhases' =>$projectPhases, 'Floorplans'=>$Floorplans]);
     }
 }

@@ -397,6 +397,7 @@
     $(".venobox").venobox(); 
   });
   </script>  
+    @stack('scripts')
 </body>
 
 </html>

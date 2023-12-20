@@ -14,7 +14,7 @@
     <!--==================================================-->
     <!-- Start Euildint Breatcome Area -->
     <!--==================================================-->
-    <div class="breatcome-area" id="top-our-clients">
+    <!-- <div class="breatcome-area" id="top-our-clients">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
 
 	<!--==================================================-->
@@ -44,17 +44,19 @@
 				<div class="col-lg-12 col-md-12">
 					<div class="row">
 						<div class="col-lg-12">
+                            <div class="section-title text-center">
+                                <img src="assets/images/logo_negativo.png" width="70px" alt="Logo" >
+                            </div>
 							<!-- start section title -->
 							<div class="section-title text-center">
 								<div class="section-shape">
-									<img src="assets/images/resource/section-shape.png" alt="">
+									<!-- <img src="assets/images/resource/section-shape.png" alt=""> -->
 								</div>
 								<div class="section-sub-title">
-									<h4>Welcome</h4>
+									<!-- <h4>Welcome</h4> -->
 								</div>
 								<div class="section-main-title">
-									<h2>Please Log in </h2>
-									<h2>to see your project(s)</h2>
+									<h2>PORTAL</h2>
 								</div>
 							</div>
 							<!-- End section title -->
@@ -71,7 +73,7 @@
                                         @csrf
 
                                         <div class="row mb-3">
-                                            <label for="email" class="col-md-4 col-form-label text-md-end text-black">{{ __('Username') }}</label>
+                                            <label for="email" class="col-md-4 col-form-label text-md-end" style="color:black">{{ __('Username') }}</label>
 
                                             <div class="col-md-6">
                                                 <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autofocus>
@@ -85,7 +87,7 @@
                                         </div>
 
                                         <div class="row mb-3">
-                                            <label for="password" class="col-md-4 col-form-label text-md-end text-black">{{ __('Password') }}</label>
+                                            <label for="password" class="col-md-4 col-form-label text-md-end text-black" style="color:black">{{ __('Password') }}</label>
 
                                             <div class="col-md-6">
                                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -103,7 +105,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                                    <label class="form-check-label" for="remember">
+                                                    <label class="form-check-label" style="color:black" for="remember">
                                                         {{ __('Recordar Usuario') }}
                                                     </label>
                                                 </div>
@@ -112,7 +114,7 @@
 
                                         <div class="row mb-0 mt-4">
                                             <div class="col-md-8 offset-md-4">
-                                                <button type="submit" class="btn btn-primary">
+                                                <button type="submit" class="btn btn-primary" style="background-color:#236040;border-color:#236040;">
                                                     {{ __('Iniciar Sesion') }}
                                                 </button>
 
