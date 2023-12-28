@@ -51,6 +51,8 @@
 
     <!-- modernizr js -->
     <script src="{{asset('assets/js/vendor/modernizr-3.5.0.min.js')}}"></script>
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 
 
@@ -64,7 +66,7 @@
 	<!--==================================================-->
 	<!-- Start Euildint Top Bar Style Two Area -->
 	<!--==================================================-->
-	<div class="topbar-area style-two d-flex align-items-center">
+	<!-- <div class="topbar-area style-two d-flex align-items-center">
 		<div class="container-fluid p-90">
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-6">
@@ -83,21 +85,13 @@
 							<li class="line">
 							<li><a href="#">{{ Auth::user()->name }}</a></li>
 							<li class="line">
-                            <li><a  href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                {{ __('Log Out') }}
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form></li>
+                            
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--==================================================-->
 	<!-- End Euildint Top Bar Style Two Area -->
 	<!--==================================================-->
@@ -153,15 +147,23 @@
 								</div>
 							</li>
 						</ul>
-						<!-- <div class="header-call-section">
+						<div class="header-call-section">
 							<div class="header-call-icon">
-								<i class="bi bi-telephone-plus"></i>
+								<i class="bi bi-person"></i>
 							</div>
 							<div class="header-call-title">
-								<a href="#">Need help?  Call us: </a>
-								<span><a href="#"> (888) 774-6498 </a></span>
+								<a href="#"><strong>{{ Auth::user()->name }}</strong> </a>
+								<span> <a  href="{{ route('logout') }}" style="font-size: small; margin-top: 0px"
+                                onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                {{ __('Log Out') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form></span>
 							</div>
-						</div> -->
+						</div>
 					</div>
 					<!-- end header menu -->
 				</div>
@@ -341,6 +343,7 @@
 
 
 <!-- jquery js -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="{{asset('assets/js/vendor/jquery-3.6.2.min.js')}}"></script>
 
 <script src="{{asset('assets/js/popper.min.js')}}"></script>

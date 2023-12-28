@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ClientsController;
 use App\Http\Controllers\ProvidersController;
 use App\Http\Controllers\CotizacionController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectsController;
 use Spatie\Permission\Traits\HasRoles;
 
@@ -89,7 +90,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     
-
+    Route::get('proHound',[App\Http\Controllers\HomeController::class,'prohund'])->name('proHound');
     Route::resource('permissions', PermissionController::class);
     Route::get('PermissionsData', [App\Http\Controllers\PermissionController::class, 'anyData'])->name('permissions.data');
     Route::resource('roles', RoleController::class);

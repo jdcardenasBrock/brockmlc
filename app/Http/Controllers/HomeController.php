@@ -35,11 +35,8 @@ class HomeController extends Controller
             $a=$usuario->hasRole('Client');
 
             if($a){
-                $client_id=clients::select('id')->where('rel_user','=',$usuario->id)->first();
-                $projects=projects::where('client_id','=',$client_id->id)->get();
-
-
-                return view('home_client',compact('client_id','projects'));
+                return view('cards');
+               
             }else{
                 return view('home');
             }
@@ -48,6 +45,20 @@ class HomeController extends Controller
         }
     }
 
+    public function prohund(){
+        if (Auth::check()) {
+            // Obtener el usuario autenticado
+            $usuario = Auth::user();
+            $a=$usuario->hasRole('Client');
+            if($a){
+            $client_id=clients::select('id')->where('rel_user','=',$usuario->id)->first();
+            $projects=projects::where('client_id','=',$client_id->id)->get();
+
+            return view('home_client',compact('client_id','projects'));
+            }
+        }
+
+    }
     public function GetData ($idProject){
         $projectPhases=ProjectPhases::select('id','date_initiate','url_matterport','phase_name')->where('project_id','=',$idProject)->get();
         $Floorplans=ProjectFloorplans::select('id','url_floorplan','floor_label','name')->where('project_id','=',$idProject)->get();

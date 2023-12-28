@@ -13,9 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-      $this->app->bind('path.public',function(){
-      return'/home/u995723016/domains/mcardi.com/public_html/newbrockmlc';
-      });
+      // $this->app->bind('path.public',function(){
+      // return'/home/u995723016/domains/mcardi.com/public_html/newbrockmlc';
+      // });
     }
 
     /**
