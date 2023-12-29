@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        return '/u458622443/domains/inversionesmecons.com/public_html';
+      // $this->app->bind('path.public',function(){
+      // return'/home/u995723016/domains/mcardi.com/public_html/newbrockmlc';
+      // });
     }
 
     /**
