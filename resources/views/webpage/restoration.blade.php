@@ -32,11 +32,12 @@
 	.section-main-title{
         font-size: 38px;
     }	
+
     @media (max-width: 991.98px) {
         .breatcome-content{
             top: 82px;
             text-align: center;
-        }     	  
+        }     	   
 	  .section-main-title{
 		font-size: 21px;
 		}  
@@ -51,6 +52,17 @@
             padding-bottom: 120px;
         }
     }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        
+        #top-restoration{
+            background: url(assets/images/restoration/Rest_1.jpg);
+            background-position: center center; 
+            background-size: cover;
+        }
+    
+    }
+
 </style>
 <!--==================================================--> 
 <!-- Start Euildint Breatcome Area -->
@@ -122,12 +134,31 @@
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
                         <ul>
-                            <li><a href="#"> Stormwater Install & Maintenance 
-                                <!-- <span><i class="bi bi-chevron-right"></i></span> -->
-                            </a></li>	
+                            <li><a href="#"> Stormwater Install & Maintenance</a></li>	
                             <li><a href="#"> French Drain Install & Maintenance </a></li>
                             <li><a href="#"> Trench Drain Install & Maintenance </a></li>
                             <li><a href="#"> Forestry Mulching & Land Clearing </a></li>
+                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Disaster Clean-up </a></li>
+                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Excavation, Import & Export </a></li>
+                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Engineering & Design Build Solutions </a></li>
+                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Concrete Flatwork / Curb & Gutter </a></li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-lg-4 col-md-6 d-none d-md-block d-lg-none">                
+                <!-- End widget search box -->
+                <div class="widget-categories-box">
+                    <!-- <div class="widget-catagories-title">
+                        <h4>SITEWORK SERVICES INCLUDE</h4>
+                    </div> -->
+                    <!-- widget categories menu -->
+                    <div class="widget-categories-menu">
+                        <ul>
+                            <!-- <li><a href="#"> Stormwater Install & Maintenance </a></li>	
+                            <li><a href="#"> French Drain Install & Maintenance </a></li>
+                            <li><a href="#"> Trench Drain Install & Maintenance </a></li>
+                            <li><a href="#"> Forestry Mulching & Land Clearing </a></li> -->
                             <li><a href="#"> Disaster Clean-up </a></li>
                             <li><a href="#"> Excavation, Import & Export </a></li>
                             <li><a href="#"> Engineering & Design Build Solutions </a></li>

@@ -46,7 +46,7 @@
 
 	.about-thumb{
 		height: 400px;
-		width: 70%;
+		width: 70%; 
 	}
 
 	@media (max-width: 767px) {

@@ -94,7 +94,7 @@
                     <div class="col-lg-12">
                         <!-- start service details single box -->
                         <div class="service-details-single-box mb-30">
-                            <div class="service-details-thumb">
+                            <div class="service-details-thumb mb-5">
                                 <img src="assets/images/service/service-details1.jpg" alt="">
                             </div>
                             <div class="service-details-content">

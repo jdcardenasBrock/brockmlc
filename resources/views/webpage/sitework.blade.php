@@ -8,6 +8,7 @@
     }    
     #video-container-restoration{
         background: url(assets/images/restoration/Rest_3-video.jpg);
+        background-repeat: no-repeat;
     }
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
@@ -47,8 +48,11 @@
         }
         .service-details-thumb{
             margin-bottom: 50px;
-        }  
-        .call-do-action-area.style-two{
+        } 
+        .single-video{
+            top: -128%;
+        } 
+        .call-do-action-area{
 			height: 250px;
         } 
         .call-do-title.style-two h2  {
@@ -76,6 +80,9 @@
         .single-video.style-three.text-center{
             top: -10px !important;
         }
+        .call-do-action-area{
+			height: 503px;
+		}
     }
 
 </style>
@@ -142,9 +149,9 @@
             </div>                        
             <div class="col-lg-4 col-md-6">                
                 <!-- End widget search box -->
-                <div class="widget-categories-box">
+                <div class="widget-categories-box"> 
                     <div class="widget-catagories-title">
-                        <h4>SITEWORK SERVICES INCLUDE</h4>
+                        <h4>SITEWORK SERVICES INCLUDE</h4> 
                     </div>
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
@@ -191,32 +198,28 @@
 <!--==================================================-->
 <!-- Start Euildint Call Do Bg Area -->
 <!--==================================================-->
-<div class="call-do-action-area style-two wow animate__slideInUp" id="video-container-restoration">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-                <div class="call-do-title style-two d-none d-lg-block">
-                    <h2>Sitework <br>Division</h2>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="single-video style-three text-center">
-                    <div class="video-icon style-three">                    
-                        <div id="resto_video" style="display:none; width: 90%">
-                            <video controls preload="metadata">
-                                <source src="assets/videos/Brock_Mountain_Sitework.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <a class="video-vemo-icon venobox vbox-item" data-autoplay="true" data-vbtype="inline" href="#resto_video"><i class="bi bi-play"></i></a>							
-                    </div>
-                    <div class="call-do-title d-lg-none d-sm-block">
-                        <h2>Sitework <br>Division</h2>
+<!-- assets/videos/Brock_Mountain_Sitework.mp4 -->
+<div class="call-do-action-area animate__slideInUp" id="video-container-restoration">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="single-video text-center">
+					<div class="video-icon">
+						<div id="building_video" style="display:none; width: 90%">
+							<video controls preload="metadata">
+								<source src="assets/videos/Brock_Mountain_Sitework.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<a class="video-vemo-icon venobox vbox-item" data-autoplay="true" data-vbtype="inline" href="#building_video"><i class="bi bi-play"></i></a>							
 					</div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="call-do-title">
+						<h2>Sitework Division</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!--==================================================-->

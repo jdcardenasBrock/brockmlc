@@ -99,7 +99,7 @@
 <!--==================================================-->
 <!-- End Euildint Map Area --> 
 <!--==================================================--> 
-<script async src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&callback=initMap"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&callback=initMap&language=en"></script>
 
 <script>
 

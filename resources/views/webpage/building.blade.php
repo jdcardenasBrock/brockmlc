@@ -59,8 +59,11 @@
 		.section-title{
 		text-align: center;
 		}
-		.call-do-action-area.style-two{
-			height: 270px;
+		.single-video{
+            top: -128%;
+        }
+		.call-do-action-area{
+			height: 250px;
         } 
         .call-do-title.style-two h2  {
             text-align: center;
@@ -100,6 +103,21 @@
 		}
 		img.d-sm-block{
 			display: inline-block !important;
+		}
+		.call-do-action-area{
+			height: 503px;
+		}
+		.single-video{
+            top: -98%;
+        }
+		.video-icon a {
+			height: 120px;
+			width: 120px;
+			line-height: 105px;
+		}
+		.video-icon a i {
+			color: #ffffff;
+			font-size: 76px;
 		}
     }
 	
@@ -204,17 +222,13 @@
 <!--==================================================-->
 <!-- Start Euildint Call Do Bg Area -->
 <!--==================================================-->
-<div class="call-do-action-area style-two wow animate__slideInUp" id="video-container-building" style="margin-top: 30px;">
+<!-- assets/videos/Brock_Mountain_Sitework.mp4 -->
+<div class="call-do-action-area animate__slideInUp" id="video-container-building" style="margin-top: 30px;">
 	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-8 col-md-12">
-				<div class="call-do-title style-two  d-none d-lg-block">
-					<h2>Brock Mountain <br>Land Company, LLC</h2>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-12">
-				<div class="single-video style-three text-center">
-					<div class="video-icon style-three">						
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="single-video text-center">
+					<div class="video-icon">
 						<div id="building_video" style="display:none; width: 90%">
 							<video controls preload="metadata">
 								<source src="assets/videos/Commercial_Building_Division_Promo.mp4" type="video/mp4">
@@ -223,13 +237,13 @@
 						</div>
 						<a class="video-vemo-icon venobox vbox-item" data-autoplay="true" data-vbtype="inline" href="#building_video"><i class="bi bi-play"></i></a>							
 					</div>
-					<div class="call-do-title d-lg-none d-sm-block">
-						<h2>Brock Mountain <br>Land Company, LLC</h2>	
+					<div class="call-do-title">
+						<h2>Brock Mountain <br>Land Company, LLC</h2>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
 </div>
 
 <!--==================================================-->
