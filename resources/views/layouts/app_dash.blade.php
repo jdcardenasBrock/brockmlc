@@ -36,7 +36,7 @@
 
 <body id="app-container" class="menu-default show-spinner" >
     <nav class="navbar fixed-top">
-        <div class="d-flex align-items-center navbar-left">
+        <div class="d-flex align-items-center ">
             <a href="#" class="menu-button d-none d-md-block">
                 <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
                     <rect x="0.48" y="0.5" width="7" height="1" />
@@ -63,8 +63,7 @@
 
 
         <a class="navbar-logo" href="{{route('home')}}">
-            <span class="logo d-none d-xs-block"></span>
-            <span class="logo-mobile d-block d-xs-none"></span>
+            <img src="{{asset('img/profiles/prohound_app_logo.jpg')}}" style="height: 64px;position: absolute; left: 164px; top:18px" alt="ProHound">
         </a>
 
         <div class="navbar-right">
