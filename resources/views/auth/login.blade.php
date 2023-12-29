@@ -2,17 +2,19 @@
 
 @section('content')
 
-
 <style>
 	#top-our-clients{
-        background: url("{{asset('img/banner/banner1.jpg')}}");
+        /*background: url("{{asset('img/banner/banner1.jpg')}}");*/
+        background: url(assets/images/resource/Portal_bg.jpg);
+        background-position: center center;
+        background-size: cover;
     }
 	.slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
 	}
 </style>
     <!--==================================================-->
-    <!-- Start Euildint Breatcome Area -->
+    <!-- Start Euildint Breatcome Area --> 
     <!--==================================================-->
     <div class="breatcome-area" id="top-our-clients">
         <div class="container">
@@ -25,7 +27,7 @@
                         <div class="bratcome-text">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li>Pro HOUND</li>
+                                <li>BMLC Portal</li>
                             </ul>
                         </div>
                     </div>

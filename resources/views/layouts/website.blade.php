@@ -85,7 +85,7 @@
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
 										<li><a href="{{route('news')}}">News</a></li>
 									</ul>
-								</div>
+								</div> 
 							</li>
 							<li><a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
@@ -125,20 +125,49 @@
 	</div>
 
 	<!--Mobile Menu Area -->
-	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
+	
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
 		<div class="mobile-menu">
-			<img src="/assets/images/logo2.png"  class="mean-bar-img" />
+            <a href="{{route('index')}}"><img src="/assets/images/logo_negativo.png" class="mean-bar-img" /></a>
+            <!-- <img src="/assets/images/logo_negativo.png"  class="mean-bar-img" width="50px" /> -->
 			<nav class="Edulin_menu">
 				<ul class="nav_scroll">
-					<li><a href="{{route('index')}}">Home</a></li>
-					<li><a href="{{route('sitework')}}">Sitework</a></li>
-					<li><a href="{{route('building')}}"></a>Building</li>
-					<li><a href="{{route('restoration')}}">Restoration</a></li>
-					<li><a href="{{route('contact')}}">Contact Us</a></li>
-				</ul>
+                    <li><a href="{{route('index')}}">Home</a>								
+                    </li>
+                    <li><a href="#">Who We Are</i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('our_mission')}}">Our Mission</a></li>
+                                <li><a href="{{route('national_presence')}}">National Presence</a></li>
+                                <li><a href="{{route('news')}}">News</a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li><a href="#">What We Do</i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('sitework')}}">Sitework</a></li>
+                                <li><a href="{{route('building')}}">Building</a></li>
+                                <li><a href="{{route('restoration')}}">Restoration</a></li>
+                                <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Work With Us</i></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
+                                <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li>
+                                <li><a href="{{route('contact')}}">Contact Us</a></li>
+                                <li><a href="{{route('login')}}">BMLC portal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
 			</nav>
 		</div>
 	</div>
+
 	<!--==================================================-->
 	<!-- End Euildint Header Style Two Area -->
 	<!--==================================================-->

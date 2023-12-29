@@ -2,7 +2,7 @@ a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
   background: #272a2c;
   float: left;
-  min-height: 130px;
+  min-height: 60px;
   padding: 4px 0 0;
   position: relative;
   width: 100%;
@@ -119,13 +119,20 @@ a.meanmenu-reveal{display:none}
 .mean-container a.meanmenu-reveal:hover span {
   background: #fff;
 }
+.mean-container .mean-bar::before {    
+    /*color: #fff;
+    content: "BMLC";
+    font-size: 28px;
+    font-weight: 600;
+    left: 10px;
+    position: absolute;
+    top: 18px;*/
+}
+
 .mean-bar-img {
   position: absolute;
-  top: 19px;
+  top: 10px;
   left: 10px;
   z-index: 10001;
-  width: 90px;
-}
-.mean-container .mean-nav{
-  margin-top: 56px;
+  width: 50px;
 }

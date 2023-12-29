@@ -34,7 +34,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 
 Route::get('/', function () {
-    return view('webpage.index');
+    return view('webpage.index'); 
 })->name('index');
 
 Route::get('/our_mission', function () {

@@ -138,7 +138,7 @@
 
 						// navigation reveal
 						var showMeanMenu = function() {
-								var meanStyles = "background:"+meanRevealColour+";color:"+meanRevealColour+";padding-top: 55px;  padding-right: 50px;"+meanRevealPos;
+								var meanStyles = "right: 0px; left: auto; text-align: center; text-indent: 0px; font-size: 18px;"+meanRevealPos;
 								if (currentWidth <= meanScreenWidth) {
 								jQuery(removeElements).addClass('mean-remove');
 									meanMenuExist = true;
