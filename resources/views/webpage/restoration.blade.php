@@ -51,6 +51,11 @@
             /* padding-top: 70px; */
             padding-bottom: 120px;
         }
+        #top-restoration{
+            background: url(assets/images/restoration/Rest_1.jpg);
+            background-position: center center; 
+            background-size: cover;
+        }
     }
 
     @media (min-width: 768px) and (max-width: 991px){

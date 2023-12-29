@@ -54,6 +54,13 @@
 </head>
 
 <body>
+    <style>
+        @media (max-width: 991.98px) {
+            .footer-wiget-log a img{
+                width:150px;
+            }
+        }
+    </style>    
 	<!-- loder -->
 	  <div class="loader-wrapper">
 		<div class="loader"></div>

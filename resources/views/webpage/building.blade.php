@@ -92,6 +92,14 @@
 		#img-experience{
 			height: 234px;
 		}
+		#top-building{ 
+			background-position: 45% 290%;                      
+            background-size: 300%;
+        }
+		#top-building{ 
+			background-position: 45% 290%;                      
+            background-size: 300%;
+        }
     }
 
 	@media (min-width: 768px) and (max-width: 991px){ 
@@ -118,8 +126,12 @@
 		.video-icon a i {
 			color: #ffffff;
 			font-size: 76px;
-		}
-    }
+		}		 
+        #top-building{ 
+			background-position: 45% 290%;                      
+            background-size: 300%;
+        } 
+    }	
 	
 </style>
 <!--==================================================-->

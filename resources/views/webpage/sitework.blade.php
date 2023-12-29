@@ -83,6 +83,18 @@
         .call-do-action-area{
 			height: 503px;
 		}
+        .single-video{
+            top: -98%;
+        }
+        .video-icon a {
+            height: 120px;
+            width: 120px;
+            line-height: 105px;
+        }
+        .video-icon a i {
+            color: #ffffff;
+            font-size: 76px;
+        }
     }
 
 </style>
@@ -215,7 +227,7 @@
 					</div>
 					<div class="call-do-title">
 						<h2>Sitework Division</h2>
-					</div>
+					</div> 
 				</div>
 			</div>
 		</div>

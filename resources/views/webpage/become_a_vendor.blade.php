@@ -69,7 +69,7 @@
         
         #top-vendor{            
             background-position: 80% 130%;
-            background-size: 180%;
+            background-size: 190%;
             background-repeat: no-repeat;
         } 
     
