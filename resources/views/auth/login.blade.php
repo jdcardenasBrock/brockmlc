@@ -3,38 +3,74 @@
 @section('content')
 
 <style>
-	#top-our-clients{
-        /*background: url("{{asset('img/banner/banner1.jpg')}}");*/
-        background: url(assets/images/resource/Portal_bg.jpg);
-        background-position: center center;
+    #top-portal{
+        background: url(img/banner/bannerPortal.jpg);
+        background-position: center center; 
         background-size: cover;
+    }    
+    @media (min-width: 992px) {
+        #top-portal{            
+            background-position: center center; 
+            background-size: cover;
+            height: 430px;
+        }  
+      .breatcome-content{
+        top: 82px;
+        text-align: center;
+      }     
     }
-	.slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
-		text-shadow: 1px 4px 6px black;
-	}
+
+    @media (max-width: 991.98px) {
+        #top-portal{            
+            background-position: 80% 130%;
+        background-size: cover;
+            background-repeat: no-repeat;
+        }  
+      .breatcome-content{
+        top: 82px;
+        text-align: center;
+      }     
+
+    }
+
+    @media (min-width: 630px) and (max-width: 991px){
+        
+        #top-portal{            
+            background-position: 50% 150%;
+            margin-top: 45px;
+            background-repeat: no-repeat;
+        } 
+    
+    }
+    @media (max-width: 630px){
+        
+        #top-portal{            
+            background-position: 50% 100%;
+            background-size: cover;    
+            margin-top: 45px;
+        } 
+    
+    }
+
 </style>
-    <!--==================================================-->
-    <!-- Start Euildint Breatcome Area --> 
-    <!--==================================================-->
-    <!-- <div class="breatcome-area" id="top-our-clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="breatcome-content">
-                        <div class="breatcome-title">
-                            
-                        </div>
-                        <div class="bratcome-text">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li>BMLC Portal</li>
-                            </ul>
-                        </div>
+
+<div class="breatcome-area" id="top-portal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="breatcome-content">
+                    <div class="breatcome-title">
+
+                    </div>
+                    <div class="bratcome-text"> 
+
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+</div>
+
     
 
 	<!--==================================================-->
@@ -44,27 +80,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12">
-					<div class="row">
-						<div class="col-lg-12">
-                            <div class="section-title text-center">
-                                <img src="assets/images/logo_negativo.png" width="70px" alt="Logo" >
-                            </div>
-							<!-- start section title -->
-							<div class="section-title text-center">
-								<div class="section-shape">
-									<!-- <img src="assets/images/resource/section-shape.png" alt=""> -->
-								</div>
-								<div class="section-sub-title">
-									<!-- <h4>Welcome</h4> -->
-								</div>
-								<div class="section-main-title">
-									<h2>PORTAL</h2>
-								</div>
-							</div>
-							<!-- End section title -->
-						</div>
-					</div>
-					<!-- End section title -->
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="blog-quote-box mb-40">

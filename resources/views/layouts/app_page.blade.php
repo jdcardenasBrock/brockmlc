@@ -63,14 +63,13 @@
                 </svg>
             </a>
 
-            
+            <a class="navbar-logo" href="{{route('home')}}">
+            <img src="{{asset('img/profiles/prohound_app_logo.jpg')}}" style="height: 64px;position: absolute; left: 164px; top:18px" alt="ProHound Logo">
+            </a>
         </div>
 
 
-        <a class="navbar-logo" href="{{route('home')}}">
-            <span class="logo d-none d-xs-block"></span>
-            <span class="logo-mobile d-block d-xs-none"></span>
-        </a>
+       
 
         <div class="navbar-right">
             <div class="header-icons d-inline-block align-middle">
