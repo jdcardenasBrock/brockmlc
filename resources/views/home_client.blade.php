@@ -204,6 +204,17 @@ $(function () {
 
  // Manejar el evento de cambio en el select
  $('#select_project').change(function () {
+    
+    let img = document.getElementById('div_floor');
+            // Alternar la clase 'oculto'
+            img.classList.add('oculto');
+            $('#list-floorplan').empty();
+
+            let frame = document.getElementById('div_walk');
+            // Alternar la clase 'oculto'
+            frame.classList.add('oculto');
+            $('#list-phases').empty();
+
         // Obtener el valor seleccionado
         let projectSelected = $(this).val();
         if(projectSelected!=""){
