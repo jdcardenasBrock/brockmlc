@@ -139,7 +139,7 @@
                                 <div class="blog-content style-two">
                                     
                                     <div class="blog-title style-two mt-3 mb-3">
-                                    <h3 style="text-decoration:underline;color:#236040 !important">Eastern Zone Clients</a></h3>
+                                    <h3 style="text-decoration:underline;color:#236040 !important">Eastern Zone Clients</h3>
                                     </div>
                                     <div class="blog-bottom">
                                         <div class="blog-btn style-two">

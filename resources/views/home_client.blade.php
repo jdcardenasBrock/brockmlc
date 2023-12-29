@@ -43,6 +43,10 @@
         .oculto {
             display: none !important; /* La clase oculta el elemento */
         }
+        .container-prohound{
+            display: flow;
+            justify-content: space-between;
+        }
     </style>
     <div class="container-fluid">
         <div class="row">
@@ -52,8 +56,9 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="team-details-content">
-                                <div class="team-details-title">
-                                    <h4  style="color:#236040">Select Project</h4>
+                                <div class="team-details-title container-prohound">
+                                    <img src="{{asset('img/cards/logo.png')}}" alt="ProHound Logo" width="60px" style=" display: inline-block;"> 
+                                    <h4  style="color:#236040;  display: inline-block;">Select Project</h4>
                                 </div>
                                 <div class="team-details-discription">
                                     <form id="form_projects" name="form_projects"  accept-charset="UTF-8" >
