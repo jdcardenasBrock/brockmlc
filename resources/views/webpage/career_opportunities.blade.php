@@ -114,12 +114,24 @@
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
                         <ul>
-                            <li><a href="#"> Business Solution <span><i class="bi bi-chevron-right"></i></span></a></li>	
-                            <li><a href="#"> Expert Mechanical <span><i class="bi bi-chevron-right"></i></span></a></li>
-                            <li><a href="#"> Architecture & Building <span><i class="bi bi-chevron-right"></i></span></a></li>
-                            <li><a href="#"> Construction Management <span><i class="bi bi-chevron-right"></i></span></a></li>
-                            <li><a href="#"> Apartment Design <span><i class="bi bi-chevron-right"></i></span></a></li>
-                            <li><a href="#"> Facade Engineering <span><i class="bi bi-chevron-right"></i></span></a></li>
+                            <li>Business Solution
+                                <!-- <span><i class="bi bi-chevron-right"></i></span></a> -->
+                            </li>	
+                            <li>Expert Mechanical
+                                <!-- <span><i class="bi bi-chevron-right"></i></span></a> -->
+                            </li>
+                            <li>Architecture & Building
+                                <!-- <span><i class="bi bi-chevron-right"></i></span></a> -->
+                            </li>
+                            <li>Construction Management
+                                <!-- <span><i class="bi bi-chevron-right"></i></span></a> -->
+                            </li>
+                            <li>Apartment Design
+                                <!-- <span><i class="bi bi-chevron-right"></i></span></a> -->
+                            </li>
+                            <li>Facade Engineering
+                                <!-- <span><i class="bi bi-chevron-right"></i></span></a> -->
+                            </li>
                         </ul>
                     </div>
                 </div>

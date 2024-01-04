@@ -49,6 +49,14 @@
 		width: 70%; 
 	}
 
+	.link_custom{
+		text-decoration: none;
+	}
+
+	.link_custom:hover{
+		color: #141422;
+	}
+
 	@media (max-width: 767px) {
 
 		#brock_team_img{
@@ -559,8 +567,8 @@
 					<h4>TESTIMONIALS</h4>
 				</div>
 				<div class="section-main-title">
-					<a href="our_clients.php" style="text-decoration: none;"><h2>Our Happy Clients</h2></a>
-					<a href="our_clients.php" style="text-decoration: none;"><h2>Says About Us</h2></a>
+					<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Our Happy Clients</h2></a>
+					<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Says About Us</h2></a>
 				</div>
 			</div>
 			<!-- End section title -->
@@ -569,7 +577,7 @@
 					<div class="col-lg-12">
 						<div class="testi-text">
 							<p>
-							<a href="our_clients.php" style="text-decoration: none;">	
+							<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">	
 							"Just did another close up tour of the beach.  Seeing a lot of your work.  Well Done!  I'm impressed beyond words!!!!  Thank you for what you do!  I'm telling everyone I know"<br>
 							<strong>(Matt Reinhart - Volusia County Commissioner)</strong>
 							</a>
@@ -579,7 +587,7 @@
 					<div class="col-lg-12">
 						<div class="testi-text">
 							<p>
-							<a href="our_clients.php" style="text-decoration: none;">
+							<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 							“Your team has done the unthinkable. “Your efforts are extremely appreciated and more work is coming on other projects””<br>
 							<strong>(Property Manager)</strong>
 							</a>
@@ -608,7 +616,7 @@
 										<div class="testi-discription">
 											
 											<p>
-												<a href="our_clients.php" style="text-decoration: none;">
+												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 												“You were in a league of our own and amazing!  Good work team!”
 												</a>
 											</p>
@@ -639,7 +647,7 @@
 										<div class="testi-discription">
 											
 											<p>
-												<a href="our_clients.php" style="text-decoration: none;">
+												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 												“Nicely done Quincey!  You guys are first class!”
 												</a>
 											</p>
@@ -670,7 +678,7 @@
 										<div class="testi-discription">
 											
 											<p>
-												<a href="our_clients.php" style="text-decoration: none;">
+												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 												"I simply can't understand how contractors that have been doing this for 30 years don't look as good as ..."
 												</a>
 											</p>
@@ -705,7 +713,7 @@
 										<div class="testi-discription">
 											
 											<p>
-												<a href="our_clients.php" style="text-decoration: none;">
+												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 												"It has been a pleasure to watch a crew that is organized, moving along nicely with difficult sheet piling work."
 												</a>
 											</p>
@@ -736,7 +744,7 @@
 										<div class="testi-discription">
 											
 											<p>
-												<a href="our_clients.php" style="text-decoration: none;">
+												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 												"What an amazing, blessed and anointed organization you have created.. We will forever be grateful..."
 												</a>
 											</p>
@@ -767,7 +775,7 @@
 										<div class="testi-discription">
 											
 											<p>
-												<a href="our_clients.php" style="text-decoration: none;">
+												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 												“Shout out to Brock Mountain Land Company, LLC & Eric Burns for the great expansion & renovation ...”
 												</a>
 											</p>

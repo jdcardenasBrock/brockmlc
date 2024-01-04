@@ -3417,7 +3417,7 @@ button.icons {
     width: 100%;
 }
 
-.widget-categories-menu ul li a {
+.widget-categories-menu ul li {
     display: block;
     overflow: hidden;
     text-decoration: none;
@@ -3425,6 +3425,20 @@ button.icons {
     font-size: 17px;
     transition: .5s;
     font-weight: 500;
+}
+
+.widget-categories-menu ul li a{
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #18191D;
+    font-size: 17px;
+    transition: .5s;
+    font-weight: 500;
+}
+
+.widget-categories-menu ul li:hover {
+    color: #fff;
 }
 
 .widget-categories-menu ul li:hover a {

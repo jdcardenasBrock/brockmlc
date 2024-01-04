@@ -139,14 +139,14 @@
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
                         <ul>
-                            <li><a href="#"> Stormwater Install & Maintenance</a></li>	
-                            <li><a href="#"> French Drain Install & Maintenance </a></li>
-                            <li><a href="#"> Trench Drain Install & Maintenance </a></li>
-                            <li><a href="#"> Forestry Mulching & Land Clearing </a></li>
-                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Disaster Clean-up </a></li>
-                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Excavation, Import & Export </a></li>
-                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Engineering & Design Build Solutions </a></li>
-                            <li class="d-lg-block d-sm-block d-md-none"><a href="#"> Concrete Flatwork / Curb & Gutter </a></li>
+                            <li> Stormwater Install & Maintenance</li>	
+                            <li> French Drain Install & Maintenance </li>
+                            <li> Trench Drain Install & Maintenance </li>
+                            <li> Forestry Mulching & Land Clearing </li>
+                            <li class="d-lg-block d-sm-block d-md-none"> Disaster Clean-up </li>
+                            <li class="d-lg-block d-sm-block d-md-none"> Excavation, Import & Export </li>
+                            <li class="d-lg-block d-sm-block d-md-none"> Engineering & Design Build Solutions </li>
+                            <li class="d-lg-block d-sm-block d-md-none"> Concrete Flatwork / Curb & Gutter </li>
                         </ul>
                     </div>
                 </div>                
@@ -160,14 +160,14 @@
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
                         <ul>
-                            <!-- <li><a href="#"> Stormwater Install & Maintenance </a></li>	
-                            <li><a href="#"> French Drain Install & Maintenance </a></li>
-                            <li><a href="#"> Trench Drain Install & Maintenance </a></li>
-                            <li><a href="#"> Forestry Mulching & Land Clearing </a></li> -->
-                            <li><a href="#"> Disaster Clean-up </a></li>
-                            <li><a href="#"> Excavation, Import & Export </a></li>
-                            <li><a href="#"> Engineering & Design Build Solutions </a></li>
-                            <li><a href="#"> Concrete Flatwork / Curb & Gutter </a></li>
+                            <!-- <li> Stormwater Install & Maintenance </li>	
+                            <li> French Drain Install & Maintenance </li>
+                            <li> Trench Drain Install & Maintenance </li>
+                            <li> Forestry Mulching & Land Clearing </a>> -->
+                            <li> Disaster Clean-up </li>
+                            <li> Excavation, Import & Export </li>
+                            <li> Engineering & Design Build Solutions </li>
+                            <li> Concrete Flatwork / Curb & Gutter </li>
                         </ul>
                     </div>
                 </div>                
