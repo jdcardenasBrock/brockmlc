@@ -467,7 +467,7 @@
                 <input type="text" class="form-control" name="floorplan_names[]" placeholder="Enter a FloorPlan label">
             </div>
             <div class="form-group">
-                <label>Date Scanned</label>
+                <label>Add Document</label>
                 <input type="file" class="form-control datepicker" name="files[]" accept=".png, .jpg, .jpeg" >
             </div>
             <div class="separator mb-4"></div>
@@ -500,7 +500,7 @@
                             <img src="${urlFloor}" alt="${nameFloor}" class="list-thumbnail responsive border-0 card-img-left m-2">
                         </a>
             <div class="form-group">
-                <label>Date Scanned</label>
+                <label>Add Document</label>
                 <input type="file" class="form-control datepicker" name="files[]" accept=".png, .jpg, .jpeg">
             </div>
             <div class="separator mb-4"></div>

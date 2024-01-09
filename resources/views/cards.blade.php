@@ -79,75 +79,81 @@
 			<div class="row mt-4">
                 <div class="col-lg-4 col-md-6 mb-30">
                     <!-- start blog single box -->
-                    <div class="blog-single-box style-two">
-                        <div class="blog-thumb">
-                            <img src="{{asset('img/cards/logo.png')}}" alt="" style="width:100%">
-                        </div>
-                        <div class="blog-content style-two">
-                            
-                            <div class="blog-title style-two mt-3 mb-3">
-                                <h3><a href="{{route('proHound')}}" style="color:#236040 !important;">ProHound</a></h3>
+
+                    <a href="{{ route('proHound') }}" style="text-decoration: none; display: block; color: inherit;">
+                        <div class="blog-single-box style-two">
+                            <div class="blog-thumb">
+                                <img src="{{asset('img/cards/logo.png')}}" alt="" style="width:100%">
                             </div>
-                            <div class="blog-bottom">
-                                <div class="blog-btn style-two">
-                                    <a href="{{route('proHound')}}">Enter to ProHound</a>
+                            <div class="blog-content style-two">
+                                <div class="blog-title style-two mt-3 mb-3">
+                                   <h3 style="text-decoration:underline;color:#236040 !important"> ProHound</h3>
                                 </div>
-                                <div class="blog-icon">
-                                    <a href="{{route('proHound')}}"><i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-bottom">
+                                    <div class="blog-btn style-two">
+                                        Enter to ProHound
+                                    </div>
+                                    <div class="blog-icon">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- End blog single box -->
                 </div>
                 
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <!-- start blog single box -->
-                    <div class="blog-single-box style-two">
-                        <div class="blog-thumb">
-                            <img src="{{asset('img/cards/western.png')}}" alt="" style="width:100%">
-                        </div>
-                        <div class="blog-content style-two">
-                            
-                            <div class="blog-title style-two mt-3 mb-3">
-                                <h3><a href="{{route('home')}}" style="color:#236040 !important;">Western Zone Clients</a></h3>
-                            </div>
-                            <div class="blog-bottom">
-                                <div class="blog-btn style-two">
-                                    <a href="{{route('home')}}">Enter to Western Zone Clients</a>
+                    <div class="col-lg-4 col-md-6 mb-30">
+                        <!-- start blog single box -->
+                        <a href="{{ route('home') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb">
+                                    <img src="{{asset('img/cards/western.png')}}" alt="" style="width:100%">
                                 </div>
-                                <div class="blog-icon">
-                                    <a href="{{route('home')}}"><i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-content style-two">
+                                    
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important"> Western Zone Clients</h3>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to Western Zone Clients
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <!-- End blog single box -->
                     </div>
-                    <!-- End blog single box -->
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <!-- start blog single box -->
-                    <div class="blog-single-box style-two">
-                        <div class="blog-thumb">
-                            <img src="{{asset('img/cards/eastern.png')}}" alt="" style="width:100%">
-                        </div>
-                        <div class="blog-content style-two">
-                            
-                            <div class="blog-title style-two mt-3 mb-3">
-                                <h3><a href="{{route('home')}}" style="color:#236040 !important;">Eastern Zone Clients</a></h3>
-                            </div>
-                            <div class="blog-bottom">
-                                <div class="blog-btn style-two">
-                                    <a href="{{route('home')}}">Enter to Eastern Zone Clients</a>
+                
+                    <div class="col-lg-4 col-md-6 mb-30">
+                        <!-- start blog single box -->
+                        <a  href="{{ route('home') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb">
+                                    <img src="{{asset('img/cards/eastern.png')}}" alt="" style="width:100%">
                                 </div>
-                                <div class="blog-icon">
-                                    <a href="{{route('home')}}"><i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-content style-two">
+                                    
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important">Eastern Zone Clients</h3>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to Eastern Zone Clients
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <!-- End blog single box -->
                     </div>
-                    <!-- End blog single box -->
-                </div>
             </div>
     </div>
 </div>
