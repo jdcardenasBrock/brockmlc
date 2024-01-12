@@ -57,7 +57,69 @@
 		color: #141422;
 	}
 
+	.testi-text{
+		font-size: 45px;
+		font-weight: 500;
+		line-height: 44px;
+	}	
+
+	.owl-stage{
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+	}
+
+	#top_notch{
+		position: absolute; top: -20%; right: 15%;
+	}
+
+	#description_brock{
+		padding-top: 60px;
+	}
+
+	.about-area {
+		padding-top: 112px !important;
+	}
+
+	.owl-item{
+		margin-right: 100px; 
+		margin-left: 100px;
+	}	
+
 	@media (max-width: 767px) {
+
+		.testi-text{		
+			font-size: 14px;	
+			line-height: 26px;
+		}
+
+		.about-discribtion p{
+			text-align: center;
+			padding: 20px;
+		}	
+
+		#top_notch{
+			width: 85px;
+			top: 5%; right: 0;
+			display: none;
+		}	
+
+		#logo_section_1{
+			width: 75%;
+			margin-left: 12%;
+		}
+
+		#description_brock{
+			padding-top: 0;
+		}
+
+		.about-area{
+			padding-top: 60px !important;
+		}
+
+		#container-testimonials{
+			padding: 25px;
+		}
 
 		#brock_team_img{
 			padding: 0 0 194px;			
@@ -140,6 +202,16 @@
 
 	@media (min-width: 768px) and (max-width: 991px){ 
 
+		.about-discribtion p{
+			text-align: center;
+		}
+
+		#top_notch{
+			width: 45px;			
+			top: 5%; right: 0;
+			display: none;
+		}
+
 		.mt-lg-80{
 			margin-top: -80px;
 		}
@@ -188,216 +260,9 @@
 <!-- Start Euildint Slider Style Two Area -->
 <!--==================================================-->
 <section class="banner-section">
-	<div class="banner-carousel owl-carousel">
-		<div class="slide-item one">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_1.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Building</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item two">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_2.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item tres">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_3.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item four">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_4.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item five">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_5.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item six">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_6.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item seven">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_7.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide-item eight">
-			<div class="image-layer" style="background-image: url('assets/images/slider/Home_8.jpg');"></div>
-			<div class="container">
-				<div class="slider-content style-two wow animate__slideInLeft">
-					<div class="slider-sub-title">
-						<!-- <h4>Great Experience In Restoration</h4> -->
-					</div>
-					<div class="slider-main-title">
-						<h1>Building Tomorrow's Success 
-						Today</h1>
-					</div>
-					<div class="slider-discripton">
-						<p></p>
-					</div>
-					
-					<div class="slider-social-menu">
-						<!-- <ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<video autoplay muted loop style="width:100%;">
+		<source src="assets/images/Video_BM_Home.mp4">
+	</video>
 </section>
 <!--==================================================-->
 <!-- End Euildint Slider Style Two Area -->
@@ -406,25 +271,25 @@
 <!--==================================================-->
 <!-- Start Euildint About Area -->
 <!--==================================================-->
-<div class="about-area style-two wow animate__slideInUp" style="padding-top: 75px">
+<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: 120px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
 				<div class="section-title d-lg-none d-sm-block mb-5">
-					<div class="section-shape">
+					<!-- <div class="section-shape">
 						<img src="assets/images/resource/section-shape.png" alt="">
-					</div>
+					</div> -->
 					<div class="section-sub-title">
-						<h4>Superior Construction</h4>
+						<h4 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, <br>WE'RE YOUR SOLUTION</h4>
 					</div>
-					<div class="section-main-title about">
+					<!-- <div class="section-main-title about">
 						<h2>Exceeding The Demands Of Commercial Sitework & Building Through Innovation & Dependability</h2>
-					</div>
+					</div> -->
 				</div>
-				<div class="about-thumb style-two wow animate__slideInUp" style="background-image: url('assets/images/home/Home_9-Sup_Construction.jpg'); background-position: center center; background-size: cover;">
+				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/logo_negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat">
 					<!-- <img src="assets/images/home/Home_9-Sup_Construction.jpg" alt=""> -->
 					<!-- statr about counter -->
-					<div class="about-counter">
+					<!-- <div class="about-counter">
 						<div class="about-numbar">
 							<h4 class="counter">12</h4>
 							<span>+</span>
@@ -433,26 +298,25 @@
 							<h5>Years of Experience
 								Construction Services</h5>
 						</div>
-					</div>
+					</div> -->
 					<!-- End about counter -->
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-12">
+			<div class="col-lg-6 col-md-12" id="description_brock">
 				<div class="section-title d-none d-lg-block">
-					<div class="section-shape">
+					<!-- <div class="section-shape">
 						<img src="assets/images/resource/section-shape.png" alt="">
-					</div>
+					</div> -->
 					<div class="section-sub-title">
-						<h4>Superior Construction</h4>
+						<h4 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, <br>WE'RE YOUR SOLUTION</h4>
 					</div>
-					<div class="section-main-title about">
-						<h2>Exceeding The Demands Of Commercial Sitework & Building Through Innovation & Dependability</h2>
-					</div>
+					<!-- <div class="section-main-title about">
+						<h2 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, WE’RE YOUR SOLUTION</h2>
+					</div> -->
 				</div>
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
-						<p>Meeting the demands of commercial construction requires expertise, experience, and readily available skilled resource.
-						Brock Mountain offers virtually unlimited flexibility for construction, sitework, building and stormwater management. This unparalleled combination of capabilities results in extreme accuracy delivered on time and on-budget.</p>
+						<p style="color: white">Brock Mountain is dedicated to providing clients the very best in construction services. We are a multidisciplinary general contractor whose Quality, Integrity, and Expertise allow us to make complex projects simple. We take pride in the relationships we foster with our clients and are passionate about continuously improving to exceed our client's expectations. Our commitment to excellence is the motivation behind everything we do at Brock Mountain.</p>
 					</div>
 					<!-- start process bar -->
 					
@@ -460,7 +324,7 @@
 					<div class="row mt-3">
 						<div class="col-lg-6">
 							<!--start about single box -->
-							<div class="about-single-box">
+							<!-- <div class="about-single-box">
 								<div class="about-icon">
 									<img src="assets/images/resource/about-icon1.png" alt="">
 								</div>
@@ -468,7 +332,7 @@
 									<h4>Nationwide Service</h4>
 									<p>Write some related text here.</p>
 								</div>
-							</div>
+							</div> -->
 							<!--end about single box -->
 						</div>
 						
@@ -493,17 +357,17 @@
 <!--==================================================-->
 <!-- Start Euildint Call Do Bg Area -->
 <!--==================================================-->
-<div class="call-do-action-area animate__slideInUp" id="brock_team_section" style="margin-bottom: 120px; background: url(assets/images/home/brock_team-scaled-2.jpg); background-position: center center; background-size: cover;">
+<div class="call-do-action-area animate__slideInUp" id="brock_team_section" style="margin-top: 120px; position: relative; background: url(assets/images/home/brock_team-scaled-2.jpg); background-position: center center; background-size: cover;">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-6 col-md-12">
+			<div class="col-lg-7 col-md-12 text-center">
 				<div class="faq-content" style="box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.8); background: #266041; margin-top: -140px; padding: 8px 58px 8px;">
 					<div class="section-title">
 						<div class="section-sub-title faq">
 							<!-- <h4>Frequently Asked Questions</h4> -->
 						</div>
 						<div class="section-main-title faq">
-							<h2 style="color: #FFF">We work with excellent people!</h2>
+							<h2 style="color: #FFF">We are Leaders in Safety</h2>
 						</div>
 						<!-- <div class="faq-discripition">
 							<p>Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics. The timeline for seeing results depends on the specific services you choose and the current state of your business. </p>
@@ -512,18 +376,24 @@
 				</div>
 			</div>
 		</div>
+		<img id="top_notch" src="assets/images/SAFETY SEAL.png">
 	</div>
 </div>
-
 <!--==================================================-->
 <!-- End Euildint Call Do Bg Area -->
 <!--==================================================-->
+
+<div class="container d-lg-none d-sm-block" style="margin-top: -70px;">
+	<div class="row d-flex justify-content-center">
+		<img src="assets/images/SAFETY SEAL.png" style="width: 50%">
+	</div>
+</div>
 
 
 <!--==================================================-->
 <!-- Start Euildint Call Do Bg Area -->
 <!--==================================================-->
-<div class="call-do-action-area animate__slideInUp">
+<div class="call-do-action-area animate__slideInUp" style="display: none">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -553,248 +423,312 @@
 <!--==================================================-->
 <!-- Start Euildint Testimonial Area -->
 <!--==================================================-->
-<div class="testimonial-area wow animate__slideInUp mt-100 mb-100" >
-<div class="container">
-	<div class="row">
-		
-		<div class="col-lg-5 col-md-12">					
-			<!-- start section title -->
-			<div class="section-title">
-				<div class="section-shape">
-					<img src="assets/images/resource/section-shape.png" alt="">
-				</div>
-				<div class="section-sub-title">
-					<h4>TESTIMONIALS</h4>
-				</div>
-				<div class="section-main-title">
-					<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Our Happy Clients</h2></a>
-					<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Says About Us</h2></a>
-				</div>
-			</div>
-			<!-- End section title -->
-			<div class="row">
-				<div class="testi_list owl-carousel">
-					<div class="col-lg-12">
-						<div class="testi-text">
-							<p>
-							<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">	
-							"Just did another close up tour of the beach.  Seeing a lot of your work.  Well Done!  I'm impressed beyond words!!!!  Thank you for what you do!  I'm telling everyone I know"<br>
-							<strong>(Matt Reinhart - Volusia County Commissioner)</strong>
-							</a>
-							</p>
+<div class="testimonial-area wow animate__slideInUp" style="margin-top: 120px;">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-12 col-md-12" id="container-testimonials">					
+				<!-- start section title -->
+				<!-- <div class="section-title">
+					<div class="section-shape">
+						<img src="assets/images/resource/section-shape.png" alt="">
+					</div>
+					<div class="section-sub-title">
+						<h4>TESTIMONIALS</h4>
+					</div>
+					<div class="section-main-title">
+						<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Our Happy Clients</h2></a>
+						<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Says About Us</h2></a>
+					</div>
+				</div> -->
+				<!-- End section title -->
+				<div class="row">
+					<div class="testi_list owl-carousel text-center">
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">	
+								“Awesome workforce. Responsible, reliable, and professional!” 
+								<br>
+								<br>
+								<strong>(Satisfied Client)</strong>
+								</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								“AMAZING!! These guys treat you like family…. Trustworthy crew, great equipment, and respectful. Kept us informed every step of the way and were able to predict problems and suggest solutions. Beautiful job! I would recommend these guys over anyone any day! Thank you guys for our dream home come true!” 
+								<br>
+								<br>
+								<strong>(Property Manager)</strong>
+								</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								“I was very impressed with the crew. They came on time and quickly collected everything that needed to go. They were pleasant and eager to help me. Can’t ask for anything more!”  
+								<br>
+								<br>
+								<strong>(Property Manager)</strong>
+								</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								“Excellent work. Professional and timely service” 
+								<br>
+								<br>
+								<strong>(Property Manager)</strong>
+								</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								“We were very happy that we chose Brock Mountain. We would hire them again, and probably will for our next project. We are very satisfied with their workmanship and their knowledge of what they were doing. This company was very time efficient and completed their job with professionalism, and on schedule. Wish I could give them a higher ranking than 5 stars because they deserve it.”  
+								<br>
+								<br>
+								<strong>(Property Manager)</strong>
+								</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								“You were in a league of your own and amazing! Good work team!” 
+								<br>
+								<br>
+								<strong>(Property Manager)</strong>
+								</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="testi-text">
+								<p>
+								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								"What an amazing, blessed, and anointed organization you have created. We will forever be grateful..."
+								<br>
+								<br>
+								<strong>(Property Manager)</strong>
+								</a>
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-12">
-						<div class="testi-text">
-							<p>
-							<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-							“Your team has done the unthinkable. “Your efforts are extremely appreciated and more work is coming on other projects””<br>
-							<strong>(Property Manager)</strong>
-							</a>
-							</p>
-						</div>
-					</div>
 				</div>
 			</div>
+			<div class="col-lg-7 col-md-12" style="display: none">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 mt-lg-80">
+								<!-- start testi single box -->
+								<div class="testi-single-box wow animate__slideInUp">
+									<div class="testi-items-box">
+										<div class="testi-content">
+											<div class="testi-thumb">
+												<!-- <img src="assets/images/testimonial/testi1.png" alt=""> -->
+											</div>
+											<div class="testi-title">
+												<h4></h4>
+												<span>A client well pleased with Team BMLC!</span>
+											</div>
+											<div class="testi-discription">
+												
+												<p>
+													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													“You were in a league of our own and amazing!  Good work team!”
+													</a>
+												</p>
+												
+												</div>
+											<div class="testi-icon-thumb">
+												<img src="assets/images/testimonial/testi-icon.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div> 
+								<!-- End testi single box -->
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<!-- start testi single box -->
+								<div class="testi-single-box wow animate__slideInUp">
+									<div class="testi-items-box">
+										<div class="testi-content">
+											<div class="testi-thumb">
+												<!-- <img src="assets/images/testimonial/testi3.png" alt=""> -->
+											</div>
+											<div class="testi-title">
+												<h4>
+													<!-- Alex Mitchell -->
+												</h4>
+												<span>General Manager of Universal Engineering</span>
+											</div>
+											<div class="testi-discription">
+												
+												<p>
+													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													“Nicely done Quincey!  You guys are first class!”
+													</a>
+												</p>
+												
+												</div>
+											<div class="testi-icon-thumb">
+												<img src="assets/images/testimonial/testi-icon.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End testi single box -->
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<!-- start testi single box -->
+								<div class="testi-single-box wow animate__slideInUp">
+									<div class="testi-items-box">
+										<div class="testi-content">
+											<div class="testi-thumb">
+												<!-- <img src="assets/images/testimonial/testi3.png" alt=""> -->
+											</div>
+											<div class="testi-title">
+												<h4>
+													<!-- Alex Mitchell -->
+												</h4>
+												<span>Engineer representing the HOA</span>
+											</div>
+											<div class="testi-discription">
+												
+												<p>
+													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													"I simply can't understand how contractors that have been doing this for 30 years don't look as good as ..."
+													</a>
+												</p>
+												
+												</div>
+											<div class="testi-icon-thumb">
+												<img src="assets/images/testimonial/testi-icon.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End testi single box -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 mt-lg-100 mt-sm-180">
+								<!-- start testi single box -->
+								<div class="testi-single-box two wow animate__slideInUp">
+									<div class="testi-items-box">
+										<div class="testi-content">
+											<div class="testi-thumb">
+												<!-- <img src="assets/images/testimonial/testi2.png" alt=""> -->
+											</div>
+											<div class="testi-title">
+												<h4>
+													<!-- Guy Hawkins -->
+												</h4>
+												<span>Building Engineer</span>
+											</div>
+											<div class="testi-discription">
+												
+												<p>
+													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													"It has been a pleasure to watch a crew that is organized, moving along nicely with difficult sheet piling work."
+													</a>
+												</p>
+												
+												</div>
+											<div class="testi-icon-thumb">
+												<img src="assets/images/testimonial/testi-icon.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End testi single box -->
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<!-- start testi single box -->
+								<div class="testi-single-box four wow animate__slideInUp">
+									<div class="testi-items-box">
+										<div class="testi-content">
+											<div class="testi-thumb">
+												<!-- <img src="assets/images/testimonial/testi4.png" alt=""> -->
+											</div>
+											<div class="testi-title">
+												<h4>
+													<!-- Jessca Arow -->
+												</h4>
+												<span>Latrice Bryant-Robinson Daytona Beach Shores</span>
+											</div>
+											<div class="testi-discription">
+												
+												<p>
+													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													"What an amazing, blessed and anointed organization you have created.. We will forever be grateful..."
+													</a>
+												</p>
+												
+												</div>
+											<div class="testi-icon-thumb">
+												<img src="assets/images/testimonial/testi-icon.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End testi single box -->
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<!-- start testi single box -->
+								<div class="testi-single-box four wow animate__slideInUp">
+									<div class="testi-items-box">
+										<div class="testi-content">
+											<div class="testi-thumb">
+												<!-- <img src="assets/images/testimonial/testi4.png" alt=""> -->
+											</div>
+											<div class="testi-title">
+												<h4>
+													<!-- Jessca Arow -->
+												</h4>
+												<span>Michelle Pace Wood</span>
+											</div>
+											<div class="testi-discription">
+												
+												<p>
+													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													“Shout out to Brock Mountain Land Company, LLC & Eric Burns for the great expansion & renovation ...”
+													</a>
+												</p>
+												
+												</div>
+											<div class="testi-icon-thumb">
+												<img src="assets/images/testimonial/testi-icon.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End testi single box -->
+							</div>
+						</div>
+					</div>
+				</div>					
+			</div>		
 		</div>
-		<div class="col-lg-7 col-md-12">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 mt-lg-80">
-							<!-- start testi single box -->
-							<div class="testi-single-box wow animate__slideInUp">
-								<div class="testi-items-box">
-									<div class="testi-content">
-										<div class="testi-thumb">
-											<!-- <img src="assets/images/testimonial/testi1.png" alt=""> -->
-										</div>
-										<div class="testi-title">
-											<h4></h4>
-											<span>A client well pleased with Team BMLC!</span>
-										</div>
-										<div class="testi-discription">
-											
-											<p>
-												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-												“You were in a league of our own and amazing!  Good work team!”
-												</a>
-											</p>
-											
-											</div>
-										<div class="testi-icon-thumb">
-											<img src="assets/images/testimonial/testi-icon.png" alt="">
-										</div>
-									</div>
-								</div>
-							</div> 
-							<!-- End testi single box -->
-						</div>
-						<div class="col-lg-12 col-md-12">
-							<!-- start testi single box -->
-							<div class="testi-single-box wow animate__slideInUp">
-								<div class="testi-items-box">
-									<div class="testi-content">
-										<div class="testi-thumb">
-											<!-- <img src="assets/images/testimonial/testi3.png" alt=""> -->
-										</div>
-										<div class="testi-title">
-											<h4>
-												<!-- Alex Mitchell -->
-											</h4>
-											<span>General Manager of Universal Engineering</span>
-										</div>
-										<div class="testi-discription">
-											
-											<p>
-												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-												“Nicely done Quincey!  You guys are first class!”
-												</a>
-											</p>
-											
-											</div>
-										<div class="testi-icon-thumb">
-											<img src="assets/images/testimonial/testi-icon.png" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End testi single box -->
-						</div>
-						<div class="col-lg-12 col-md-12">
-							<!-- start testi single box -->
-							<div class="testi-single-box wow animate__slideInUp">
-								<div class="testi-items-box">
-									<div class="testi-content">
-										<div class="testi-thumb">
-											<!-- <img src="assets/images/testimonial/testi3.png" alt=""> -->
-										</div>
-										<div class="testi-title">
-											<h4>
-												<!-- Alex Mitchell -->
-											</h4>
-											<span>Engineer representing the HOA</span>
-										</div>
-										<div class="testi-discription">
-											
-											<p>
-												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-												"I simply can't understand how contractors that have been doing this for 30 years don't look as good as ..."
-												</a>
-											</p>
-											
-											</div>
-										<div class="testi-icon-thumb">
-											<img src="assets/images/testimonial/testi-icon.png" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End testi single box -->
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 mt-lg-100 mt-sm-180">
-							<!-- start testi single box -->
-							<div class="testi-single-box two wow animate__slideInUp">
-								<div class="testi-items-box">
-									<div class="testi-content">
-										<div class="testi-thumb">
-											<!-- <img src="assets/images/testimonial/testi2.png" alt=""> -->
-										</div>
-										<div class="testi-title">
-											<h4>
-												<!-- Guy Hawkins -->
-											</h4>
-											<span>Building Engineer</span>
-										</div>
-										<div class="testi-discription">
-											
-											<p>
-												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-												"It has been a pleasure to watch a crew that is organized, moving along nicely with difficult sheet piling work."
-												</a>
-											</p>
-											
-											</div>
-										<div class="testi-icon-thumb">
-											<img src="assets/images/testimonial/testi-icon.png" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End testi single box -->
-						</div>
-						<div class="col-lg-12 col-md-12">
-							<!-- start testi single box -->
-							<div class="testi-single-box four wow animate__slideInUp">
-								<div class="testi-items-box">
-									<div class="testi-content">
-										<div class="testi-thumb">
-											<!-- <img src="assets/images/testimonial/testi4.png" alt=""> -->
-										</div>
-										<div class="testi-title">
-											<h4>
-												<!-- Jessca Arow -->
-											</h4>
-											<span>Latrice Bryant-Robinson Daytona Beach Shores</span>
-										</div>
-										<div class="testi-discription">
-											
-											<p>
-												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-												"What an amazing, blessed and anointed organization you have created.. We will forever be grateful..."
-												</a>
-											</p>
-											
-											</div>
-										<div class="testi-icon-thumb">
-											<img src="assets/images/testimonial/testi-icon.png" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End testi single box -->
-						</div>
-						<div class="col-lg-12 col-md-12">
-							<!-- start testi single box -->
-							<div class="testi-single-box four wow animate__slideInUp">
-								<div class="testi-items-box">
-									<div class="testi-content">
-										<div class="testi-thumb">
-											<!-- <img src="assets/images/testimonial/testi4.png" alt=""> -->
-										</div>
-										<div class="testi-title">
-											<h4>
-												<!-- Jessca Arow -->
-											</h4>
-											<span>Michelle Pace Wood</span>
-										</div>
-										<div class="testi-discription">
-											
-											<p>
-												<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-												“Shout out to Brock Mountain Land Company, LLC & Eric Burns for the great expansion & renovation ...”
-												</a>
-											</p>
-											
-											</div>
-										<div class="testi-icon-thumb">
-											<img src="assets/images/testimonial/testi-icon.png" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End testi single box -->
-						</div>
-					</div>
-				</div>
-			</div>					
-		</div>		
 	</div>
-</div>
 </div>
 <!--==================================================-->
 <!-- End Euildint Testimonial Area -->
@@ -804,40 +738,30 @@
 <!--==================================================-->
 <!-- Start Euildint Brand Area -->
 <!--==================================================-->
-<div class="brand-area " style="margin-bottom: 120px;">
+<div class="brand-area " style="margin-bottom: 120px; margin-top: 120px;">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="brand_list owl-carousel">
 				<div class="col-lg-12">
 					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/brand/brand1.png" alt=""></a>
-					</div>
+						<a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a>
+					</div>					
 				</div>
 				<div class="col-lg-12">
 					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/brand/brand2.png" alt=""></a>
-					</div>
+						<a href="#"><img src="assets/images/Sitework.png" style="width: 125%" alt=""></a>
+					</div>					
 				</div>
 				<div class="col-lg-12">
 					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/brand/brand3.png" alt=""></a>
-					</div>
+						<a href="#"><img src="assets/images/Restoration.png"  alt=""></a>
+					</div>					
 				</div>
 				<div class="col-lg-12">
 					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/brand/brand4.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/brand/brand5.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/brand/brand6.png" alt=""></a>
-					</div>
-				</div>
+						<a href="#"><img src="assets/images/Logo BM Homes NEGATIVE.png" style="width: 100%" alt=""></a>
+					</div>					
+				</div>				
 			</div>
 		</div>
 	</div>

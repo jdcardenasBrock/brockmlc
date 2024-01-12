@@ -55,6 +55,19 @@
 
 <body>
     <style>
+        .sticky-menu .col-lg-2{
+            display: none;
+        }
+        .sticky-menu .col-lg-10{
+            width: 100% !important;
+        }
+        .sticky-menu .header-munu{
+            text-align: center;
+           
+        }
+        .sticky-menu .header-munu.style-two ul li:last-of-type{
+            margin-right: 55px !important;
+        }
         @media (max-width: 991.98px) {
             .footer-wiget-log a img{
                 width:150px;
@@ -198,19 +211,19 @@
             <div class="col-lg-3 col-md-6">
                 <div class="footer-wiget" style="visibility: visible;">
                     <div class="footer-wiget-log">
-                        <a href="{{route('index')}}"><img src="assets/images/footer/footer-logo.png" alt=""></a>
+                        <a href="{{route('index')}}"><img width="150px" src="assets/images/logo_negativo.png" alt=""></a>
                     </div>
                     <div class="footer-wiget-text">
                         <p></p>
                     </div>
-                    <div class="footer-wiget-social">
+                    <!-- <div class="footer-wiget-social">
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -223,6 +236,7 @@
                             <li><a href="{{route('sitework')}}"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
                             <li><a href="{{route('building')}}"><i class="bi bi-chevron-double-right"></i> Building </a></li>
                             <li><a href="{{route('restoration')}}"><i class="bi bi-chevron-double-right"></i> Restoration </a></li>
+                            <li><a href="https://brockmountainhomes.com/"><i class="bi bi-chevron-double-right"></i> Brock Mountain Homes </a></li>
                         </ul>
                     </div>
                 </div>
@@ -238,7 +252,8 @@
 
                             <li><a href="{{route('become_a_vendor')}}" > <i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
                             <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li>
-                            <li><a href="{{route('contact')}}'"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
+                            <li><a href="{{route('contact')}}"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
+                            <li><a  href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
                         </ul>
                     </div>
                 </div>
@@ -246,9 +261,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6 pr-0">
                 <div class="foter-box">
                     <div class="footer-wiget-title">
-                        <h4>Recent Projects</h4>
+                        <h4>Connect With Us</h4>
                     </div>
-                    <div class="row">
+                    <div class="footer-wiget-social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="mailto:info@brockmlc.com"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="row">
                         <div class="col-lg-4 col-sm-4">
                             <div class="footer-recent-thumb">
                                 <img src="assets/images/footer/Footer1.jpg" alt="">
@@ -279,7 +301,7 @@
                                 <img src="assets/images/footer/Footer6.jpg" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -391,6 +413,14 @@
     $(".venobox").venobox(); 
   });
   </script>  
+  <script>
+    // $(document).ready(function(){
+    //     console.log($(".sticky-menu"))
+    // })
+    
+    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").addClass("col-lg-12")
+    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").removeClass("col-lg-10")
+  </script>
 </body>
 
 </html>
