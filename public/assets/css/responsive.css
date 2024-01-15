@@ -2322,7 +2322,7 @@
         }
 
         .foter-box {
-            display: none;
+            display: block;
         }
     
         .copyright-text {
@@ -3152,7 +3152,7 @@
         }
 
         .foter-box {
-            display: none;
+            display: block;
         }
     
         .copyright-text {

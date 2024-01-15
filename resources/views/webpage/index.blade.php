@@ -13,7 +13,7 @@
 		text-shadow: 1px 4px 6px black;
 	}
 
-	.testi-discription{
+	.testimonial-area .testi-discription{
 		font-size: 14px;
 		font-style: italic;
 	}
@@ -22,7 +22,7 @@
 		margin-bottom: 0px;
 	}
 
-	.testi-discription p a, .testi-text p a{
+	.testimonial-area .testi-discription p a, .testimonial-area .testi-text p a{
 		font-style: italic;
 	}
 
@@ -66,7 +66,13 @@
 	.owl-stage{
 		display: flex; 
 		justify-content: center; 
-		align-items: center;
+		align-items: center;		
+	}
+	
+	.owl-stage .col-lg-12{
+		display: flex; 
+		justify-content: center; 
+		align-items: center;		
 	}
 
 	#top_notch{
@@ -84,12 +90,40 @@
 	.owl-item{
 		margin-right: 100px; 
 		margin-left: 100px;
-	}	
+	}
+	
+	.testimonial-area{
+		margin-top: 120px;
+	}
 
 	@media (max-width: 767px) {
 
-		.testi-text{		
-			font-size: 14px;	
+		/* .brand-thumb a img{
+			width: 150px !important;
+		} */
+
+		/* .testimonial-area .owl-stage{
+			margin-bottom: -50px;
+		} */
+
+		.brand-thumb{
+			height: 100px !important;
+		}
+
+		.testimonial-area .owl-stage{			
+			margin-bottom: -70px;
+		}
+
+		.owl-item{
+			margin: 0 !important;
+		}
+
+		.testimonial-area{
+			margin-top: 40px;
+		}
+
+		.testi-text p a{		
+			font-size: 21px !important;	
 			line-height: 26px;
 		}
 
@@ -202,14 +236,40 @@
 
 	@media (min-width: 768px) and (max-width: 991px){ 
 
+		/* .owl-stage{
+			width: 1950px !important;
+		} */
+
 		.about-discribtion p{
 			text-align: center;
 		}
 
 		#top_notch{
-			width: 45px;			
-			top: 5%; right: 0;
-			display: none;
+			width: 185px;			
+			top: 0; right: 2%;
+			/* display: none; */
+		}
+
+		.section-main-title h2{
+			font-size: 30px;
+		}
+
+		.faq-content{
+			margin-top: -100px !important;			
+		}
+
+		.testimonial-area .owl-stage{			
+			margin-bottom: -180px !important;
+		}
+
+		.brand-thumb{	
+			height: 80px !important;		
+			width: 150px !important;
+			background-size: contain !important;
+		}
+
+		.owl-item{
+			margin: 0 !important;
 		}
 
 		.mt-lg-80{
@@ -360,7 +420,7 @@
 <div class="call-do-action-area animate__slideInUp" id="brock_team_section" style="margin-top: 120px; position: relative; background: url(assets/images/home/brock_team-scaled-2.jpg); background-position: center center; background-size: cover;">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-7 col-md-12 text-center">
+			<div class="col-lg-7 col-md-9 text-center">
 				<div class="faq-content" style="box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.8); background: #266041; margin-top: -140px; padding: 8px 58px 8px;">
 					<div class="section-title">
 						<div class="section-sub-title faq">
@@ -383,7 +443,7 @@
 <!-- End Euildint Call Do Bg Area -->
 <!--==================================================-->
 
-<div class="container d-lg-none d-sm-block" style="margin-top: -70px;">
+<div class="container d-lg-none d-md-none d-sm-block top-notch" style="margin-top: -70px;">
 	<div class="row d-flex justify-content-center">
 		<img src="assets/images/SAFETY SEAL.png" style="width: 50%">
 	</div>
@@ -423,7 +483,7 @@
 <!--==================================================-->
 <!-- Start Euildint Testimonial Area -->
 <!--==================================================-->
-<div class="testimonial-area wow animate__slideInUp" style="margin-top: 120px;">
+<div class="testimonial-area wow animate__slideInUp">
 	<div class="container">
 		<div class="row">
 			
@@ -444,7 +504,7 @@
 				<!-- End section title -->
 				<div class="row">
 					<div class="testi_list owl-carousel text-center">
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">	
@@ -456,7 +516,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
@@ -468,7 +528,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
@@ -480,7 +540,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
@@ -492,7 +552,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
@@ -504,7 +564,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
@@ -516,7 +576,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-12">
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
@@ -742,25 +802,37 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="brand_list owl-carousel">
-				<div class="col-lg-12">
-					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a>
-					</div>					
+				<div class="col-lg-12 text-center">
+					<a href="{{route('building')}}">
+						<div class="brand-thumb" style="background-image: url('assets/images/Building.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px;">
+							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+						</div>	
+						<h4 style="color: white">Building</h4>	
+					</a>			
 				</div>
-				<div class="col-lg-12">
-					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/Sitework.png" style="width: 125%" alt=""></a>
-					</div>					
+				<div class="col-lg-12 text-center">
+					<a href="{{route('sitework')}}">
+						<div class="brand-thumb" style="background-image: url('assets/images/Sitework.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px; width: 190px">
+							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+						</div>	
+						<h4 style="color: white">Sitework</h4>
+					</a>					
 				</div>
-				<div class="col-lg-12">
-					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/Restoration.png"  alt=""></a>
-					</div>					
+				<div class="col-lg-12 text-center">
+					<a href="{{route('restoration')}}">
+						<div class="brand-thumb" style="background-image: url('assets/images/Restoration.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px;">
+							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+						</div>	
+						<h4 style="color: white">Restoration</h4>
+					</a>					
 				</div>
-				<div class="col-lg-12">
-					<div class="brand-thumb">
-						<a href="#"><img src="assets/images/Logo BM Homes NEGATIVE.png" style="width: 100%" alt=""></a>
-					</div>					
+				<div class="col-lg-12 text-center">
+					<a href="https://brockmountainhomes.com/" target="_blank">
+						<div class="brand-thumb" style="background-image: url('assets/images/Logo BM Homes NEGATIVE.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px; width: 190px">
+							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+						</div>	
+						<h4 style="color: white">Homes</h4>	
+					</a>				
 				</div>				
 			</div>
 		</div>

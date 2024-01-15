@@ -266,7 +266,7 @@
                     <div class="footer-wiget-social">
                         <ul>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.facebook.com/brockmlc/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="mailto:info@brockmlc.com"><i class="fas fa-envelope"></i></a></li>
                         </ul>
                     </div>
