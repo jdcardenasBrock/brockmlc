@@ -347,7 +347,7 @@
 <!--==================================================-->
 <section class="banner-section">
 	<video autoplay muted loop style="width:100%;">
-		<source src="assets/images/Video BM Home 567.mp4">
+		<source src="assets/images/Video BM Home 760.mp4">
 	</video>
 </section>
 <!--==================================================-->
