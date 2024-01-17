@@ -68,9 +68,32 @@
         .sticky-menu .header-munu.style-two ul li:last-of-type{
             margin-right: 55px !important;
         }
-        @media (max-width: 991.98px) {
+        .logo_footer, .footer-wiget-social{
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }        
+        @media (max-width: 767px) {
+            .logo_footer, .footer-wiget-social{
+                display: block;
+            } 
+        }
+        @media (min-width: 768px) and (max-width: 991px){
             .footer-wiget-log a img{
                 width:150px;
+            }
+            .logo_footer{
+                display: flex; 
+                justify-content: start; 
+                align-items: end;
+            }
+            .footer-wiget-social{
+                display: flex; 
+                justify-content: center; 
+                align-items: end;
+            }
+            #social-tittle{
+                text-align: center;
             }
         }
     </style>    
@@ -113,7 +136,7 @@
 										<li><a href="{{route('sitework')}}">Sitework</a></li>
 										<li><a href="{{route('building')}}">Building</a></li>
 										<li><a href="{{route('restoration')}}">Restoration</a></li>
-										<li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
+										<!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li> -->
 									</ul>
 								</div>
 							</li>
@@ -208,10 +231,10 @@
 <div class="footer-area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 logo_footer">
                 <div class="footer-wiget" style="visibility: visible;">
                     <div class="footer-wiget-log">
-                        <a href="{{route('index')}}"><img width="150px" src="assets/images/logo_negativo.png" alt=""></a>
+                        <a href="{{route('index')}}"><img width="150px" src="assets/images/Logo negativo.png" alt=""></a>
                     </div>
                     <div class="footer-wiget-text">
                         <p></p>
@@ -236,7 +259,7 @@
                             <li><a href="{{route('sitework')}}"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
                             <li><a href="{{route('building')}}"><i class="bi bi-chevron-double-right"></i> Building </a></li>
                             <li><a href="{{route('restoration')}}"><i class="bi bi-chevron-double-right"></i> Restoration </a></li>
-                            <li><a href="https://brockmountainhomes.com/"><i class="bi bi-chevron-double-right"></i> Brock Mountain Homes </a></li>
+                            <!-- <li><a href="https://brockmountainhomes.com/"><i class="bi bi-chevron-double-right"></i> Brock Mountain Homes </a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -258,12 +281,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 pr-0">
+            <div class="col-lg-2 col-md-4 col-sm-6 pr-0">
                 <div class="foter-box">
-                    <div class="footer-wiget-title">
+                    <div class="footer-wiget-title" id="social-tittle">
                         <h4>Connect With Us</h4>
                     </div>
-                    <div class="footer-wiget-social">
+                    <div class="footer-wiget-social" >
                         <ul>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             <li><a href="https://www.facebook.com/brockmlc/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -308,7 +331,7 @@
         <div class="row mt-110">
             <div class="col-lg-6 col-md-12">
                 <div class="copyright-text">
-                    <p>Brock MLC - Copyright © 2023 All Rights Reserved.</p>
+                    <p>Brock MLC - Copyright © 2024 All Rights Reserved.</p>
                 </div>
             </div>
         </div>

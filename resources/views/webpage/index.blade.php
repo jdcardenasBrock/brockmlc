@@ -81,6 +81,7 @@
 
 	#description_brock{
 		padding-top: 60px;
+		margin-top: -90px;
 	}
 
 	.about-area {
@@ -96,6 +97,16 @@
 		margin-top: 120px;
 	}
 
+	#logo_section_1{
+		padding-top: -150px;
+		margin-top: -130px;
+    	margin-bottom: 130px;		
+	}
+
+	#container_section_1{
+		margin-top: 120px;
+	}
+
 	@media (max-width: 767px) {
 
 		/* .brand-thumb a img{
@@ -105,6 +116,10 @@
 		/* .testimonial-area .owl-stage{
 			margin-bottom: -50px;
 		} */
+
+		#container_section_1{
+			margin-top: 0;
+		}
 
 		.brand-thumb{
 			height: 100px !important;
@@ -141,6 +156,8 @@
 		#logo_section_1{
 			width: 75%;
 			margin-left: 12%;
+			margin-top: 0;
+    		margin-bottom: 70px;
 		}
 
 		#description_brock{
@@ -240,6 +257,15 @@
 			width: 1950px !important;
 		} */
 
+		#logo_section_1{			
+			margin-top: 0;
+			margin-bottom: 70px;		
+		}
+
+		#container_section_1{
+			margin-top: 0;
+		}
+
 		.about-discribtion p{
 			text-align: center;
 		}
@@ -321,7 +347,7 @@
 <!--==================================================-->
 <section class="banner-section">
 	<video autoplay muted loop style="width:100%;">
-		<source src="assets/images/Video_BM_Home.mp4">
+		<source src="assets/images/Video BM Home 567.mp4">
 	</video>
 </section>
 <!--==================================================-->
@@ -331,8 +357,8 @@
 <!--==================================================-->
 <!-- Start Euildint About Area -->
 <!--==================================================-->
-<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: 120px;">
-	<div class="container">
+<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: -10px;">
+	<div class="container" id="container_section_1">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
 				<div class="section-title d-lg-none d-sm-block mb-5">
@@ -340,13 +366,13 @@
 						<img src="assets/images/resource/section-shape.png" alt="">
 					</div> -->
 					<div class="section-sub-title">
-						<h4 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, <br>WE'RE YOUR SOLUTION</h4>
+						<h4 style="color: white">We Are More Than A General Contractor…</h4>
 					</div>
 					<!-- <div class="section-main-title about">
 						<h2>Exceeding The Demands Of Commercial Sitework & Building Through Innovation & Dependability</h2>
 					</div> -->
 				</div>
-				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/logo_negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat">
+				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/Logo negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat;">
 					<!-- <img src="assets/images/home/Home_9-Sup_Construction.jpg" alt=""> -->
 					<!-- statr about counter -->
 					<!-- <div class="about-counter">
@@ -368,15 +394,15 @@
 						<img src="assets/images/resource/section-shape.png" alt="">
 					</div> -->
 					<div class="section-sub-title">
-						<h4 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, <br>WE'RE YOUR SOLUTION</h4>
+						<h4 style="color: white">We Are More Than A General Contractor…</h4>
 					</div>
 					<!-- <div class="section-main-title about">
-						<h2 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, WE’RE YOUR SOLUTION</h2>
+						<h2 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, WE'RE YOUR SOLUTION</h2>
 					</div> -->
 				</div>
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
-						<p style="color: white">Brock Mountain is dedicated to providing clients the very best in construction services. We are a multidisciplinary general contractor whose Quality, Integrity, and Expertise allow us to make complex projects simple. We take pride in the relationships we foster with our clients and are passionate about continuously improving to exceed our client's expectations. Our commitment to excellence is the motivation behind everything we do at Brock Mountain.</p>
+						<p style="color: white">With over a decade of experience, Brock Mountain is dedicated to ensuring your construction services are both seamless and gratifying. Our team of professionals possess extensive knowledge and are devoted to delivering top-tier service and craftsmanship throughout every phase of your project. With core values of Safety, Quality, and Integrity, we are capable of efficiently managing complex projects through comprehensive services and turnkey solutions. We cultivate meaningful relationships with our clients and are driven by a fervent dedication to surpassing their expectations through continuous improvement. Our unwavering commitment to excellence serves as the guiding force behind every endeavor at Brock Mountain.</p>
 					</div>
 					<!-- start process bar -->
 					
@@ -483,7 +509,7 @@
 <!--==================================================-->
 <!-- Start Euildint Testimonial Area -->
 <!--==================================================-->
-<div class="testimonial-area wow animate__slideInUp">
+<div class="testimonial-area wow animate__slideInUp" style="margin-bottom: 120px">
 	<div class="container">
 		<div class="row">
 			
@@ -520,7 +546,7 @@
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-								“AMAZING!! These guys treat you like family…. Trustworthy crew, great equipment, and respectful. Kept us informed every step of the way and were able to predict problems and suggest solutions. Beautiful job! I would recommend these guys over anyone any day! Thank you guys for our dream home come true!” 
+								“AMAZING!! These guys treat you like family…. Trustworthy crew, great equipment, and respectful. Kept us informed every step of the way and were able to predict problems and suggest solutions. Beautiful job! I would recommend these guys over anyone any day!” 
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
@@ -532,7 +558,7 @@
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-								“I was very impressed with the crew. They came on time and quickly collected everything that needed to go. They were pleasant and eager to help me. Can’t ask for anything more!”  
+								“I was very impressed with the crew. They came on time and quickly collected everything that needed to go. They were pleasant and eager to help me. Can't ask for anything more!”  
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
@@ -556,7 +582,7 @@
 							<div class="testi-text">
 								<p>
 								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
-								“We were very happy that we chose Brock Mountain. We would hire them again, and probably will for our next project. We are very satisfied with their workmanship and their knowledge of what they were doing. This company was very time efficient and completed their job with professionalism, and on schedule. Wish I could give them a higher ranking than 5 stars because they deserve it.”  
+								“This company was very time efficient and completed their job with professionalism, and on schedule. Wish I could give them a higher ranking than 5 stars because they deserve it.”  
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
@@ -798,7 +824,7 @@
 <!--==================================================-->
 <!-- Start Euildint Brand Area -->
 <!--==================================================-->
-<div class="brand-area " style="margin-bottom: 120px; margin-top: 120px;">
+<div class="brand-area " style="margin-bottom: 120px; margin-top: 120px; display: none">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="brand_list owl-carousel">
