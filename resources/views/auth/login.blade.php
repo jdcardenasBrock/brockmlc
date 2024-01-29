@@ -82,7 +82,10 @@
 				<div class="col-lg-12 col-md-12">
 					<div class="row">
 						<div class="col-lg-12">
-							<div class="blog-quote-box mb-40">
+                            <div class="col-lg-12 col-md-12">
+                                <h2>This page is under construction.</h2>
+                            </div>
+							<div class="blog-quote-box mb-40 d-none">
 								<div class="blog-quote-conent">
 									
 

@@ -150,9 +150,9 @@
                             <div class="service-details-thumb">
                                 <img src="assets/images/restoration/Rest_2-profess.jpg" alt="">
                             </div>
-                            <div class="service-details-content">
+                            <div class="service-details-content" style="margin-top: 40px;">
                                 <h4 class="d-none d-lg-block"><a href="#">PROFESSIONAL & RELIABLE SITEWORK SERVICES</a></h4>
-                                <p class="mt-2">Our sitework teams & equipment accessibility combined with our proven expertise is another reason why Brock Mountain is trusted nationwide. Our team can help facilitate any project on time and on budget.</p>
+                                <p class="mt-2">Our sitework teams & equipment accessibility combined with our proven expertise is another reason why Brock Mountain is trusted nationwide. Our team can help facilitate any project on time and within budget.</p>
                             </div>
                         </div>
                         <!-- End service details single box -->
@@ -176,6 +176,7 @@
                             <li class="d-lg-block d-sm-block d-md-none">Excavation, Import & Export </li>
                             <li class="d-lg-block d-sm-block d-md-none">Engineering & Design Build Solutions </li>
                             <li class="d-lg-block d-sm-block d-md-none">Concrete Flatwork / Curb & Gutter </li>
+                            <li class="d-lg-block d-sm-block d-md-none">And so much more </li>
                         </ul>
                     </div>
                 </div>                
@@ -189,14 +190,11 @@
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
                         <ul>
-                            <!-- <li>Stormwater Install & Maintenance </li>	
-                            <li>French Drain Install & Maintenance </li>
-                            <li>Trench Drain Install & Maintenance </li>
-                            <li>Forestry Mulching & Land Clearing </a>> -->
                             <li>Disaster Clean-up </li>
                             <li>Excavation, Import & Export </li>
                             <li>Engineering & Design Build Solutions </li>
                             <li>Concrete Flatwork / Curb & Gutter </li>
+                            <li>And so much more </li>
                         </ul>
                     </div>
                 </div>                

@@ -522,8 +522,8 @@
 						<h4>TESTIMONIALS</h4>
 					</div>
 					<div class="section-main-title">
-						<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Our Happy Clients</h2></a>
-						<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Says About Us</h2></a>
+						<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Our Happy Clients</h2></a>
+						<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;"><h2>Says About Us</h2></a>
 					</div>
 				</div> -->
 				<!-- End section title -->
@@ -532,7 +532,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">	
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">	
 								“Awesome workforce. Responsible, reliable, and professional!” 
 								<br>
 								<br>
@@ -544,7 +544,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 								“AMAZING!! These guys treat you like family…. Trustworthy crew, great equipment, and respectful. Kept us informed every step of the way and were able to predict problems and suggest solutions. Beautiful job! I would recommend these guys over anyone any day!” 
 								<br>
 								<br>
@@ -556,7 +556,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 								“I was very impressed with the crew. They came on time and quickly collected everything that needed to go. They were pleasant and eager to help me. Can't ask for anything more!”  
 								<br>
 								<br>
@@ -568,7 +568,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 								“Excellent work. Professional and timely service” 
 								<br>
 								<br>
@@ -580,7 +580,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 								“This company was very time efficient and completed their job with professionalism, and on schedule. Wish I could give them a higher ranking than 5 stars because they deserve it.”  
 								<br>
 								<br>
@@ -592,7 +592,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 								“You were in a league of your own and amazing! Good work team!” 
 								<br>
 								<br>
@@ -604,7 +604,7 @@
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
-								<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+								<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 								"What an amazing, blessed, and anointed organization you have created. We will forever be grateful..."
 								<br>
 								<br>
@@ -635,7 +635,7 @@
 											<div class="testi-discription">
 												
 												<p>
-													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 													“You were in a league of our own and amazing!  Good work team!”
 													</a>
 												</p>
@@ -666,7 +666,7 @@
 											<div class="testi-discription">
 												
 												<p>
-													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 													“Nicely done Quincey!  You guys are first class!”
 													</a>
 												</p>
@@ -697,7 +697,7 @@
 											<div class="testi-discription">
 												
 												<p>
-													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 													"I simply can't understand how contractors that have been doing this for 30 years don't look as good as ..."
 													</a>
 												</p>
@@ -732,7 +732,7 @@
 											<div class="testi-discription">
 												
 												<p>
-													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 													"It has been a pleasure to watch a crew that is organized, moving along nicely with difficult sheet piling work."
 													</a>
 												</p>
@@ -763,7 +763,7 @@
 											<div class="testi-discription">
 												
 												<p>
-													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 													"What an amazing, blessed and anointed organization you have created.. We will forever be grateful..."
 													</a>
 												</p>
@@ -794,7 +794,7 @@
 											<div class="testi-discription">
 												
 												<p>
-													<a href="{{route('our_mission')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
+													<a href="{{route('testimonials')}}#testimonials-section" class="link_custom" style="text-decoration: none;">
 													“Shout out to Brock Mountain Land Company, LLC & Eric Burns for the great expansion & renovation ...”
 													</a>
 												</p>
