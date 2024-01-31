@@ -139,15 +139,17 @@
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
                         <ul>
-                            <li> Stormwater Install & Maintenance</li>	
-                            <li> French Drain Install & Maintenance </li>
-                            <li> Trench Drain Install & Maintenance </li>
-                            <li> Forestry Mulching & Land Clearing </li>
-                            <li class="d-lg-block d-sm-block d-md-none"> Disaster Clean-up </li>
-                            <li class="d-lg-block d-sm-block d-md-none"> Excavation, Import & Export </li>
-                            <li class="d-lg-block d-sm-block d-md-none"> Engineering & Design Build Solutions </li>
-                            <li class="d-lg-block d-sm-block d-md-none"> Concrete Flatwork / Curb & Gutter </li>
-                            <li class="d-lg-block d-sm-block d-md-none">And so much more</li>
+                            <li>Water Damage</li>	
+                            <li>Water Extraction </li>
+                            <li>Dry-Out </li>
+                            <li>Mold Remediation</li>
+                            <li>Decontamination</li>
+                            <li>Deodorizing</li>
+                            <li>Tarp & Boarding</li>
+                            <li>Disaster Response</li>
+                            <li>Reconstruction</li>
+                            <li>Fire Damage</li>
+                            <li>And so much more</li>
                         </ul>
                     </div>
                 </div>                
@@ -160,17 +162,7 @@
                     </div> -->
                     <!-- widget categories menu -->
                     <div class="widget-categories-menu">
-                        <ul>
-                            <!-- <li> Stormwater Install & Maintenance </li>	
-                            <li> French Drain Install & Maintenance </li>
-                            <li> Trench Drain Install & Maintenance </li>
-                            <li> Forestry Mulching & Land Clearing </a>> -->
-                            <li> Disaster Clean-up </li>
-                            <li> Excavation, Import & Export </li>
-                            <li> Engineering & Design Build Solutions </li>
-                            <li> Concrete Flatwork / Curb & Gutter </li>
-                            <li> And so much more</li>
-                        </ul>
+                        
                     </div>
                 </div>                
             </div>
