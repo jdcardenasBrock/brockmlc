@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Brock MLC Website </title>
-	<meta name="description" content="ProHound App">
+	<meta name="description" content="Brock MLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
     <!-- bootstrap CSS -->
