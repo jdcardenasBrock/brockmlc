@@ -2,7 +2,7 @@
 @section('content')
 <style>
     #top-national-presence{
-        background: url(assets/images/resource/national_presence_bg.jpeg);
+        background: url(assets/images/resource/national_presence_bg.jpg);
         background-position: bottom center; 
         background-size: cover; 
     }    
