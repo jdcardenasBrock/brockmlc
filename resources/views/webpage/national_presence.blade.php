@@ -2,8 +2,8 @@
 @section('content')
 <style>
     #top-national-presence{
-        background: url(assets/images/resource/national_presence_bg.jpg);
-        background-position: center center; 
+        background: url(assets/images/resource/national_presence_bg.jpeg);
+        background-position: bottom center; 
         background-size: cover; 
     }    
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{

@@ -3,6 +3,7 @@
 <style> 
     #top-building{
         background: url(assets/images/building/bui_1.jpg);
+		background-repeat: no-repeat;
 		background-position: center center; 
         background-size: cover;
     }
@@ -92,13 +93,9 @@
 		#img-experience{
 			height: 234px;
 		}
-		#top-building{ 
-			background-position: 45% 290%;                      
-            background-size: 300%;
-        }
-		#top-building{ 
-			background-position: 45% 290%;                      
-            background-size: 300%;
+		.blog-standard-area{
+            padding-top: 120px;
+            padding-bottom: 120px;
         }
     }
 
@@ -127,10 +124,7 @@
 			color: #ffffff;
 			font-size: 76px;
 		}		 
-        #top-building{ 
-			background-position: 45% 290%;                      
-            background-size: 300%;
-        } 
+        
     }	
 	
 </style>
@@ -181,9 +175,9 @@
 				</div>
 				<div class="about-thumb wow animate__slideInUp">
 					<img src="assets/images/building/Bui_2.jpg" style="width: 48%">
-					<img class="d-lg-none d-sm-block" src="assets/images/building/Bui_3.jpeg" style="width: 51%">
+					<img class="about-shape-mobile d-lg-none d-sm-block" src="assets/images/building/Bui_3.jpg" >
 					<div class="about-shape d-none d-lg-block">
-						<img src="assets/images/building/Bui_3.jpeg" alt="">
+						<img src="assets/images/building/Bui_3.jpg" style="width: 73%" alt="">
 					</div>
 				</div>
 			</div>
@@ -328,4 +322,28 @@
 <!--==================================================-->
 <!-- End Euildint About Area -->
 <!--==================================================-->
+
+<div class="blog-standard-area">
+    <div class="container">
+        <div class="row d-flex justify-content-around">
+            <div class="col-lg-10">
+                <!-- start blog single box -->
+                <div class="blog-standard-box" >
+                    <div class="row">
+                        <div class="blog_list owl-carousel">
+                            @for ($item=1;$item<=10;$item++)
+                            <div class="col-lg-12">
+                                <div class="blog-standard-thumb">
+                                    <img src="assets/images/building/BuildingGalleryImages_{{$item}}.jpg" alt=" ">
+                                </div>
+                            </div>
+                            @endfor
+                        </div>
+                    </div>
+                </div>
+                <!-- End blog single box -->
+            </div>        
+        </div>
+    </div>
+</div>
 @endsection

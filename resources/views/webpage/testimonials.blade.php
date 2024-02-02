@@ -2,7 +2,7 @@
 @section('content')
 <style>
     #top-our_mission {
-        background: url(assets/images/resource/our_mission_bg.jpg);
+        background: url(assets/images/resource/testimonials.jpeg);
         background-position: center center;
         background-size: cover;
     }

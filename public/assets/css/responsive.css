@@ -347,7 +347,10 @@
     }
 
     .about-shape {
-        display: none;
+        display: none;    
+        bottom: -136px;
+        right: -79px;
+    
     }
 
     .about-discribtion p {

@@ -573,6 +573,13 @@ Tags: architect, building company, construction, construction template, construc
     line-height: 26px;
     margin-bottom: 16px;
 }
+.section-sub-title h2 {
+    color: #266041;
+    text-transform: uppercase;
+    line-height: 26px;
+    margin-bottom: 16px;
+    text-align: center;
+}
 
 .section-main-title {
     margin-bottom: 62px;
@@ -654,6 +661,11 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     bottom: -26px;
     right: 0;
+}
+.about-shape-mobile {
+    position: absolute;
+    bottom: -49px;
+    right: 24px;
 }
 
 .about-discribtion p {

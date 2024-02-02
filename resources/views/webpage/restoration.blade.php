@@ -1,13 +1,22 @@
 @extends('layouts.website') 
 @section('content')
 <style>
+    .blog-standard-box{
+
+        align-items: center;
+        text-align: center;
+      justify-content: center;
+	}
     #top-restoration{
         background: url(assets/images/restoration/Rest_1.jpg);
-        background-position: top right; 
+        background-position: center right; 
         background-size: cover;
     }
     #video-container-restoration{
         background: url(assets/images/restoration/Rest_3-video.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom center; 
+        background-size: cover;
     }
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
@@ -175,56 +184,19 @@
 <div class="blog-standard-area">
     <div class="container">
         <div class="row d-flex justify-content-around">
-            <div class="col-lg-10 mb-20">
+            <div class="col-lg-10 mb-20" style="display: contents;">
                 <!-- start blog single box -->
-                <div class="blog-standard-box">
-                    <div class="row">
-                        <div class="blog_list owl-carousel" style="height: 60%">
+                <div class="blog-standard-box" style="max-width: 696px;" >
+                    <div class="row" style="  text-align: center;">
+                        <div class="blog_list owl-carousel" >
+                        @for ($item=1;$item<=10;$item++)
                             <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal1-856.jpg" alt=" ">
+                                <div class="blog-standard-thumb" >
+                                    <img src="assets/images/restoration/gallery/RestorationGalleryImages_{{$item}}.jpg" alt=" ">
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal2-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal3-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal4-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal5-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal6-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal7-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal8-856.jpg" alt="#">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal9-856.jpg" alt="">
-                                </div>
-                            </div>
+                            @endfor
+                            
                         </div>
                     </div>
                     <!-- <div class="blog-standard-meta">

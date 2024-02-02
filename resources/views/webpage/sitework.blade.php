@@ -9,6 +9,8 @@
     #video-container-restoration{
         background: url(assets/images/restoration/Rest_3-video.jpg);
         background-repeat: no-repeat;
+        background-position: bottom center; 
+        background-size: cover;
     }
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
@@ -243,65 +245,15 @@
                 <div class="blog-standard-box">
                     <div class="row">
                         <div class="blog_list owl-carousel">
+                            @for ($item=1;$item<=10;$item++)
                             <div class="col-lg-12">
                                 <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal1-856.jpg" alt=" ">
+                                    <img src="assets/images/restoration/SiteworkGalleryImages_{{$item}}.jpg" alt=" ">
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal2-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal3-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal4-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal5-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal6-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal7-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal8-856.jpg" alt="#">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal9-856.jpg" alt="">
-                                </div>
-                            </div>
+                            @endfor
                         </div>
                     </div>
-                    <!-- <div class="blog-standard-meta">
-                        <span>By Admin</span> 
-                        <span>17 Aug 2023 </span>
-                        <span class="meta">Construction</span>
-                    </div> -->
-                    <!-- <div class="blog-standard-content">
-                        <h4><a href="#">All the Greatest Moments of Thoroughbred</a></h4>
-                        <p>Why Roofing are factmake 17 Reason EasierForesee the pain & trouble that are bounds too ensue equalidea off denouncing pleasures and praising pain was borncomplete account and expound the actual teachings the great the master-builder of human happiness. In a free hour...</p>
-                    </div> -->
-                    <!-- <div class="eulding-btn standard">
-                        <a href="#">Read More <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                    </div> -->
                 </div>
                 <!-- End blog single box -->
             </div>        
