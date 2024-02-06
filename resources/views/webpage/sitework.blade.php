@@ -150,7 +150,7 @@
                                 <h4><a href="#">PROFESSIONAL & RELIABLE SITEWORK SERVICES</a></h4>
                             </div> -->
                             <div class="service-details-thumb">
-                                <img src="assets/images/restoration/Rest_2-profess.jpg" alt="">
+                                <img src="assets/images/restoration/Rest_2-profess3.jpg" alt="">
                             </div>
                             <div class="service-details-content" style="margin-top: 40px;">
                                 <h4 class="d-none d-lg-block"><a href="#">PROFESSIONAL & RELIABLE SITEWORK SERVICES</a></h4>
