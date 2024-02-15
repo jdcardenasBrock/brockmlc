@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Brock MLC Website </title>
+    <title>Brock Mountian</title>
 	<meta name="description" content="ProHound App">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
@@ -120,11 +120,11 @@
 							<li><a href="#">Who We Are <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="{{route('our_mission')}}">Our Mission</a></li>
+										<li><a href="{{route('our_mission')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
 										<li><a href="{{route('news')}}">News</a></li>
 									</ul>
-								</div>
+								</div> 
 							</li>
 							<li><a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
@@ -140,7 +140,7 @@
 								<div class="sub-menu">
 									<ul>
 										<li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
-										<li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li>
+										<!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
 										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
@@ -245,7 +245,7 @@
                             <li><a href="{{route('index')}}"><i class="bi bi-chevron-double-right"></i> Home </a></li>
 
                             <li><a href="{{route('become_a_vendor')}}" > <i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
-                            <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li>
+                            <!-- <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li> -->
                             <li><a href="{{route('contact')}}'"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
                         </ul>
                     </div>

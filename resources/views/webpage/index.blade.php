@@ -99,7 +99,7 @@
 
 	#logo_section_1{
 		padding-top: -150px;
-		margin-top: -130px;
+		margin-top: -30px;
     	margin-bottom: 130px;		
 	}
 
@@ -353,24 +353,24 @@
 <!-- End Euildint Slider Style Two Area -->
 <!--==================================================-->	
 
-<!--==================================================-->
+<!--==================================================--> 
 <!-- Start Euildint About Area -->
 <!--==================================================-->
 <div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: -10px;">
 	<div class="container" id="container_section_1">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-				<div class="section-title d-lg-none d-sm-block mb-5">
+				<!-- <div class="section-title d-lg-none d-sm-block mb-5"> -->
 					<!-- <div class="section-shape">
 						<img src="assets/images/resource/section-shape.png" alt="">
 					</div> -->
-					<div class="section-sub-title">
+					<!-- <div class="section-sub-title">
 						<h4 style="color: white">We Are More Than A General Contractor…</h4>
-					</div>
+					</div> -->
 					<!-- <div class="section-main-title about">
 						<h2>Exceeding The Demands Of Commercial Sitework & Building Through Innovation & Dependability</h2>
 					</div> -->
-				</div>
+				<!-- </div> -->
 				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/Logo negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat;">
 					<!-- <img src="assets/images/home/Home_9-Sup_Construction.jpg" alt=""> -->
 					<!-- statr about counter -->
@@ -388,20 +388,29 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12" id="description_brock">
-				<div class="section-title d-none d-lg-block">
+				<!-- <div class="section-title d-none d-lg-block"> -->
 					<!-- <div class="section-shape">
 						<img src="assets/images/resource/section-shape.png" alt="">
 					</div> -->
-					<div class="section-sub-title">
+					<!-- <div class="section-sub-title">
 						<h4 style="color: white">We Are More Than A General Contractor…</h4>
-					</div>
+					</div> -->
 					<!-- <div class="section-main-title about">
 						<h2 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, WE'RE YOUR SOLUTION</h2>
 					</div> -->
-				</div>
+				<!-- </div> -->
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
-						<p style="color: white">With over a decade of experience, Brock Mountain is dedicated to ensuring your construction services are both seamless and gratifying. Our team of professionals possess extensive knowledge and are devoted to delivering top-tier service and craftsmanship throughout every phase of your project. With core values of Safety, Quality, and Integrity, we are capable of efficiently managing complex projects through comprehensive services and turnkey solutions. We cultivate meaningful relationships with our clients and are driven by a fervent dedication to surpassing their expectations through continuous improvement. Our unwavering commitment to excellence serves as the guiding force behind every endeavor at Brock Mountain.</p>
+						<p style="color: white">
+						With over 25 years of industry experience,
+						our focus lies in fostering meaningful
+						relationships with our clients. We
+						approach every project with integrity and expertise which allows us to offer
+						comprehensive solutions, making complex
+						projects simple. At Brock Mountain, we are
+						dedicated to providing a seamless
+						experience for our clients.
+					</p>
 					</div>
 					<!-- start process bar -->
 					

@@ -124,7 +124,7 @@
 							<li><a href="#">Who We Are <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="{{route('our_mission')}}">Our Mission</a></li>
+										<li><a href="{{route('our_mission')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
 										<li><a href="{{route('news')}}">News</a></li>
 									</ul>
@@ -144,7 +144,7 @@
 								<div class="sub-menu">
 									<ul>
 										<li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
-										<li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li>
+										<!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
 										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
@@ -180,7 +180,7 @@
                     <li><a href="#">Who We Are</i></a>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('our_mission')}}">Our Mission</a></li>
+                                <li><a href="{{route('our_mission')}}">About Us</a></li>
                                 <li><a href="{{route('national_presence')}}">National Presence</a></li>
                                 <li><a href="{{route('news')}}">News</a></li>
                             </ul>
@@ -200,7 +200,7 @@
                         <div class="sub-menu">
                             <ul>
                                 <li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
-                                <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li>
+                                <!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
                                 <li><a href="{{route('contact')}}">Contact Us</a></li>
                                 <li><a href="{{route('login')}}">BMLC portal</a></li>
                             </ul>
@@ -274,7 +274,7 @@
                             <li><a href="{{route('index')}}"><i class="bi bi-chevron-double-right"></i> Home </a></li>
 
                             <li><a href="{{route('become_a_vendor')}}" > <i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
-                            <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li>
+                            <!-- <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li> -->
                             <li><a href="{{route('contact')}}"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
                             <li><a  href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
                         </ul>
