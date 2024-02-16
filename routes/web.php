@@ -44,14 +44,17 @@ Route::get('/', function () {
 Route::get('/testimonials', function () {
     return view('webpage.testimonials');
 })->name('testimonials');
+Route::get('/our_mission', function () {
+    return view('webpage.our_mission');
+})->name('about_us');
 
 Route::get('/national_presence', function () {
     return view('webpage.national_presence');
 })->name('national_presence');
 
-// Route::get('/news', function () {
-//     return view('webpage.news');
-// })->name('news');
+Route::get('/news', function () {
+    return view('webpage.news');
+})->name('news');
 
 Route::get('/sitework', function () {
     return view('webpage.sitework');
@@ -65,13 +68,13 @@ Route::get('/restoration', function () {
     return view('webpage.restoration');
 })->name('restoration');
 
-// Route::get('/become_a_vendor', function () {
-//     return view('webpage.become_a_vendor');
-// })->name('become_a_vendor');
+Route::get('/become_a_vendor', function () {
+    return view('webpage.become_a_vendor');
+})->name('become_a_vendor');
 
-// Route::get('/career_opportunities', function () {
-//     return view('webpage.career_opportunities');
-// })->name('career_opportunities');
+Route::get('/career_opportunities', function () {
+    return view('webpage.career_opportunities');
+})->name('career_opportunities');
 
 Route::get('/contact', function () {
     return view('webpage.contact');

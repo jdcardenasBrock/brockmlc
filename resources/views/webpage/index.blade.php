@@ -99,7 +99,7 @@
 
 	#logo_section_1{
 		padding-top: -150px;
-		margin-top: -130px;
+		margin-top: -30px;
     	margin-bottom: 130px;		
 	}
 
@@ -353,24 +353,24 @@
 <!-- End Euildint Slider Style Two Area -->
 <!--==================================================-->	
 
-<!--==================================================-->
+<!--==================================================--> 
 <!-- Start Euildint About Area -->
 <!--==================================================-->
 <div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: -10px;">
 	<div class="container" id="container_section_1">
 		<div class="row">
-			<div class="col-lg-6 col-md-12">
-				<div class="section-title d-lg-none d-sm-block mb-5">
+			<div class="col-lg-6 col-md-12 d-flex justify-content-center">
+				<!-- <div class="section-title d-lg-none d-sm-block mb-5"> -->
 					<!-- <div class="section-shape">
 						<img src="assets/images/resource/section-shape.png" alt="">
 					</div> -->
-					<div class="section-sub-title">
+					<!-- <div class="section-sub-title">
 						<h4 style="color: white">We Are More Than A General Contractor…</h4>
-					</div>
+					</div> -->
 					<!-- <div class="section-main-title about">
 						<h2>Exceeding The Demands Of Commercial Sitework & Building Through Innovation & Dependability</h2>
 					</div> -->
-				</div>
+				<!-- </div> -->
 				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/Logo negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat;">
 					<!-- <img src="assets/images/home/Home_9-Sup_Construction.jpg" alt=""> -->
 					<!-- statr about counter -->
@@ -388,20 +388,29 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12" id="description_brock">
-				<div class="section-title d-none d-lg-block">
+				<!-- <div class="section-title d-none d-lg-block"> -->
 					<!-- <div class="section-shape">
 						<img src="assets/images/resource/section-shape.png" alt="">
 					</div> -->
-					<div class="section-sub-title">
+					<!-- <div class="section-sub-title">
 						<h4 style="color: white">We Are More Than A General Contractor…</h4>
-					</div>
+					</div> -->
 					<!-- <div class="section-main-title about">
 						<h2 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, WE'RE YOUR SOLUTION</h2>
 					</div> -->
-				</div>
+				<!-- </div> -->
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
-						<p style="color: white">With over a decade of experience, Brock Mountain is dedicated to ensuring your construction services are both seamless and gratifying. Our team of professionals possess extensive knowledge and are devoted to delivering top-tier service and craftsmanship throughout every phase of your project. With core values of Safety, Quality, and Integrity, we are capable of efficiently managing complex projects through comprehensive services and turnkey solutions. We cultivate meaningful relationships with our clients and are driven by a fervent dedication to surpassing their expectations through continuous improvement. Our unwavering commitment to excellence serves as the guiding force behind every endeavor at Brock Mountain.</p>
+						<p style="color: white">
+						With over 25 years of industry experience,
+						our focus lies in fostering meaningful
+						relationships with our clients. We
+						approach every project with integrity and expertise which allows us to offer
+						comprehensive solutions, making complex
+						projects simple. At Brock Mountain, we are
+						dedicated to providing a seamless
+						experience for our clients.
+					</p>
 					</div>
 					<!-- start process bar -->
 					
@@ -440,39 +449,64 @@
 <!--==================================================-->
 
 <!--==================================================-->
-<!-- Start Euildint Call Do Bg Area -->
+<!-- Start Euildint Slider Style Two Area -->
 <!--==================================================-->
-<div class="call-do-action-area animate__slideInUp" id="brock_team_section" style="margin-top: 120px; position: relative; background: url(assets/images/home/brock_team-scaled-2.jpg); background-position: center center; background-size: cover;">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-7 col-md-9 text-center">
-				<div class="faq-content" style="box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.8); background: #266041; margin-top: -140px; padding: 8px 58px 8px;">
-					<div class="section-title">
-						<div class="section-sub-title faq">
-							<!-- <h4>Frequently Asked Questions</h4> -->
-						</div>
-						<div class="section-main-title faq">
-							<h2 style="color: #FFF">We are Leaders in Safety</h2>
-						</div>
-						<!-- <div class="faq-discripition">
-							<p>Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics. The timeline for seeing results depends on the specific services you choose and the current state of your business. </p>
-						</div> -->
+<section class="blog-standard-area" style="background-color: #272a2c;">
+	<div class="blog-standard-box">
+		<div class="row">
+			<div class="blog_list owl-carousel">
+				<div class="col-lg-12">
+					<div class="blog-standard-thumb" style="">
+						<img src="assets/images/home/brock_team-scaled-2.jpg" alt="">
 					</div>
 				</div>
+				<div class="col-lg-12 row">
+					<!-- <div class="blog-standard-thumb"> -->
+						<div class="col-lg-5" style="padding: 5%">
+							<p style="color: white; font-size: 26px;font-weight: 400;line-height: 36px;">
+							We prioritize the safety of our most valuable
+							asset — our people. This commitment is 
+							reflected in our investments of in-house
+							authorized instructors for OSHA 10-HR,
+							30-HR, and Disaster Site Workers courses.
+							Our mission is to ensure that every individual
+							feels safe and secure in their work
+							into this slide environment. We actively encourage open
+							communication, empowering individuals to
+							speak up and halt work if they identify
+							unsafe conditions or suggest safer methods.
+							</p>
+						</div>
+						<div class="col-lg-7">
+							<img src="assets/images/Home_Page _ Safety.webp" alt="" >							
+						</div>
+					<!-- </div> -->
+				</div>				
 			</div>
 		</div>
-		<img id="top_notch" src="assets/images/SAFETY SEAL.png">
+		<!-- <div class="blog-standard-meta">
+			<span>By Admin</span>
+			<span>17 Aug 2023 </span>
+			<span class="meta">Construction</span>
+		</div>
+		<div class="blog-standard-content">
+			<h4><a href="#">All the Greatest Moments of Thoroughbred</a></h4>
+			<p>Why Roofing are factmake 17 Reason EasierForesee the pain & trouble that are bounds too ensue equalidea off denouncing pleasures and praising pain was borncomplete account and expound the actual teachings the great the master-builder of human happiness. In a free hour...</p>
+		</div>
+		<div class="eulding-btn standard">
+			<a href="#">Read More <i class="bi bi-arrow-up-right-circle-fill"></i></a>
+		</div> -->
 	</div>
-</div>
+</section>
 <!--==================================================-->
-<!-- End Euildint Call Do Bg Area -->
+<!-- End Euildint Slider Style Two Area -->
 <!--==================================================-->
 
-<div class="container d-lg-none d-md-none d-sm-block top-notch" style="margin-top: -70px;">
+<!-- <div class="container d-lg-none d-md-none d-sm-block top-notch" style="margin-top: -70px;">
 	<div class="row d-flex justify-content-center">
 		<img src="assets/images/SAFETY SEAL.png" style="width: 50%">
 	</div>
-</div>
+</div> -->
 
 
 <!--==================================================-->
@@ -528,7 +562,7 @@
 				</div> -->
 				<!-- End section title -->
 				<div class="row">
-					<div class="testi_list owl-carousel text-center">
+					<div class="testi_list owl-carousel text-center" style="color: black">
 						<div class="col-12">
 							<div class="testi-text">
 								<p>
@@ -537,7 +571,7 @@
 								<br>
 								<br>
 								<strong>(Satisfied Client)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -549,7 +583,7 @@
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -561,7 +595,7 @@
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -573,7 +607,7 @@
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -585,7 +619,7 @@
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -597,7 +631,7 @@
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -609,7 +643,7 @@
 								<br>
 								<br>
 								<strong>(Property Manager)</strong>
-								</a>
+								<!-- </a> -->
 								</p>
 							</div>
 						</div>
@@ -830,7 +864,7 @@
 				<div class="col-lg-12 text-center">
 					<a href="{{route('building')}}">
 						<div class="brand-thumb" style="background-image: url('assets/images/Building.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px;">
-							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+							
 						</div>	
 						<h4 style="color: white">Building</h4>	
 					</a>			
@@ -838,7 +872,7 @@
 				<div class="col-lg-12 text-center">
 					<a href="{{route('sitework')}}">
 						<div class="brand-thumb" style="background-image: url('assets/images/Sitework.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px; width: 190px">
-							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+							
 						</div>	
 						<h4 style="color: white">Sitework</h4>
 					</a>					
@@ -846,7 +880,7 @@
 				<div class="col-lg-12 text-center">
 					<a href="{{route('restoration')}}">
 						<div class="brand-thumb" style="background-image: url('assets/images/Restoration.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px;">
-							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+							
 						</div>	
 						<h4 style="color: white">Restoration</h4>
 					</a>					
@@ -854,7 +888,7 @@
 				<div class="col-lg-12 text-center">
 					<a href="https://brockmountainhomes.com/" target="_blank">
 						<div class="brand-thumb" style="background-image: url('assets/images/Logo BM Homes NEGATIVE.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px; width: 190px">
-							<!-- <a href="#"><img src="assets/images/Building.png" style="width: 65%" alt=""></a> -->						
+							
 						</div>	
 						<h4 style="color: white">Homes</h4>	
 					</a>				

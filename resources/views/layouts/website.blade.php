@@ -11,7 +11,7 @@
     <title>Brock MLC Website </title>
 	<meta name="description" content="Brock MLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
+    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" type="text/css" media="all">
     <!-- carousel CSS -->
@@ -106,8 +106,9 @@
 
 	<!--==================================================-->
 	<!-- Start Euildint Header Style Two Area -->
-	<!--==================================================-->
+	<!--==================================================-->    
 	<div class="header-area style-two" id="navbar">
+    <div class="container">
 		<div class="container-fluid p-90">
 			<div class="row align-items-center">
 				<div class="col-lg-2">
@@ -165,6 +166,7 @@
 				</div>
 			</div>
 		</div>
+    </div>
 	</div>
 
 	<!--Mobile Menu Area -->
@@ -217,17 +219,19 @@
 
 
 
-    <main>
-  
+    <main>  
+    <div class="container" style="">  
 
     @yield('content')
-
+    
+    </div>
     </main>
 
 
 <!--==================================================-->
 <!-- Start Euildint Footer Area -->
 <!--==================================================-->
+<div class="container">
 <div class="footer-area">
     <div class="container">
         <div class="row">
@@ -336,6 +340,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <!--==================================================-->
 <!-- End Euildint Footer Area -->
