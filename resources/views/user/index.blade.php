@@ -46,6 +46,23 @@
                                                     @endforeach
                                                 </div>
                                         </div>
+                                        <div class="form-group">
+                                                <label for="block_option">Do you want to add a session expiration date?</label>
+                                                <select class="form-control" id="block_option" name="block_option">
+                                                    <option value="0">No</option>
+                                                    <option value="1">Yes</option>
+                                                </select>
+                                            </div>
+
+                                            <div id="block_date" style="display: none;" class="form-group">
+                                                <label for="block_date_select">Select a session expiration date</label>
+                                                <select class="form-control" id="block_date_select" name="block_date_select">
+                                                <option value="">Select</option>    
+                                                <option value="1">1 Day</option>
+                                                    <option value="7">1 Week</option>
+                                                    <option value="30">1 Month</option>
+                                                </select>
+                                            </div>
                                         <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
                                         <button type="submit"  class="btn btn-primary">Save</button>
                                     </form>
@@ -94,6 +111,26 @@
                                                         </div>
                                                     @endforeach
                                                 </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit_block_option">Do you want to add a session expiration date?</label>
+                                            <select class="form-control" id="edit_block_option" name="edit_block_option">
+                                                <option value="0">No</option>
+                                                <option value="1">Yes</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <span id="span_block_option" name="span_block_option"></span>
+                                        </div>
+                                            
+                                        <div id="edit_block_date" style="display: none;" class="form-group">
+                                            <label for="edit_block_date_select">Select a new session expiration date</label>
+                                            <select class="form-control" id="edit_block_date_select" name="edit_block_date_select">
+                                            <option value="">Select</option>    
+                                            <option value="1">1 Day</option>
+                                                <option value="7">1 Week</option>
+                                                <option value="30">1 Month</option>
+                                            </select>
                                         </div>
                                        
                                         <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
@@ -187,6 +224,14 @@
                     $("#_edit_id").val(json['users'].id);
                     $("#edit_name").val(json['users'].name);
                     $("#edit_email").val(json['users'].email);
+                    let blocked_until=json['users'].blocked_until;
+
+                    if(blocked_until!=null){
+                        $("#edit_block_option").val(1);
+                        document.getElementById('edit_block_date').style.display = 'block';
+                        $("#span_block_option").html("Last Session Expiration Date: <br> "+json['users'].blocked_until);
+                    }
+                    console.log(json['roles']);
                     rellenarRoles(json['roles']);
                     }else{
                     alert("Error");
@@ -224,6 +269,21 @@
         }
     }
 
+    document.getElementById('block_option').addEventListener('change', function() {
+        if (this.value === '1') {
+            document.getElementById('block_date').style.display = 'block';
+        } else {
+            document.getElementById('block_date').style.display = 'none';
+        }
+    });
+
+    document.getElementById('edit_block_option').addEventListener('change', function() {
+        if (this.value === '1') {
+            document.getElementById('edit_block_date').style.display = 'block';
+        } else {
+            document.getElementById('edit_block_date').style.display = 'none';
+        }
+    });
 
     </script>
 @endpush

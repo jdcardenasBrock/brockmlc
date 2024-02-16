@@ -33,6 +33,9 @@ use Spatie\Permission\Traits\HasRoles;
 |
 */
 
+Route::get('block', function () {
+    return view('webpage.index'); 
+})->name('block');
 
 Route::get('/', function () {
     return view('webpage.index'); 
@@ -74,9 +77,9 @@ Route::get('/contact', function () {
     return view('webpage.contact');
 })->name('contact');
 
-// Route::get('/login', function () {
-//     return view('auth.login');
-// })->name('login');
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('loginw');
 
 
 /*
@@ -89,6 +92,7 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin');
     
     Route::get('proHound',[App\Http\Controllers\HomeController::class,'prohund'])->name('proHound');
     Route::resource('permissions', PermissionController::class);
@@ -112,12 +116,15 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('project_showData/{id}', [App\Http\Controllers\HomeController::class, 'GetData'])->name('project_showData');
 
     // Resources para el modulo de clientes
-    Route::resource('clients', ClientsController::class);
     Route::get('datatableClients', [App\Http\Controllers\ClientsController::class, 'GetData'])->name('Clients.data');
 
     Route::get('ajax/request/showClients', function () {
         return false;
     })->name('ajax.ruta.showClients');
+
+    Route::get('siteworkPremium',[App\Http\Controllers\HomeController::class, 'siteworkPremium'])->name('siteworkPremium');
+    Route::get('restorationPremium',[App\Http\Controllers\HomeController::class, 'restorationPremium'])->name('restorationPremium');
+    Route::get('buildingPremium',[App\Http\Controllers\HomeController::class, 'buildingPremium'])->name('buildingPremium');
     
  
 });

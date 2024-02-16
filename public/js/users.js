@@ -26,6 +26,14 @@ $(document).ready(function(){
           $('#password').focus();
           return false;
         }
+
+        if ($('#block_option').val() === 1) {
+          if ($('#block_date_select').val() === "") {
+            alert('You must select the block date','Warning!');
+            $('#block_date_select').focus();
+            return false;
+          }
+        }
        
       
 
@@ -58,6 +66,19 @@ $(document).ready(function(){
          return false;
 
     });
+
+    function validateRadioButtons(inputName){
+      let seleccionado = false;
+      
+      for (var i = 0; i < inputName.length; i++) {
+        if (inputName[i].checked) {
+          seleccionado = true;
+          break;
+        }
+      }
+      return seleccionado;
+    }
+
     function Empty_Inputs_Edit(){
       $("#edit_name_permission").val("");
       $('#edit_email').val() === "";
@@ -65,19 +86,26 @@ $(document).ready(function(){
     }
     $('#form_edit_users').submit(function(event){
         if ($('#edit_name').val() === "") {
-            alert('You must enter the full name','Atencion!');
+            alert('You must enter the full name','Atention!');
             $('#edit_name').focus();
             return false;
         }
       
         if ($('#edit_email').val() === "") {
-          alert('You must enter the username','Atencion!');
+          alert('You must enter the username','Atention!');
           $('#edit_email').focus();
           return false;
         }
         if ($('#edit_password').val() === "") {
-          alert('You must enter the password','Atencion!');
+          alert('You must enter the password','Atention!');
           $('#edit_password').focus();
+          return false;
+        }
+        
+        let rol_user = document.getElementsByName("edit_rol_user"); 
+        let rolIsSelected=validateRadioButtons(rol_user);
+        if (!rolIsSelected) {
+          alert("You must select a rol.",'Atention!');
           return false;
         }
 
@@ -92,6 +120,7 @@ $(document).ready(function(){
               cache: false,
               data: data,
               success: function (response) {
+                console.log("enviado "+data);
                 var json = $.parseJSON(response);
                 if(json.success){
                 $("#EditUser").modal('hide');

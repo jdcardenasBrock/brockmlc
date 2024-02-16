@@ -142,13 +142,17 @@
                                     <li><a href="#" onclick="mostrarAlerta()">Become a Vendor</a></li>
                                     <li><a href="#" onclick="mostrarAlerta()">Career Opportunities</a></li>
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
-										<li><a href="#" onclick="mostrarAlerta()">BMLC portal</a></li>
+										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
 								</div>
 							</li>
 						</ul>
 						<div class="header-call-section">
+                            
 							<div class="header-call-icon">
+                                <a href="{{route('home')}}" rel="noopener noreferrer">
+                                    <i class="bi bi-house"></i>
+                                </a>
 								<i class="bi bi-person"></i>
 							</div>
 							<div class="header-call-title">

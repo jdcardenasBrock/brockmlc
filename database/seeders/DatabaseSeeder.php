@@ -31,13 +31,6 @@ class DatabaseSeeder extends Seeder
         Permission::create(['name' => 'edit_role']);
         Permission::create(['name' => 'delete_role']);
 
-
-        Permission::create(['name' => 'view_clients']);
-        Permission::create(['name' => 'create_clients']);
-        Permission::create(['name' => 'edit_clients']);
-        Permission::create(['name' => 'delete_clients']);
-
-
         Permission::create(['name' => 'view_projects']);
         Permission::create(['name' => 'create_projects']);
         Permission::create(['name' => 'edit_projects']);
@@ -45,6 +38,13 @@ class DatabaseSeeder extends Seeder
         
 
         Permission::create(['name' => 'view_projects_client']);
+
+        Permission::create(['name' => 'view_prohound']);
+        Permission::create(['name' => 'view_restoration_premium']);
+        Permission::create(['name' => 'view_building_premium']);
+        Permission::create(['name' => 'view_sitework_premium']);
+        Permission::create(['name' => 'western_zone_clients']);
+        Permission::create(['name' => 'eastern_zone_clients']);
         
 
         // create roles and assign created permissions
@@ -54,7 +54,10 @@ class DatabaseSeeder extends Seeder
         $role_super_admin->givePermissionTo(Permission::all());
 
         $role_admin = Role::create(['name' => 'Admin']);
-        $role_admin->givePermissionTo(['create_user', 'edit_user', 'delete_user', 'create_role', 'edit_role', 'delete_role']);
+        $role_admin->givePermissionTo(['create_user', 'edit_user', 'delete_user', 
+        'create_role', 'edit_role', 'delete_role','view_prohound',
+        'view_restoration_premium','view_building_premium','view_sitework_premium',
+        'western_zone_clients','eastern_zone_clients']);
 
         $role_client = Role::create(['name' => 'Client']);
         $role_client->givePermissionTo(['view_projects_client']);

@@ -7,7 +7,7 @@ use App\Models\User;
 use Yajra\Datatables\Datatables;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Hash;
-
+use Carbon\Carbon;
 class UserController extends Controller
 {
     /**
@@ -39,12 +39,19 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        $blocked_until=null;
+        if($request->input('block_option')==1){
+            $blocked_until = Carbon::now()->addDays($request->input('block_date_select'));
+        }
+
         $user = User::Create($request->only('name','email') +
             [
                 'username' => $request->input('email'),
                 'password' => Hash::make($request->input('password')),
+                'blocked_until' =>$blocked_until
             ]);
         $roles = $request->input('rol_user');
+       
         $user->syncRoles($roles);
         return json_encode(['success' => true]);
     }
@@ -83,16 +90,24 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::findOrFail($id);
-        $user->name = $request->input('edit_name');
-        $user->email = $request->input('edit_email');
-        $user->username = $request->input('edit_email');
-        $user->password = Hash::make($request->input('password'));
-        $user->updated_at = date("Y-m-d H:i:s");
-        $user->save();
-        $roles = $request->input('edit_rol_user');
-        $user->syncRoles($roles);
-        return json_encode(['success' => true]);
+        dd('hola');
+        // $blocked_until=null;
+        // if($request->input('edit_block_option')==1 && $request->input('edit_block_date_select') !=""){
+        //     $blocked_until = Carbon::now()->addDays($request->input('bedit_block_date_select'));
+        // }
+        // dd($request->password);
+
+        // $user = User::findOrFail($id);
+        // $user->name = $request->input('edit_name');
+        // $user->email = $request->input('edit_email');
+        // $user->username = $request->input('edit_email');
+        // $user->password = Hash::make($request->input('password'));
+        // $user->updated_at = date("Y-m-d H:i:s");
+        // $user->blocked_until =$blocked_until;
+        // $user->save();
+        // $roles = $request->input('edit_rol_user');
+        // $user->syncRoles($roles);
+        // return json_encode(['success' => true]);
     }
 
     /**

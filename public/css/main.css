@@ -14,7 +14,11 @@ body.show-spinner>main {
 body.show-spinner>* {
   opacity: 0;
 }
-
+.btn-brock{
+  font-size: .8rem !important;
+  background-color: #265e44  !important;
+  color: #fff!important;
+}
 /* Spinner */
 body.show-spinner::after {
   content: " ";

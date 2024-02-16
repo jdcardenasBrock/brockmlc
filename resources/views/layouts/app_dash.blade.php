@@ -67,6 +67,16 @@
         </a>
 
         <div class="navbar-right">
+
+        <a href="{{route('home')}}">
+            <div class="position-relative d-inline-block">
+                    <button class="header-icon btn btn-empty btn-brock" type="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Go Back to the Main Portal Menu
+                        <i class="iconsminds-back"></i>
+                    </button>
+            </div>
+
+            </a>
             <div class="header-icons d-inline-block align-middle">
                 
 
@@ -110,19 +120,11 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-
+                    
                     @can('view_projects')
                     <li>
                         <a href="{{route('project.index')}}" style="text-align: center">
                             <i class="simple-icon-layers"></i> Projects
-                        </a>
-                    </li>
-                    @endcan
-                  
-                    @can('view_clients')
-                    <li>
-                        <a href="{{route('clients.index')}}" style="text-align: center">
-                            <i class="iconsminds-business-mens"></i> Clients
                         </a>
                     </li>
                     @endcan
@@ -133,18 +135,18 @@
                         </a>
                     </li>
                     @endcan
-
+                    <li>
+                        <a href="{{route('home')}}">
+                            <i class="iconsminds-back"></i> Go Back to<br> the Main<br> Portal Menu
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="sub-menu">
             <div class="scroll">
-              
-                  
                 <ul class="list-unstyled" data-link="permissions">
-
-                    
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#collapseForms" aria-expanded="true"
                             aria-controls="collapseForms" class="rotate-arrow-icon opacity-50">
@@ -182,6 +184,7 @@
 
             </div>
         </div>
+        
     </div>
 
     <main>

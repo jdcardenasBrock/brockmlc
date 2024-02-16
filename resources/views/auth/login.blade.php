@@ -70,9 +70,6 @@
         </div>
     </div>
 </div>
-
-    
-
 	<!--==================================================-->
 	<!-- Start Euildint Blog Standard Area -->
 	<!--==================================================-->
@@ -82,13 +79,8 @@
 				<div class="col-lg-12 col-md-12">
 					<div class="row">
 						<div class="col-lg-12">
-                            <div class="col-lg-12 col-md-12">
-                                <h2>This page is under construction.</h2>
-                            </div>
-							<div class="blog-quote-box mb-40 d-none">
+							<div class="blog-quote-box mb-40">
 								<div class="blog-quote-conent">
-									
-
                                     <form method="POST" action="{{ route('login') }}">
                                         @csrf
 
@@ -126,7 +118,7 @@
                                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                                     <label class="form-check-label" style="color:black" for="remember">
-                                                        {{ __('Recordar Usuario') }}
+                                                        {{ __('Remember Me') }}
                                                     </label>
                                                 </div>
                                             </div>
@@ -135,7 +127,7 @@
                                         <div class="row mb-0 mt-4">
                                             <div class="col-md-8 offset-md-4">
                                                 <button type="submit" class="btn btn-primary" style="background-color:#236040;border-color:#236040;">
-                                                    {{ __('Iniciar Sesion') }}
+                                                    {{ __('Login') }}
                                                 </button>
 
                                                 <!-- @if (Route::has('password.request'))

@@ -4761,7 +4761,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 .progress-banner {
     height: 200px;
-    background-image: linear-gradient(to right top, #00365a, #00538a, #015994);
+    background-color: #265e44;
     transition: 0.5s;
     background-size: 200% auto;
     cursor: pointer;

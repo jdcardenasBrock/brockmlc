@@ -69,7 +69,11 @@
         </div>
     </div>
 </div>
-
+    @php
+        $isAdmin=$usuario->hasRole('Admin');
+        $isSuperAdmin=$usuario->hasRole('SuperAdmin');
+        $hasProhound=$usuario->hasRole('SuperAdmin');
+    @endphp
 <div class="blog-area wow animate__slideInUp" style="visibility: visible;">
 		<div class="container">
 			<div class="row">
@@ -77,38 +81,111 @@
 			</div>
 
 			<div class="row mt-4">
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <!-- start blog single box -->
 
-                    <a href="{{ route('proHound') }}" style="text-decoration: none; display: block; color: inherit;">
-                        <div class="blog-single-box style-two">
-                            <div class="blog-thumb">
-                                <img src="{{asset('img/cards/logo.png')}}" alt="" style="width:100%">
-                            </div>
-                            <div class="blog-content style-two">
-                                <div class="blog-title style-two mt-3 mb-3">
-                                   <h3 style="text-decoration:underline;color:#236040 !important"> ProHound</h3>
+                @if (auth()->user()->hasAnyPermission(['view_prohound']))
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <a href="{{ route('proHound') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/logo.png')}}" alt="" style="max-width:261px; padding: 23px;">
                                 </div>
-                                <div class="blog-bottom">
-                                    <div class="blog-btn style-two">
-                                        Enter to ProHound
+                                <div class="blog-content style-two">
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important"> ProHound</h3>
                                     </div>
-                                    <div class="blog-icon">
-                                        <i class="bi bi-arrow-right"></i>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to ProHound
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <!-- End blog single box -->
-                </div>
-                
-                    <div class="col-lg-4 col-md-6 mb-30">
+                        </a>
+                        <!-- End blog single box -->
+                    </div>
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['view_restoration_premium']))
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <a href="{{ route('restorationPremium') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/restoration.png')}}" alt="" style="max-width:261px; padding: 23px;">
+                                </div>
+                                <div class="blog-content style-two">
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important"> Restoration Premium</h3>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to Restoration Premium
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['view_building_premium']))
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <a href="{{ route('buildingPremium') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/building.png')}}" alt="" style="max-width:261px; padding: 23px;">
+                                </div>
+                                <div class="blog-content style-two">
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important"> Building Premium</h3>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to Building Premium
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['view_sitework_premium']))
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <a href="{{ route('siteworkPremium') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/sitework.png')}}" alt="" style="max-width:261px; padding: 23px;">
+                                </div>
+                                <div class="blog-content style-two">
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important"> Sitework Premium</h3>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to Sitework Premium
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['western_zone_clients']))
+                    <div class="col-lg-3 col-md-6 mb-30">
                         <!-- start blog single box -->
                         <a href="{{ route('home') }}" style="text-decoration: none; display: block; color: inherit;">
                             <div class="blog-single-box style-two">
-                                <div class="blog-thumb">
-                                    <img src="{{asset('img/cards/western.png')}}" alt="" style="width:100%">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/western.png')}}" alt="" style="max-width:261px; padding: 23px;">
                                 </div>
                                 <div class="blog-content style-two">
                                     
@@ -126,15 +203,15 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- End blog single box -->
                     </div>
-                
-                    <div class="col-lg-4 col-md-6 mb-30">
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['eastern_zone_clients']))
+                    <div class="col-lg-3 col-md-6 mb-30">
                         <!-- start blog single box -->
                         <a  href="{{ route('home') }}" style="text-decoration: none; display: block; color: inherit;">
                             <div class="blog-single-box style-two">
-                                <div class="blog-thumb">
-                                    <img src="{{asset('img/cards/eastern.png')}}" alt="" style="width:100%">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/eastern.png')}}" alt="" style="max-width:261px; padding: 23px;">
                                 </div>
                                 <div class="blog-content style-two">
                                     
@@ -154,6 +231,37 @@
                         </a>
                         <!-- End blog single box -->
                     </div>
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['create_user','edit_user','delete_user','view_permissions',
+                    'create_permissions','edit_permissions','delete_permissions','view_role','create_role','edit_role','delete_role',
+                    'view_clients','create_clients','edit_clients','delete_clients','view_projects','create_projects','edit_projects',
+                    'delete_projects']))
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <!-- start blog single box -->
+
+                        <a href="{{ route('admin') }}" style="text-decoration: none; display: block; color: inherit;">
+                            <div class="blog-single-box style-two">
+                                <div class="blog-thumb" style="text-align: center;">
+                                    <img src="{{asset('img/cards/admin.png')}}" alt="" style="max-width:261px; padding: 23px;">
+                                </div>
+                                <div class="blog-content style-two">
+                                    <div class="blog-title style-two mt-3 mb-3">
+                                    <h3 style="text-decoration:underline;color:#236040 !important"> Admin</h3>
+                                    </div>
+                                    <div class="blog-bottom">
+                                        <div class="blog-btn style-two">
+                                            Enter to Admin Panel
+                                        </div>
+                                        <div class="blog-icon">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End blog single box -->
+                    </div>
+                    @endif
             </div>
     </div>
 </div>
