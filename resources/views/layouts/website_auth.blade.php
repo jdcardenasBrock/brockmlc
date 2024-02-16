@@ -11,7 +11,7 @@
     <title>Brock Mountian</title>
 	<meta name="description" content="ProHound App">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
+    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" type="text/css" media="all">
     <!-- carousel CSS -->
@@ -120,7 +120,7 @@
 							<li><a href="#">Who We Are <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="{{route('our_mission')}}">About Us</a></li>
+										<li><a href="{{route('about_us')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
 										<li><a href="{{route('news')}}">News</a></li>
 									</ul>
@@ -191,10 +191,12 @@
 	<!--==================================================-->
 
     <main>
+    <div class="container">
   
 
     @yield('content')
 
+    </div>
     </main>
 
 <!--==================================================-->

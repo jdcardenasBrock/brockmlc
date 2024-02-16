@@ -2201,11 +2201,12 @@ h1, h2, h3, h4, h5, h6{
 /* counter css */
 
 .counter-area {
-    background: url(../images/home/Home_11-westarted.jpg);
+    background: url(../images/about/Who_We_Are_About_Us_2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 65px 51px 65px;
+    height: 500px;
 }
 
 .counter-numbar h4 {

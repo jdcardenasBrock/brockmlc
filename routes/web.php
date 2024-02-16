@@ -40,7 +40,7 @@ Route::get('/', function () {
 
 Route::get('/our_mission', function () {
     return view('webpage.our_mission');
-})->name('our_mission');
+})->name('about_us');
 
 Route::get('/national_presence', function () {
     return view('webpage.national_presence');
