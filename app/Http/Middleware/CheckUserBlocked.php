@@ -18,7 +18,7 @@ class CheckUserBlocked
     {
         if (auth()->check() && auth()->user()->isBlocked()) {
             auth()->logout();
-            return redirect()->route('block');
+            return redirect()->route('login')->with('message', 'Your session has already expired. Please contact our company to start another one.');;
         }
         return $next($request);
     }

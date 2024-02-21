@@ -1,6 +1,7 @@
 @extends('layouts.app_dash')
 
 @section('content')
+@if (auth()->user()->hasAnyPermission(['view_permissions','create_permissions','edit_permissions','delete_permissions']))
 <div class="container-fluid">
     <div class="row app-row">
         <div class="col-12">
@@ -96,7 +97,7 @@
     
    
 </div>
-
+@endif
 @endsection
 @push('scripts')
     <script src="{{asset('js/permissions.js')}}"></script>

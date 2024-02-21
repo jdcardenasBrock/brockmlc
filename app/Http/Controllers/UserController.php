@@ -75,10 +75,11 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $users = User::where('id', $id)->first();
+        $users = User::findOrFail($id);
+        $role_User=$users->roles->first();
         $roles = Role::all()->pluck('name', 'id');
 
-        return json_encode(['success' => true, 'users' => $users, 'roles' => $roles]);
+        return json_encode(['success' => true, 'users' => $users, 'roles' => $roles,'role_User' => $role_User]);
     }
 
     /**
@@ -90,24 +91,23 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd('hola');
-        // $blocked_until=null;
-        // if($request->input('edit_block_option')==1 && $request->input('edit_block_date_select') !=""){
-        //     $blocked_until = Carbon::now()->addDays($request->input('bedit_block_date_select'));
-        // }
-        // dd($request->password);
+        $blocked_until=null;
+        if($request->input('edit_block_option')==1 && $request->input('edit_block_date_select') !=""){
+            $blocked_until = Carbon::now()->addDays($request->input('edit_block_date_select'));
+        }
 
-        // $user = User::findOrFail($id);
-        // $user->name = $request->input('edit_name');
-        // $user->email = $request->input('edit_email');
-        // $user->username = $request->input('edit_email');
-        // $user->password = Hash::make($request->input('password'));
-        // $user->updated_at = date("Y-m-d H:i:s");
-        // $user->blocked_until =$blocked_until;
-        // $user->save();
-        // $roles = $request->input('edit_rol_user');
-        // $user->syncRoles($roles);
-        // return json_encode(['success' => true]);
+
+        $user = User::findOrFail($id);
+        $user->name = $request->input('edit_name');
+        $user->email = $request->input('edit_email');
+        $user->username = $request->input('edit_email');
+        $user->password = Hash::make($request->input('edit_password'));
+        $user->updated_at = date("Y-m-d H:i:s");
+        $user->blocked_until =$blocked_until;
+        $user->save();
+        $roles = $request->input('edit_rol_user');
+        $user->syncRoles($roles);
+        return json_encode(['success' => true]);
     }
 
     /**

@@ -137,13 +137,20 @@
                                                 @endif -->
                                             </div>
                                         </div>
+                                    
                                     </form>
-
-                                
 								</div>
 							</div>
 						</div>												
 					</div>
+                    <div class="row">
+                        @if(session('message'))
+                            <div class="alert alert-warning col-10">
+                                {{ session('message') }}
+                            </div>
+                        @endif
+                    </div>
+                    
 				</div>				
 			</div>
 		</div>

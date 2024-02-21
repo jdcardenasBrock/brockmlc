@@ -21,7 +21,6 @@ $(document).ready(function(){
           if(confirmacion){
 
             var data = $('#form_add_permissions').serialize();
-            console.log(data);
             $.ajax({
               url: $('#form_add_permissions #_url').val(),
               headers: {'X-CSRF-TOKEN': $('#form_add_permissions #_token').val()},

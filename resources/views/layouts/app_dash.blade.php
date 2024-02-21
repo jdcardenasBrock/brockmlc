@@ -67,16 +67,13 @@
         </a>
 
         <div class="navbar-right">
-
-        <a href="{{route('home')}}">
             <div class="position-relative d-inline-block">
-                    <button class="header-icon btn btn-empty btn-brock" type="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Go Back to the Main Portal Menu
-                        <i class="iconsminds-back"></i>
-                    </button>
+                    <a href="{{route('home')}}" class="btn btn-empty btn-brock">
+                            <i class="iconsminds-back"></i> Go Back to the Main Portal Menu
+                        </a>
             </div>
 
-            </a>
+
             <div class="header-icons d-inline-block align-middle">
                 
 
@@ -121,20 +118,22 @@
                         </a>
                     </li>
                     
-                    @can('view_projects')
+                    @if (auth()->user()->hasAnyPermission([
+                    'view_projects','create_projects','edit_projects','delete_projects']))
                     <li>
                         <a href="{{route('project.index')}}" style="text-align: center">
                             <i class="simple-icon-layers"></i> Projects
                         </a>
                     </li>
-                    @endcan
-                    @can('create_user')
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['view_permissions','create_permissions','edit_permissions','delete_permissions',
+                    'create_user','edit_user','delete_user','view_role','create_role','edit_role','delete_role']))
                     <li>
                         <a href="#permissions">
                             <i class="simple-icon-wrench"></i> Permissions <br> & Users
                         </a>
                     </li>
-                    @endcan
+                    @endif
                     <li>
                         <a href="{{route('home')}}">
                             <i class="iconsminds-back"></i> Go Back to<br> the Main<br> Portal Menu
@@ -154,27 +153,27 @@
                         </a>
                         <div id="collapseForms" class="collapse show">
                             <ul class="list-unstyled inner-level-menu">
-                                @can('view_permissions')
+                                @if (auth()->user()->hasAnyPermission(['view_permissions','create_permissions','edit_permissions','delete_permissions']))
                                 <li>
                                     <a href="{{route('permissions.index')}}">
                                         <i class="simple-icon-event"></i> <span class="d-inline-block">Permissions</span>
                                     </a>
                                 </li>
-                                @endcan
-                                @can('view_role')
+                                @endif
+                                @if (auth()->user()->hasAnyPermission(['view_role','create_role','edit_role','delete_role']))
                                 <li>
                                     <a href="{{route('roles.index')}}">
                                         <i class="simple-icon-doc"></i> <span class="d-inline-block">Roles</span>
                                     </a>
                                 </li>
-                                @endcan
-                                @can('create_user')
+                                @endif
+                                @if (auth()->user()->hasAnyPermission(['create_user','edit_user','delete_user']))
                                 <li>
                                     <a href="{{route('users.index')}}">
                                         <i class="simple-icon-check"></i> <span class="d-inline-block">Users</span>
                                     </a>
                                 </li>
-                                @endcan
+                                @endif
                             </ul>
                         </div>
                     </li>

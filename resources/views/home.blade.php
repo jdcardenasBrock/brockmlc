@@ -9,7 +9,8 @@
                 <div class="separator mb-5"></div>
 
 
-
+                @if (auth()->user()->hasAnyPermission([
+                    'view_projects','create_projects','edit_projects','delete_projects']))
                 <div class="row">
                     <div class="col-lg-3">
                     <a href="{{route('project.index')}}" style="text-align: center">
@@ -25,7 +26,8 @@
                         </div>
                     </a>
                     </div>
-                   
+                   @endif
+                   @if (auth()->user()->hasAnyPermission(['view_permissions','create_permissions','edit_permissions','delete_permissions']))
                     <div class="col-lg-3">
                         <a href="{{route('permissions.index')}}" style="text-align: center">
                             <div class="card mb-4 progress-banner">
@@ -40,6 +42,9 @@
                             </div>
                         </a>
                     </div>
+                    @endif
+
+                    @if (auth()->user()->hasAnyPermission(['view_role','create_role','edit_role','delete_role']))
                     <div class="col-lg-3">
                         <a href="{{route('roles.index')}}" style="text-align: center">
                             <div class="card mb-4 progress-banner">
@@ -54,6 +59,8 @@
                             </div>
                         </a>
                     </div>
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['create_user','edit_user','delete_user']))
                     <div class="col-lg-3">
                         <a href="{{route('users.index')}}" style="text-align: center">
                             <div class="card mb-4 progress-banner">
@@ -68,6 +75,7 @@
                             </div>
                         </a>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

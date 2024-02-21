@@ -81,9 +81,14 @@ $(document).ready(function(){
 
     function Empty_Inputs_Edit(){
       $("#edit_name_permission").val("");
-      $('#edit_email').val() === "";
-      $('#edit_password').val() === "";
+      $('#edit_email').val("");
+      $('#edit_password').val("");
+      $('#edit_block_option').val(0);
+      $('#edit_block_date_select').val("");
     }
+
+
+    
     $('#form_edit_users').submit(function(event){
         if ($('#edit_name').val() === "") {
             alert('You must enter the full name','Atention!');
@@ -120,7 +125,6 @@ $(document).ready(function(){
               cache: false,
               data: data,
               success: function (response) {
-                console.log("enviado "+data);
                 var json = $.parseJSON(response);
                 if(json.success){
                 $("#EditUser").modal('hide');

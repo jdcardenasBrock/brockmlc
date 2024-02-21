@@ -436,14 +436,7 @@
     $(".venobox").venobox(); 
   });
   </script>  
-  <script>
-    // $(document).ready(function(){
-    //     console.log($(".sticky-menu"))
-    // })
-    
-    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").addClass("col-lg-12")
-    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").removeClass("col-lg-10")
-  </script>
+
     <script>
         function mostrarAlerta() {
             alert('This page is under construction.');
