@@ -39,7 +39,6 @@ $(document).ready(function () {
         if (confirmacion) {
             var data = $("#form_projects").serialize();
 
-            console.log(data);
             $.ajax({
                 url: $("#form_projects #_url").val(),
                 headers: { "X-CSRF-TOKEN": $("#form_projects #_token").val() },

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\clients;
+use App\Models\User;
 use App\Models\ProjectFloorplans;
 use App\Models\ProjectPhases;
 use App\Models\projects;
@@ -18,8 +18,8 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $clients=clients::select('id','name')->get();
-        return view('project.index',compact('clients'));
+        $users=User::select('id','name')->get();
+        return view('project.index',compact('users'));
     }
 
  
@@ -35,7 +35,7 @@ class ProjectsController extends Controller
         projects::create([
             'name' => $request->project_name,
             'address' => $request->address,
-            'client_id' => $request->client,
+            'user_id' => $request->client,
         ]);
 
         return json_encode(['success' => true]);  
@@ -49,7 +49,7 @@ class ProjectsController extends Controller
      */
     public function edit($id)
     {
-        $edit_clients=clients::select('id','name')->get();
+        $edit_clients=User::select('id','name')->get();
         $data= projects::where('id', $id)->first();
         return json_encode(['success' => true, 'data' => $data,'edit_clients' => $edit_clients]);
     }
@@ -66,7 +66,7 @@ class ProjectsController extends Controller
         $client= projects::findOrFail($id);
         $client->name=$request->edit_project_name;
         $client->address=$request->edit_address;
-        $client->client_id=$request->edit_client;
+        $client->user_id=$request->edit_client;
         $client->save();
         return json_encode(['success' => true]);
     }
@@ -88,8 +88,8 @@ class ProjectsController extends Controller
     }
     public function getData(Request $request)
     {
-        $Client = projects::select('projects.id','projects.name', 'projects.address', 'clients.name as client_name', 'projects.created_at')
-        ->leftJoin('clients','clients.id','client_id')
+        $Client = projects::select('projects.id','projects.name', 'projects.address', 'users.name as client_name', 'projects.created_at')
+        ->leftJoin('users','users.id','user_id')
         ->orderBy('projects.id', 'asc');
 
 

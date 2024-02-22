@@ -130,13 +130,6 @@
                         </a>
                     </li>
                     @endcan
-                    @can('visualizar_cliente')
-                    <li>
-                        <a href="{{route('clients.index')}}" style="text-align: center">
-                            <i class="iconsminds-business-mens"></i> Maestro Clientes
-                        </a>
-                    </li>
-                    @endcan
                     @can('visualizar_proveedor')
                     <li>
                         <a href="{{route('proveedores.index')}}" style="text-align: center">

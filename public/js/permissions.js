@@ -10,18 +10,17 @@ $(document).ready(function(){
     //metodo para ingresar registro
     $('#form_add_permissions').submit(function(event){
         if ($('#name').val() === "") {
-            alert('Debe ingresar el nombre del permiso','Atencion!');
+            alert('You must enter the permission name','Atencion!');
             $('#name').focus();
             return false;
         }
        
       
 
-        let confirmacion=confirm("¿Esta seguro de agregar esta información?");
+        let confirmacion=confirm("¿Are you sure about create this information?");
           if(confirmacion){
 
             var data = $('#form_add_permissions').serialize();
-            console.log(data);
             $.ajax({
               url: $('#form_add_permissions #_url').val(),
               headers: {'X-CSRF-TOKEN': $('#form_add_permissions #_token').val()},
@@ -34,7 +33,7 @@ $(document).ready(function(){
                 $("#addPermissions").modal('hide');
                 vaciar_Inputs_Add();
                 $('#permissions_table').DataTable().ajax.reload();
-                 alert('Permiso creado exitosamente');
+                 alert('Permission created successfully');
                   
                 }else{
                   alert(json.data);
@@ -51,13 +50,13 @@ $(document).ready(function(){
     }
     $('#form_edit_permission').submit(function(event){
         if ($('#edit_name_permission').val() === "") {
-            alert('Debe ingresar el nombre del permiso','Atencion!');
+            alert('You must enter the permission name','Atencion!');
             $('#edit_name_permission').focus();
             return false;
         }
       
 
-        let confirmacion=confirm("¿Esta seguro de editar esta información?");
+        let confirmacion=confirm("¿Are you sure about editing this information??");
           if(confirmacion){
             let ID= document.getElementById("_edit_id").value;
             var data = $('#form_edit_permission').serialize();
@@ -73,7 +72,7 @@ $(document).ready(function(){
                 $("#EditPermission").modal('hide');
                 Empty_Inputs_Edit();
                 $('#permissions_table').DataTable().ajax.reload();
-                 alert('Permiso editado exitosamente');
+                 alert('Permission edited successfully');
                   
                 }else{
                   alert(json.data);

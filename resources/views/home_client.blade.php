@@ -54,29 +54,36 @@
 
                 <div class="m-4">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="team-details-content">
-                                <div class="team-details-title container-prohound">
-                                    <img src="{{asset('img/cards/logo.png')}}" alt="ProHound Logo" width="60px" style=" display: inline-block;"> 
-                                    <h4  style="color:#236040;  display: inline-block;">Select Project</h4>
-                                </div>
-                                <div class="team-details-discription">
-                                    <form id="form_projects" name="form_projects"  accept-charset="UTF-8" >
-                                        <input type="hidden" id="_url"  name="_url" value="{{url('project_showData')}}">
-                                        <input type="hidden" id="urlHome"  name="urlHome" value="{{url('/')}}">
-                                        <input type="hidden" id="_token" value="{{ csrf_token() }}">
-                                        @csrf
-                                    
-                                    </form>
-                                        <select name="select_project" id="select_project" class="form-control">
-                                                <option value="">Select</option>
-                                            @foreach ($projects as $project )
-                                                <option value="{{$project->id}}">{{$project->name}}</option>
-                                            @endforeach
-                                        </select>
+                        @if (!$projects->isEmpty())
+                            <div class="col-lg-6 col-md-12">
+                                <div class="team-details-content">
+                                    <div class="team-details-title container-prohound">
+                                        <img src="{{asset('img/cards/logo.png')}}" alt="ProHound Logo" width="60px" style=" display: inline-block;"> 
+                                        <h4  style="color:#236040;  display: inline-block;">Select Project</h4>
+                                    </div>
+                                    <div class="team-details-discription">
+                                        <form id="form_projects" name="form_projects"  accept-charset="UTF-8" >
+                                            <input type="hidden" id="_url"  name="_url" value="{{url('project_showData')}}">
+                                            <input type="hidden" id="urlHome"  name="urlHome" value="{{url('/')}}">
+                                            <input type="hidden" id="_token" value="{{ csrf_token() }}">
+                                            @csrf
+                                        
+                                        </form>
+                                            <select name="select_project" id="select_project" class="form-control">
+                                                    <option value="">Select</option>
+                                                @foreach ($projects as $project )
+                                                    <option value="{{$project->id}}">{{$project->name}}</option>
+                                                @endforeach
+                                            </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @else
+                            <div class="col-lg-10 col-md-12 mt-4">
+                                <img src="{{asset('img/cards/logo.png')}}" alt="ProHound Logo" width="60px" style=" display: inline-block;"> 
+                                <h4  style="color:#236040;  display: inline-block;">You don't have any project associated in this moment.</h4>
+                            </div>
+                        @endif
                     </div>
                     <div class="row mt-4">
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">

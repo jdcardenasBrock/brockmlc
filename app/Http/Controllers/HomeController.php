@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\clients;
 use App\Models\projects;
 use App\Models\ProjectPhases;
 use App\Models\ProjectFloorplans;
@@ -29,32 +28,28 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (Auth::check()) {
-            // Obtener el usuario autenticado
-            $usuario = Auth::user();
-            $a=$usuario->hasRole('Client');
+        $usuario = Auth::user();
+        return view('cards',compact('usuario'));
+    }
 
-            if($a){
-                return view('cards');
-               
-            }else{
-                return view('home');
-            }
-
-           
-        }
+    public function admin()
+    {
+        return view('home');
     }
 
     public function prohund(){
         if (Auth::check()) {
             // Obtener el usuario autenticado
             $usuario = Auth::user();
-            $a=$usuario->hasRole('Client');
-            if($a){
-            $client_id=clients::select('id')->where('rel_user','=',$usuario->id)->first();
-            $projects=projects::where('client_id','=',$client_id->id)->get();
-
-            return view('home_client',compact('client_id','projects'));
+            $isSuperAdmin=$usuario->hasRole('SuperAdmin');
+            $isAdmin=$usuario->hasRole('Admin');
+            if($isSuperAdmin || $isAdmin ){
+                    $projects=projects::all();
+                return view('home_client',compact('projects'));
+            }else{
+                $projects=projects::where('user_id','=',$usuario->id)->get();
+                
+                return view('home_client',compact('projects'));
             }
         }
 
@@ -65,4 +60,15 @@ class HomeController extends Controller
 
         return json_encode(['success' => true,'projectPhases' =>$projectPhases, 'Floorplans'=>$Floorplans]);
     }
+
+    public function siteworkPremium(){
+        return view('premium.siteworkPremium');
+    }
+    public function restorationPremium(){
+        return view('premium.restorationPremium');
+    }
+    public function buildingPremium(){
+        return view('premium.buildingPremium');
+    }
+
 }
