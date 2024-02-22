@@ -8,8 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Brock Mountian</title>
-	<meta name="description" content="ProHound App">
+    <title>Brock MLC Website </title>
+	<meta name="description" content="Brock MLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
@@ -122,7 +122,7 @@
 									<ul>
 										<li><a href="{{route('about_us')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
-										<li><a href="{{route('news')}}">News</a></li>
+										<li><a href="#" onclick="mostrarAlerta()">News</a></li>
 									</ul>
 								</div> 
 							</li>
@@ -148,7 +148,11 @@
 							</li>
 						</ul>
 						<div class="header-call-section">
+                            
 							<div class="header-call-icon">
+                                <a href="{{route('home')}}" rel="noopener noreferrer">
+                                    <i class="bi bi-house"></i>
+                                </a>
 								<i class="bi bi-person"></i>
 							</div>
 							<div class="header-call-title">
@@ -402,6 +406,11 @@
     $(".venobox").venobox(); 
   });
   </script>  
+  <script>
+        function mostrarAlerta() {
+            alert('This page is under construction.');
+        }
+    </script>
     @stack('scripts')
 </body>
 

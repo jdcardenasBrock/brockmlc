@@ -1,6 +1,7 @@
 @extends('layouts.app_dash')
 
 @section('content')
+@if (auth()->user()->hasAnyPermission(['view_role','create_role','edit_role','delete_role']))
 <div class="container-fluid">
     <div class="row app-row">
         <div class="col-12">
@@ -118,7 +119,7 @@
     
    
 </div>
-
+@endif
 @endsection
 @push('scripts')
     <script src="{{asset('js/roles.js')}}"></script>

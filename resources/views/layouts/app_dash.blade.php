@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'ProHound') }}</title>
-	<meta name="description" content="ProHound App">
+	<meta name="description" content="App">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
@@ -67,6 +67,13 @@
         </a>
 
         <div class="navbar-right">
+            <div class="position-relative d-inline-block">
+                    <a href="{{route('home')}}" class="btn btn-empty btn-brock">
+                            <i class="iconsminds-back"></i> Go Back to the Main Portal Menu
+                        </a>
+            </div>
+
+
             <div class="header-icons d-inline-block align-middle">
                 
 
@@ -110,41 +117,35 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-
-                    @can('view_projects')
+                    
+                    @if (auth()->user()->hasAnyPermission([
+                    'view_projects','create_projects','edit_projects','delete_projects']))
                     <li>
                         <a href="{{route('project.index')}}" style="text-align: center">
                             <i class="simple-icon-layers"></i> Projects
                         </a>
                     </li>
-                    @endcan
-                  
-                    @can('view_clients')
-                    <li>
-                        <a href="{{route('clients.index')}}" style="text-align: center">
-                            <i class="iconsminds-business-mens"></i> Clients
-                        </a>
-                    </li>
-                    @endcan
-                    @can('create_user')
+                    @endif
+                    @if (auth()->user()->hasAnyPermission(['view_permissions','create_permissions','edit_permissions','delete_permissions',
+                    'create_user','edit_user','delete_user','view_role','create_role','edit_role','delete_role']))
                     <li>
                         <a href="#permissions">
                             <i class="simple-icon-wrench"></i> Permissions <br> & Users
                         </a>
                     </li>
-                    @endcan
-
+                    @endif
+                    <li>
+                        <a href="{{route('home')}}">
+                            <i class="iconsminds-back"></i> Go Back to<br> the Main<br> Portal Menu
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="sub-menu">
             <div class="scroll">
-              
-                  
                 <ul class="list-unstyled" data-link="permissions">
-
-                    
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#collapseForms" aria-expanded="true"
                             aria-controls="collapseForms" class="rotate-arrow-icon opacity-50">
@@ -152,27 +153,27 @@
                         </a>
                         <div id="collapseForms" class="collapse show">
                             <ul class="list-unstyled inner-level-menu">
-                                @can('view_permissions')
+                                @if (auth()->user()->hasAnyPermission(['view_permissions','create_permissions','edit_permissions','delete_permissions']))
                                 <li>
                                     <a href="{{route('permissions.index')}}">
                                         <i class="simple-icon-event"></i> <span class="d-inline-block">Permissions</span>
                                     </a>
                                 </li>
-                                @endcan
-                                @can('view_role')
+                                @endif
+                                @if (auth()->user()->hasAnyPermission(['view_role','create_role','edit_role','delete_role']))
                                 <li>
                                     <a href="{{route('roles.index')}}">
                                         <i class="simple-icon-doc"></i> <span class="d-inline-block">Roles</span>
                                     </a>
                                 </li>
-                                @endcan
-                                @can('create_user')
+                                @endif
+                                @if (auth()->user()->hasAnyPermission(['create_user','edit_user','delete_user']))
                                 <li>
                                     <a href="{{route('users.index')}}">
                                         <i class="simple-icon-check"></i> <span class="d-inline-block">Users</span>
                                     </a>
                                 </li>
-                                @endcan
+                                @endif
                             </ul>
                         </div>
                     </li>
@@ -182,6 +183,7 @@
 
             </div>
         </div>
+        
     </div>
 
     <main>

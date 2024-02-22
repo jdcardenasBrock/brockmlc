@@ -202,7 +202,7 @@
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
 						<p>Our premier project management solutions are trusted by industrial, commercial, and municipalities across the United States. Brock Mountain strives to deliver optimal performance, rapid response, and predictable results on budget and on time.
-							<br> No matter the project, we have the experience, equipment, and ability to meet your needs</p>
+							<br> No matter the project, we have the experience, equipment, and ability to meet your needs.</p>
 					</div>
 					<!-- start process bar -->
 					<!-- <div class="process-ber-plugin">

@@ -19,9 +19,8 @@
                 <h1>Projects</h1>
                 
                 <div class="top-right-button-container">
-                    @can('create_clients')
+
                     <button type="button" class="btn btn-outline-primary btn-lg top-right-button  mr-1" data-toggle="modal" data-backdrop="static" data-target="#addProjectsModal">Create a new Project</button>
-                    @endcan
                     <div class="modal fade modal-right" id="addProjectsModal" tabindex="-1" role="dialog" aria-labelledby="addProjectsModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -52,7 +51,7 @@
                                             <label>Client</label>
                                             <select class="custom-select" required="" id="client" name="client">
                                                 <option value="">Select an option</option>
-                                                @foreach ($clients as $client)
+                                                @foreach ($users as $client)
                                                     <option value="{{$client->id}}">{{$client->name}}</option>
                                                 @endforeach
                                             </select>
@@ -95,7 +94,7 @@
                                             <label>Client</label>
                                             <select class="custom-select" required="" id="edit_client" name="edit_client">
                                                 <option value="">Select an option</option>
-                                                @foreach ($clients as $client)
+                                                @foreach ($users as $client)
                                                     <option value="{{$client->id}}">{{$client->name}}</option>
                                                 @endforeach
                                             </select>
@@ -181,7 +180,7 @@
             <div class="separator mb-5"></div>
           
      
-            @can('view_clients')
+
                 <table class="table table-bordered" id="projects_table">
                     <thead>
                         <tr>
@@ -195,7 +194,6 @@
                         </tr>
                     </thead>
                 </table>
-            @endcan
         </div>
     </div>
 </div>
@@ -284,7 +282,7 @@
 
                     $("#edit_project_name").val(json.data.name);
                     $("#edit_address").val(json.data.address);
-                    $("#edit_client").val(json.data.client_id);
+                    $("#edit_client").val(json.data.user_id);
                     }else{
                     alert(json.data);
                     }
