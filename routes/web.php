@@ -33,10 +33,17 @@ use Spatie\Permission\Traits\HasRoles;
 |
 */
 
+Route::get('block', function () {
+    return view('webpage.index'); 
+})->name('block');
 
 Route::get('/', function () {
     return view('webpage.index'); 
 })->name('index');
+
+Route::get('/testimonials', function () {
+    return view('webpage.testimonials');
+})->name('testimonials');
 
 Route::get('/our_mission', function () {
     return view('webpage.our_mission');
@@ -46,9 +53,9 @@ Route::get('/national_presence', function () {
     return view('webpage.national_presence');
 })->name('national_presence');
 
-Route::get('/news', function () {
-    return view('webpage.news');
-})->name('news');
+// Route::get('/news', function () {
+//     return view('webpage.news');
+// })->name('news');
 
 Route::get('/sitework', function () {
     return view('webpage.sitework');
@@ -76,7 +83,7 @@ Route::get('/contact', function () {
 
 Route::get('/login', function () {
     return view('auth.login');
-})->name('login');
+})->name('loginw');
 
 
 /*
@@ -89,6 +96,7 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin');
     
     Route::get('proHound',[App\Http\Controllers\HomeController::class,'prohund'])->name('proHound');
     Route::resource('permissions', PermissionController::class);
@@ -112,12 +120,15 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('project_showData/{id}', [App\Http\Controllers\HomeController::class, 'GetData'])->name('project_showData');
 
     // Resources para el modulo de clientes
-    Route::resource('clients', ClientsController::class);
     Route::get('datatableClients', [App\Http\Controllers\ClientsController::class, 'GetData'])->name('Clients.data');
 
     Route::get('ajax/request/showClients', function () {
         return false;
     })->name('ajax.ruta.showClients');
+
+    Route::get('siteworkPremium',[App\Http\Controllers\HomeController::class, 'siteworkPremium'])->name('siteworkPremium');
+    Route::get('restorationPremium',[App\Http\Controllers\HomeController::class, 'restorationPremium'])->name('restorationPremium');
+    Route::get('buildingPremium',[App\Http\Controllers\HomeController::class, 'buildingPremium'])->name('buildingPremium');
     
  
 });

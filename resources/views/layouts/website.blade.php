@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Brock MLC Website </title>
-	<meta name="description" content="ProHound App">
+	<meta name="description" content="Brock MLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
@@ -127,7 +127,7 @@
 									<ul>
 										<li><a href="{{route('about_us')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
-										<li><a href="{{route('news')}}">News</a></li>
+										<li><a href="#" onclick="mostrarAlerta()">News</a></li>
 									</ul>
 								</div> 
 							</li>
@@ -137,7 +137,7 @@
 										<li><a href="{{route('sitework')}}">Sitework</a></li>
 										<li><a href="{{route('building')}}">Building</a></li>
 										<li><a href="{{route('restoration')}}">Restoration</a></li>
-										<!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li> -->
+										
 									</ul>
 								</div>
 							</li>
@@ -145,22 +145,13 @@
 								<div class="sub-menu">
 									<ul>
 										<li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
-										<!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
+										
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
 										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
 								</div>
 							</li>
 						</ul>
-						<!-- <div class="header-call-section">
-							<div class="header-call-icon">
-								<i class="bi bi-telephone-plus"></i>
-							</div>
-							<div class="header-call-title">
-								<a href="#">Need help?  Call us: </a>
-								<span><a href="#"> (888) 774-6498 </a></span>
-							</div>
-						</div> -->
 					</div>
 					<!-- end header menu -->
 				</div>
@@ -184,7 +175,7 @@
                             <ul>
                                 <li><a href="{{route('about_us')}}">About Us</a></li>
                                 <li><a href="{{route('national_presence')}}">National Presence</a></li>
-                                <li><a href="{{route('news')}}">News</a></li>
+                                <li><a href="#" onclick="mostrarAlerta()">News</a></li>
                             </ul>
                         </div> 
                     </li>
@@ -280,7 +271,7 @@
                             <li><a href="{{route('become_a_vendor')}}" > <i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
                             <!-- <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li> -->
                             <li><a href="{{route('contact')}}"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
-                            <li><a  href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
+                            <li><a href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
                         </ul>
                     </div>
                 </div>
@@ -441,14 +432,12 @@
     $(".venobox").venobox(); 
   });
   </script>  
-  <script>
-    // $(document).ready(function(){
-    //     console.log($(".sticky-menu"))
-    // })
-    
-    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").addClass("col-lg-12")
-    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").removeClass("col-lg-10")
-  </script>
+
+    <script>
+        function mostrarAlerta() {
+            alert('This page is under construction.');
+        }
+    </script>
 </body>
 
 </html>

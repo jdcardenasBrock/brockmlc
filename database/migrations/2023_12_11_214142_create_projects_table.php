@@ -18,8 +18,8 @@ class CreateProjectsTable extends Migration
             $table->string('name');
             $table->string('address');
 
-            $table->unsignedBigInteger('client_id')->nullable();
-            $table->foreign('client_id')->references('id')->on('clients');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

@@ -8,8 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Brock Mountian</title>
-	<meta name="description" content="ProHound App">
+    <title>Brock MLC Website </title>
+	<meta name="description" content="Brock MLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
@@ -63,35 +63,7 @@
 		<div class="loder-section left-section"></div>
 		<div class="loder-section right-section"></div>
 	</div>
-	<!--==================================================-->
-	<!-- Start Euildint Top Bar Style Two Area -->
-	<!--==================================================-->
-	<!-- <div class="topbar-area style-two d-flex align-items-center">
-		<div class="container-fluid p-90">
-			<div class="row align-items-center">
-				<div class="col-lg-6 col-md-6">
-					<div class="topbar-adress">
-						<ul>
-							<li class="line"><a href="#">BrockMlc Portal</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="topbar-menu">
-						<ul><li class="line">
-							<li><a href="https://newbrockmlc.mcardi.com/index.php">Home</a></li>
-							<li class="line">
-							<li><a href="https://newbrockmlc.mcardi.com/contact.php">Contact Us</a></li>
-							<li class="line">
-							<li><a href="#">{{ Auth::user()->name }}</a></li>
-							<li class="line">
-                            
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
+
 	<!--==================================================-->
 	<!-- End Euildint Top Bar Style Two Area -->
 	<!--==================================================-->
@@ -122,7 +94,7 @@
 									<ul>
 										<li><a href="{{route('about_us')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
-										<li><a href="{{route('news')}}">News</a></li>
+										<li><a href="#" onclick="mostrarAlerta()">News</a></li>
 									</ul>
 								</div> 
 							</li>
@@ -140,7 +112,6 @@
 								<div class="sub-menu">
 									<ul>
 										<li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
-										<!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
 										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
@@ -148,7 +119,11 @@
 							</li>
 						</ul>
 						<div class="header-call-section">
+                            
 							<div class="header-call-icon">
+                                <a href="{{route('home')}}" rel="noopener noreferrer">
+                                    <i class="bi bi-house"></i>
+                                </a>
 								<i class="bi bi-person"></i>
 							</div>
 							<div class="header-call-title">
@@ -402,6 +377,11 @@
     $(".venobox").venobox(); 
   });
   </script>  
+  <script>
+        function mostrarAlerta() {
+            alert('This page is under construction.');
+        }
+    </script>
     @stack('scripts')
 </body>
 
