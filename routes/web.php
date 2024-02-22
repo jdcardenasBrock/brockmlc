@@ -45,6 +45,10 @@ Route::get('/testimonials', function () {
     return view('webpage.testimonials');
 })->name('testimonials');
 
+Route::get('/our_mission', function () {
+    return view('webpage.our_mission');
+})->name('about_us');
+
 Route::get('/national_presence', function () {
     return view('webpage.national_presence');
 })->name('national_presence');

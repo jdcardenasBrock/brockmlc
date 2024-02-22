@@ -657,10 +657,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .about-discribtion p {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 400;
-    line-height: 26px;
-    margin: 38px 0 0px;
+    line-height: 36px;
+    margin: 78px 0 0px;
 }
 
 /* process bar css */
@@ -2201,11 +2201,12 @@ h1, h2, h3, h4, h5, h6{
 /* counter css */
 
 .counter-area {
-    background: url(../images/home/Home_11-westarted.jpg);
+    background: url(../images/about/Who_We_Are_About_Us_2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 65px 51px 65px;
+    height: 500px;
 }
 
 .counter-numbar h4 {

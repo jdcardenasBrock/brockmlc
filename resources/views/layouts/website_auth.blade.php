@@ -11,7 +11,7 @@
     <title>Brock MLC Website </title>
 	<meta name="description" content="Brock MLC">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/icon.ico')}}">
+    <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" type="text/css" media="all">
     <!-- carousel CSS -->
@@ -120,11 +120,11 @@
 							<li><a href="#">Who We Are <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="{{route('testimonials')}}">Testimonials</a></li>
+										<li><a href="{{route('about_us')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
 										<li><a href="#" onclick="mostrarAlerta()">News</a></li>
 									</ul>
-								</div>
+								</div> 
 							</li>
 							<li><a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
@@ -139,8 +139,8 @@
 							<li><a href="#">Work With Us <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-                                    <li><a href="#" onclick="mostrarAlerta()">Become a Vendor</a></li>
-                                    <li><a href="#" onclick="mostrarAlerta()">Career Opportunities</a></li>
+										<li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
+										<!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
 										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
@@ -195,10 +195,12 @@
 	<!--==================================================-->
 
     <main>
+    <div class="container">
   
 
     @yield('content')
 
+    </div>
     </main>
 
 <!--==================================================-->
@@ -248,8 +250,8 @@
                         <ul>
                             <li><a href="{{route('index')}}"><i class="bi bi-chevron-double-right"></i> Home </a></li>
 
-                            <li><a href="#" onclick="mostrarAlerta()"><i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
-                            <li><a href="#" onclick="mostrarAlerta()"> <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li>
+                            <li><a href="{{route('become_a_vendor')}}" > <i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
+                            <!-- <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li> -->
                             <li><a href="{{route('contact')}}'"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
                         </ul>
                     </div>
