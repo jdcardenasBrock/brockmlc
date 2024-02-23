@@ -2,7 +2,7 @@
 @section('content') 
 <style>
     #top-sitework{
-        background: url(assets/images/logo_negativo.png), #272a2c;
+        background: url(assets/images/mountains.png), #272a2c;
         background-position: center 0%; 
         background-size: 50%;
         background-repeat: no-repeat;
