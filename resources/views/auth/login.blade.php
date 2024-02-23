@@ -88,7 +88,7 @@
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-md-6 offset-md-3">
+                                            <div class="col-md-6 offset-md-3 d-flex justify-content-center">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -100,9 +100,9 @@
                                         </div>
 
                                         <div class="row mb-0 mt-4">
-                                            <div class="col-md-5 offset-md-4">
-                                                <button type="submit" class="btn btn-primary" style="background-color:#236040;border-color:#236040;">
-                                                    {{ __('Log In') }}
+                                            <div class="col-md-4 offset-md-4">
+                                                <button type="submit" class="btn btn-primary w-100" style="background-color:#236040;border-color:#236040;">
+                                                    {{ __('Sign In') }}
                                                 </button>
 
                                                 <!-- @if (Route::has('password.request'))
