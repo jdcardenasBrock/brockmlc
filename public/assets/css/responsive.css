@@ -241,7 +241,7 @@
 }
 
 .widget-categories-box {
-    padding: 29px 8px 40px;
+    /* padding: 29px 8px 40px; */
 }
 
 /* blog details area */
@@ -767,7 +767,7 @@
 }
 
 .widget-categories-box {
-    padding: 29px 9px 40px;
+    /* padding: 29px 9px 40px; */
 }
 
 /* blog standard area */
@@ -2630,7 +2630,7 @@
     }
 
     .widget-categories-box {
-        padding: 29px 20px 40px;
+        /* padding: 29px 20px 40px; */
     }
 
     /* blog standard area */
@@ -3520,7 +3520,7 @@
     }
 
     .widget-categories-box {
-        padding: 29px 6px 40px;
+        /* padding: 29px 6px 40px; */
     }
 
     .widget-tags a {

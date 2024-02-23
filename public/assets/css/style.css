@@ -371,7 +371,7 @@ Tags: architect, building company, construction, construction template, construc
     color: #266041;
 }
 
-.eulding-btn a::before{
+/* .eulding-btn a::before{
     position: absolute;
     content: "";
     transition-duration: 800ms;
@@ -386,7 +386,7 @@ Tags: architect, building company, construction, construction template, construc
     transform: translateX(-50%);
     border-radius: 50%;
     z-index: -1;
-}
+} */
 
 .eulding-btn a:hover::before{
     top: -40%;
@@ -657,9 +657,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .about-discribtion p {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 30px;
     margin: 78px 0 0px;
 }
 
@@ -2056,7 +2056,7 @@ h1, h2, h3, h4, h5, h6{
 ===================================================*/
 
 .about-area.style-two {
-    padding: 0 0 112px;
+    padding: 0 0 0;
 } 
 
 /* about counter */
@@ -2140,7 +2140,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
-    margin: 27px 0 37px;
+    margin: 0 0 37px;
 }
 
 .history-content a {
@@ -2190,7 +2190,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .history-items-box:hover .history-text h4 a{
-    color: #266041;
+    color: #266041; 
 }
 
 .history-icon a i {
@@ -2206,7 +2206,7 @@ h1, h2, h3, h4, h5, h6{
     background-position: center center;
     background-repeat: no-repeat;
     padding: 65px 51px 65px;
-    height: 500px;
+    height: 350px;
 }
 
 .counter-numbar h4 {
@@ -3214,7 +3214,7 @@ section.banner-section.style-three {
     background: url(../images/resource/breatcome-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 154px 0;
+    padding: 90px 0;
 }
 
 .breatcome-content {
@@ -3227,6 +3227,7 @@ section.banner-section.style-three {
     font-size: 55px;
     font-weight: 600;
     margin-bottom: 17px;
+    margin-left: 46px;
 }
 
 .bratcome-text {
@@ -3362,7 +3363,7 @@ button.icons {
 /* widget catagories box */
 
 .widget-categories-box {
-    padding: 29px 30px 40px;
+    /* padding: 29px 30px 40px; */
     margin-bottom: 30px;
     background: #F8F8F8;
 }
@@ -3455,24 +3456,29 @@ button.icons {
 .widget-tags a {
     display: inline-block;
     text-decoration: none;
-    padding: 7px 13px;
+    padding: 7px 0;
     background: #fff;
-    border-radius: 3px;
-    color: #102039;
-    font-size: 15px;
+    /* border-radius: 3px; */
+    /* color: #102039; */
+    font-size: 18px;
     font-style: normal;
     margin: 11px 5px;
     font-weight: 400;
     position: relative;
     transition: .5s;
     z-index: 1;
+    width: 47%;
+    font-weight: bold;
+    /* line-height: 1.2; */
+    color: black !important;
 }
 
 .widget-tags a:hover {
-    color: #fff;
+    /* color: #fff; */
+    cursor: normal;
 }
 
-.widget-tags a:before {
+/* .widget-tags a:before {
     position: absolute;
     content: "";
     left: -2px;
@@ -3485,11 +3491,11 @@ button.icons {
     z-index: -1;
     border-radius: 3px;
     transition: .5s;
-}
+} */
 
-.widget-tags a:hover:before {
+/* .widget-tags a:hover:before {
     width: 104%;
-}
+} */
 
 
 /*==================================================
@@ -3497,7 +3503,7 @@ button.icons {
 ===================================================*/
 
 .blog-standard-area {
-    padding: 120px 0 120px;
+    padding: 120px 0 -35px;
 }
 
 /* blog quote css */
@@ -4534,14 +4540,14 @@ span.fill {
     position: relative;
 }
 
-.contact-single-box::before{
+/* .contact-single-box::before{
     position: absolute;
     content: "";
     width: 1px;
     height: 201px;
     background: rgba(205, 205, 205, 0.45);
     right: 0;
-}
+} */
 
 .contact-single-box.two::before {
     display: none;
@@ -4572,7 +4578,7 @@ span.fill {
 .row.contact {
     background: #FFF;
     box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.10);
-    padding: 72px 95px 87px;
+    padding: 30px 30px 67px;
 }
 
 .contact-title {

@@ -8,8 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Brock MLC Website </title>
-	<meta name="description" content="Brock MLC">
+    <title>Brock Mountain </title>
+	<meta name="description" content="Brock Mountain">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
@@ -134,10 +134,10 @@
 							<li><a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="{{route('sitework')}}">Sitework</a></li>
-										<li><a href="{{route('building')}}">Building</a></li>
-										<li><a href="{{route('restoration')}}">Restoration</a></li>
-										
+                                        <li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
+                                        <li><a href="{{route('sitework')}}#building">Building</a></li>
+                                        <li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
+										<!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li> -->
 									</ul>
 								</div>
 							</li>
@@ -182,10 +182,11 @@
                     <li><a href="#">What We Do</i></a>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('sitework')}}">Sitework</a></li>
-                                <li><a href="{{route('building')}}">Building</a></li>
-                                <li><a href="{{route('restoration')}}">Restoration</a></li>
-                                <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
+                                <li><a href="{{route('index')}}">Home</a></li>
+                                <li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
+                                <li><a href="{{route('sitework')}}#building">Building</a></li>
+                                <li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
+                                <!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li> -->
                             </ul>
                         </div>
                     </li>
@@ -274,9 +275,9 @@
                             <li><a href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
                         </ul>
                     </div>
-                </div>
+                </div> 
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 pr-0">
+            <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-start">
                 <div class="foter-box">
                     <div class="footer-wiget-title" id="social-tittle">
                         <h4>Connect With Us</h4>
@@ -432,12 +433,67 @@
     $(".venobox").venobox(); 
   });
   </script>  
+  <script>
+    // $(document).ready(function(){
+    //     console.log($(".sticky-menu"))
+    // })
+    
+    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").addClass("col-lg-12")
+    // $(".sticky-menu .container-fluid.p-90 .row.align-items-center .col-lg-10").removeClass("col-lg-10")
+  </script>
+  <script>
+    // console.log("hola")
+    var sitework = $('#container_sitework');
+    var building = $('#container_building');
+    var restoration = $('#container_restoration');
 
-    <script>
-        function mostrarAlerta() {
-            alert('This page is under construction.');
-        }
-    </script>
+    var backgrounds_sitework = new Array(        
+        'url(assets/images/sitework/Sitework_Photo_Option_1.png)'
+    , 'url(assets/images/sitework/Sitework_Photo_Option_2.png)'
+    , 'url(assets/images/sitework/Sitework_Photo_Option_3.png)'
+    , 'url(assets/images/sitework/Sitework_Photo_Option_4.png)'
+    , 'url(assets/images/sitework/Sitework_Photo_Option_5.png)'
+    , 'url(assets/images/sitework/Sitework_Photo_Option_6.png)'
+    , 'url(assets/images/sitework/Sitework_Photo_Option_7.png)'    
+    );
+
+    var backgrounds_building = new Array(        
+        'url(assets/images/building/Building_Photo_Option_1.jpg)'
+    , 'url(assets/images/building/Building_Photo_Option_2.jpg)'   
+    );
+
+    var backgrounds_restoration = new Array(        
+        'url(assets/images/restoration/Restoration_Photo_Option_1.jpg)'
+    // , 'url(assets/images/restoration/Restoration_Photo_Option_2.jpg)'  
+    , 'url(assets/images/restoration/Restoration_Photo_Option_3.jpg)'  
+    , 'url(assets/images/restoration/Restoration_Photo_Option_4.jpg)'  
+    , 'url(assets/images/restoration/Restoration_Photo_Option_5.jpg)'  
+    );
+
+    var current_sitework = 0;
+    var current_building = 0;
+    var current_restoration = 0;
+
+    function nextBackground() {
+        //     sitework
+        current_sitework++;
+        current_sitework = current_sitework % backgrounds_sitework.length;
+        sitework.css('background-image', backgrounds_sitework[current_sitework]);
+
+        // building
+        current_building++;
+        current_building = current_building % backgrounds_building.length;
+        building.css('background-image', backgrounds_building[current_building]);
+
+        // building
+        current_restoration++;
+        current_restoration = current_restoration % backgrounds_restoration.length;
+        restoration.css('background-image', backgrounds_restoration[current_restoration]);
+    }
+    setInterval(nextBackground, 3000);
+
+    sitework.css('background-image', backgrounds_sitework[0]);
+</script>
 </body>
 
 </html>

@@ -91,7 +91,7 @@
 	.owl-item{
 		margin-right: 100px; 
 		margin-left: 100px;
-	}
+	} 
 	
 	.testimonial-area{
 		margin-top: 120px;
@@ -346,7 +346,7 @@
 <!--==================================================-->
 <section class="banner-section">
 	<video autoplay muted loop style="width:100%;">
-		<source src="assets/images/Video BM Home 760 v5.mp4">
+		<source src="assets/images/Video BM Home 02-20.mp4">
 	</video>
 </section>
 <!--==================================================-->
@@ -359,86 +359,28 @@
 <div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: -10px;">
 	<div class="container" id="container_section_1">
 		<div class="row">
-			<div class="col-lg-6 col-md-12 d-flex justify-content-center">
-				<!-- <div class="section-title d-lg-none d-sm-block mb-5"> -->
-					<!-- <div class="section-shape">
-						<img src="assets/images/resource/section-shape.png" alt="">
-					</div> -->
-					<!-- <div class="section-sub-title">
-						<h4 style="color: white">We Are More Than A General Contractor…</h4>
-					</div> -->
-					<!-- <div class="section-main-title about">
-						<h2>Exceeding The Demands Of Commercial Sitework & Building Through Innovation & Dependability</h2>
-					</div> -->
-				<!-- </div> -->
-				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/Logo negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat;">
-					<!-- <img src="assets/images/home/Home_9-Sup_Construction.jpg" alt=""> -->
-					<!-- statr about counter -->
-					<!-- <div class="about-counter">
-						<div class="about-numbar">
-							<h4 class="counter">12</h4>
-							<span>+</span>
-						</div>
-						<div class="about-counter-text">
-							<h5>Years of Experience
-								Construction Services</h5>
-						</div>
-					</div> -->
-					<!-- End about counter -->
+			<div class="col-lg-6 col-md-12 d-flex justify-content-center">				
+				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/Logo negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat;">					
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-12" id="description_brock">
-				<!-- <div class="section-title d-none d-lg-block"> -->
-					<!-- <div class="section-shape">
-						<img src="assets/images/resource/section-shape.png" alt="">
-					</div> -->
-					<!-- <div class="section-sub-title">
-						<h4 style="color: white">We Are More Than A General Contractor…</h4>
-					</div> -->
-					<!-- <div class="section-main-title about">
-						<h2 style="color: white">WE'RE MORE THAN A GENERAL CONTRACTOR, WE'RE YOUR SOLUTION</h2>
-					</div> -->
-				<!-- </div> -->
+			<div class="col-lg-5 col-md-12 text-center" id="description_brock" style="display: flex;flex-direction: row;align-items: center;">				
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
-						<p style="color: white">
-						With over 25 years of industry experience,
-						our focus lies in fostering meaningful
-						relationships with our clients. We
-						approach every project with integrity and expertise which allows us to offer
-						comprehensive solutions, making complex
-						projects simple. At Brock Mountain, we are
-						dedicated to providing a seamless
-						experience for our clients.
-					</p>
-					</div>
-					<!-- start process bar -->
-					
-					<!-- End process bar -->
+						<p style="color: white;">
+							With over 25 years of industry experience,
+							our focus lies in fostering meaningful
+							relationships with our clients. We
+							approach every project with integrity and expertise which allows us to offer
+							comprehensive solutions, making complex
+							projects simple. At Brock Mountain, we are
+							dedicated to providing a seamless
+							experience for our clients.
+						</p>
+					</div>					
 					<div class="row mt-3">
-						<div class="col-lg-6">
-							<!--start about single box -->
-							<!-- <div class="about-single-box">
-								<div class="about-icon">
-									<img src="assets/images/resource/about-icon1.png" alt="">
-								</div>
-								<div class="about-text">
-									<h4>Nationwide Service</h4>
-									<p>Write some related text here.</p>
-								</div>
-							</div> -->
-							<!--end about single box -->
-						</div>
-						
-					</div>
-					<!-- <div class="about-bottom">
-						<div class="eulding-btn about">
-							<a href="#">Read More <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-						</div>
-						<div class="about-signiture">
-							<img src="assets/images/about/about-sine.png" alt="">
-						</div>
-					</div> -->
+						<div class="col-lg-6">							
+						</div>						
+					</div>					
 				</div>
 			</div>
 		</div>
@@ -454,16 +396,16 @@
 <section class="blog-standard-area" style="background-color: #272a2c;">
 	<div class="blog-standard-box">
 		<div class="row">
-			<div class="blog_list owl-carousel">
-				<div class="col-lg-12">
-					<div class="blog-standard-thumb" style="">
-						<img src="assets/images/home/brock_team-scaled-2.jpg" alt="">
+			<div class="blog_list owl-carousel" >
+				<div class="col-lg-12" style="">
+					<div class="blog-standard-thumb" style="left: 0.15%">
+						<img src="assets/images/home/brock_team-scaled-2.jpg" alt="" style="width: 100%;">
 					</div>
 				</div>
-				<div class="col-lg-12 row">
+				<div class="col-lg-12 row" style="padding-left: 55px; padding-right:30px;">
 					<!-- <div class="blog-standard-thumb"> -->
-						<div class="col-lg-5" style="padding: 5%">
-							<p style="color: white; font-size: 26px;font-weight: 400;line-height: 36px;">
+						<div class="col-lg-6" style="display: flex;flex-direction: row;align-items: center;">
+							<p style="color: white; font-size: 20px;font-weight: normal;line-height: 30px; margin-top: 25px; padding-right: 35px">
 							We prioritize the safety of our most valuable
 							asset — our people. This commitment is 
 							reflected in our investments of in-house
@@ -477,7 +419,7 @@
 							unsafe conditions or suggest safer methods.
 							</p>
 						</div>
-						<div class="col-lg-7">
+						<div class="col-lg-6">
 							<img src="assets/images/Home_Page _ Safety.webp" alt="" >							
 						</div>
 					<!-- </div> -->
