@@ -79,6 +79,7 @@ Route::get('/login', function () {
 })->name('login');
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Incio de rutas para el aplicativo web
