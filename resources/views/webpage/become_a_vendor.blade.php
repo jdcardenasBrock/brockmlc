@@ -2,7 +2,7 @@
 @section('content')
 <style>
     #top-vendor{
-        background: url(assets/images/logo_negativo.png), #272a2c;
+        background: url(assets/images/mountains.png), #272a2c;
         background-position: 100% 0%; 
         background-size: 50%;
         background-repeat: no-repeat;
