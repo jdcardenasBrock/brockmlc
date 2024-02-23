@@ -129,10 +129,10 @@
 							<li><a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="{{route('sitework')}}">Sitework</a></li>
-										<li><a href="{{route('building')}}">Building</a></li>
-										<li><a href="{{route('restoration')}}">Restoration</a></li>
-										<li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
+										<li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
+										<li><a href="{{route('sitework')}}#building">Building</a></li>
+										<li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
+										<!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li> -->
 									</ul>
 								</div>
 							</li>
@@ -178,9 +178,9 @@
 			<nav class="Edulin_menu">
 				<ul class="nav_scroll">
 					<li><a href="{{route('index')}}">Home</a></li>
-					<li><a href="{{route('sitework')}}">Sitework</a></li>
-					<li><a href="{{route('building')}}"></a>Building</li>
-					<li><a href="{{route('restoration')}}">Restoration</a></li>
+					<li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
+                    <li><a href="{{route('sitework')}}#building">Building</a></li>
+                    <li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
 					<li><a href="{{route('contact')}}">Contact Us</a></li>
 				</ul>
 			</nav>
@@ -191,7 +191,7 @@
 	<!--==================================================-->
 
     <main>
-    <div class="container">
+    <div class="container" style="">
   
 
     @yield('content')

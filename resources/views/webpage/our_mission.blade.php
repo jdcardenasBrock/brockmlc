@@ -2,9 +2,10 @@
 @section('content')
 <style>
     #top-our_mission{
-        background: url(assets/images/about/Who_We_Are_About_Us.jpg);  
+        background: url(assets/images/about/Who_We_Are_About_Us_3.jpg);  
         background-position: center center; 
-        background-size: cover;     
+        background-size: cover;
+        background-repeat: no-repeat;     
     }    
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
@@ -34,6 +35,10 @@
     .history-content p {
         font-size: 26px;
         line-height: 36px;
+    }
+    .history-content p{
+        font-size: 20px;
+        line-height: 30px;
     }
     @media (max-width: 991.98px) {
         .breatcome-content{
@@ -73,47 +78,40 @@
 <!--==================================================-->
 <!-- Start Euildint History Area -->
 <!--==================================================-->
-<div class="heistory-area animate__slideInUp" style="margin-bottom: 120px;">
-    <div class="">
+<div class="heistory-area animate__slideInUp" style="margin-bottom: 50px;">
+    <div class="container">
         <div class="row mt-70">
-            <div class="col-lg-6 col-md-12">
-                <div class="">
-                    <div class="history-content mb-50" style="border-top: 5px solid #266041;border-bottom: 5px solid #266041; ">
-                        <!-- <h4><a href="contact.php">We Started From 1999</a></h4> -->
-                        <p style="text-align: justify;">
-                        Established in Asheville, North Carolina,
-                        Brock Mountain has proudly provided general
-                        contractor services to the community. Our
-                        operations have grown  nationwide with
-                        exceptional employees, outstanding trade
-                        partners, and steadfast support from our
-                        community. With that growth, we've become
-                        equipped to handle a wide range of construction
-                        projects, ensuring professionalism and care
-                        every step of the way.
-                        </p>
-                        <!-- <a href="contact.php">Discover More <i class="bi bi-arrow-right"></i></a> -->
-                    </div>
+            <div class="col-lg-6 col-md-12" style="padding-left: 0">
+                <div class="history-content mb-50">
+                    <!-- <h4><a href="contact.php">We Started From 1999</a></h4> -->
+                    <p style="text-align: ; color: black; margin-top: 0; padding-right: 30px; text-align: justify">
+                    Established in Asheville, North Carolina,
+                    Brock Mountain has proudly provided general
+                    contractor services to the community. Our
+                    operations have grown  nationwide with
+                    exceptional employees, outstanding trade
+                    partners, and steadfast support from our
+                    community. With that growth, we've become
+                    equipped to handle a wide range of construction
+                    projects, ensuring professionalism and care
+                    every step of the way.
+                    </p>
+                    <!-- <a href="contact.php">Discover More <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6">
-                <!-- start section title -->                
-                <img src="assets/images/about/Who_We_Are _ About_Us.png" width="100%" height="90%"> 
-                <!-- End section title -->                
+            <div class="col-lg-6 col-md-6" style="padding-right: 0">                                
+                <img src="assets/images/about/Who_We_Are _ About_Us.png" width="100%" height="90%">                
             </div>           
-            <div class="col-lg-12" style="background-color: #272a2c; padding-bottom: 50px; padding-left: 30px; padding-right: 30px;">
-                <div class="row mt-50">
+            <div class="col-lg-12" style="background-color: #272a2c; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
+                <div class="row" style="padding-top: 32px">
                     <div class="col-lg-6 col-md-6">
-                    <div class="counter-area">
-                            
-                        </div>
-                        <span id="testimonials-section"></span>                        
+                        <div class="counter-area"></div>                                               
                     </div>
                     <div class="col-lg-6 col-md-6">
-                    <div class="">
+                        <div class="">
                             <div class="history-content">
                                 <!-- <h4><a href="contact.php">Some data about us</a></h4> -->
-                                <p style="text-align: justify; color: white">
+                                <p style="text-align: justify; color: white; margin-top: 0; padding-left: 30px; padding-right: 23px;">
                                 Rooted in principles of respect and
                                 transparency, we are grateful to be in a position
                                 that allows us to build lasting structures that

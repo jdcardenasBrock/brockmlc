@@ -2,101 +2,24 @@
 @section('content') 
 <style>
     #top-sitework{
-        background: url(assets/images/resource/Sitework_bg.jpg);
-        background-position: center center; 
-        background-size: cover;
-    }    
-    #video-container-restoration{
-        background: url(assets/images/restoration/Rest_3-video.jpg);
+        background: url(assets/images/logo_negativo.png), #272a2c;
+        background-position: center 0%; 
+        background-size: 50%;
         background-repeat: no-repeat;
+    } 
+    p.discription  {
+        font-size: 20px;
+        line-height: 30px;
+        color: white !important;
     }
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
 	} 
-    .vbox-inline{
-		width: 960px;
-    	height: 720px;
-		margin-top: -200px !important;
-		overflow: hidden;
-	}
-	.vbox-inline video{
-		margin-top: 15%;
-		margin-left: 10%;
-		width: 80% !important; 
-		height: 80%; 
-	}
-	.eulding-btn{
-		display: block;		
-	}
-	.eulding-btn a{
-		width: 415px;
-		text-align: center;
-	}
-    .section-main-title{
-        font-size: 38px;
-    }
-    @media (max-width: 991.98px) {
-      .breatcome-content{
-        top: 82px;
-        text-align: center;
-      } 
-      .section-main-title{
-            font-size: 21px;
-        }  
-        .section-title{
-            text-align: center;
-        }
-        .service-details-thumb{
-            margin-bottom: 50px;
-        } 
-        .single-video{
-            top: -128%;
-        } 
-        .call-do-action-area{
-			height: 250px;
-        } 
-        .call-do-title.style-two h2  {
-            text-align: center;
-        }
-        .single-video.style-three.text-center{
-            top: 20px;
-        } 
-        .video-icon a {
-			height: 80px;
-			width: 80px;
-			line-height: 63px;
-		}
 
-		.video-icon a i {			
-			font-size: 36px;
-		}  
-        .blog-standard-area{
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 991px){ 
-        .single-video.style-three.text-center{
-            top: -10px !important;
-        }
-        .call-do-action-area{
-			height: 503px;
-		}
-        .single-video{
-            top: -98%;
-        }
-        .video-icon a {
-            height: 120px;
-            width: 120px;
-            line-height: 105px;
-        }
-        .video-icon a i {
-            color: #ffffff;
-            font-size: 76px;
-        }
-    }
-
+    /* div[class*='col']{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    } */
 </style>
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
@@ -106,208 +29,158 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="breatcome-content">
-                    <div class="breatcome-title">
-                        <h1>Sitework</h1>
+                    <div class="breatcome-title" id="sitework">                       
+                        <h1>Our Services</h2>
                     </div>
-                    <div class="bratcome-text"> 
+                    <!-- <div class="bratcome-text"> 
                         <ul>
                             <li><a href="index.php">Home</a></li>
                             <li>Sitework</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--==================================================-->
-<!-- Start Euildint Breatcome Area -->
-<!--==================================================-->
-<div class="service-details-area wow animate__slideInUp">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- start section title -->
-                        <div class="section-title d-lg-none d-sm-block">
-                            <div class="section-shape">
-                                <img src="assets/images/resource/section-shape.png" alt="">
-                            </div>
-                            <div class="section-sub-title">
-                                <h4>SERVICES</h4>
-                            </div>
-                            <div class="section-main-title" style="margin-bottom: 50px">
-                                <h2>PROFESSIONAL & RELIABLE SITEWORK SERVICES</h2>
-                            </div>
-                        </div>
-                        <!-- End section title -->
-                        <!-- start service details single box -->
-                        <div class="service-details-single-box mb-30">
-                            <!-- <div class="service-details-content d-lg-none d-sm-block">
-                                <h4><a href="#">PROFESSIONAL & RELIABLE SITEWORK SERVICES</a></h4>
-                            </div> -->
-                            <div class="service-details-thumb">
-                                <img src="assets/images/restoration/Rest_2-profess.jpg" alt="">
-                            </div>
-                            <div class="service-details-content">
-                                <h4 class="d-none d-lg-block"><a href="#">PROFESSIONAL & RELIABLE SITEWORK SERVICES</a></h4>
-                                <p class="mt-2">Our sitework teams & equipment accessibility combined with our proven expertise is another reason why Brock Mountain is trusted nationwide. Our team can help facilitate any project on time and on budget.</p>
-                            </div>
-                        </div>
-                        <!-- End service details single box -->
-                    </div>                                                           
-                </div>
-            </div>                        
-            <div class="col-lg-4 col-md-6">                
-                <!-- End widget search box -->
-                <div class="widget-categories-box"> 
-                    <div class="widget-catagories-title">
-                        <h4>SITEWORK SERVICES INCLUDE</h4> 
-                    </div>
-                    <!-- widget categories menu -->
-                    <div class="widget-categories-menu">
-                        <ul>
-                            <li>Stormwater Install & Maintenance</li>	
-                            <li>French Drain Install & Maintenance </li>
-                            <li>Trench Drain Install & Maintenance </li>
-                            <li>Forestry Mulching & Land Clearing </li>
-                            <li class="d-lg-block d-sm-block d-md-none">Disaster Clean-up </li>
-                            <li class="d-lg-block d-sm-block d-md-none">Excavation, Import & Export </li>
-                            <li class="d-lg-block d-sm-block d-md-none">Engineering & Design Build Solutions </li>
-                            <li class="d-lg-block d-sm-block d-md-none">Concrete Flatwork / Curb & Gutter </li>
-                        </ul>
-                    </div>
-                </div>                
-            </div>
-            <div class="col-lg-4 col-md-6 d-none d-md-block d-lg-none">                
-                <!-- End widget search box -->
-                <div class="widget-categories-box">
-                    <!-- <div class="widget-catagories-title">
-                        <h4>SITEWORK SERVICES INCLUDE</h4>
                     </div> -->
-                    <!-- widget categories menu -->
-                    <div class="widget-categories-menu">
-                        <ul>
-                            <!-- <li>Stormwater Install & Maintenance </li>	
-                            <li>French Drain Install & Maintenance </li>
-                            <li>Trench Drain Install & Maintenance </li>
-                            <li>Forestry Mulching & Land Clearing </a>> -->
-                            <li>Disaster Clean-up </li>
-                            <li>Excavation, Import & Export </li>
-                            <li>Engineering & Design Build Solutions </li>
-                            <li>Concrete Flatwork / Curb & Gutter </li>
-                        </ul>
-                    </div>
-                </div>                
+                </div>
             </div>
         </div>
     </div>
 </div>
 <!--==================================================-->
-<!-- End Euildint Breatcome Area -->
+<!-- Start Euildint hesitory Area -->
 <!--==================================================-->
-<!--==================================================-->
-<!-- Start Euildint Call Do Bg Area -->
-<!--==================================================-->
-<!-- assets/videos/Brock_Mountain_Sitework.mp4 -->
-<div class="call-do-action-area animate__slideInUp" id="video-container-restoration">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="single-video text-center">
-					<div class="video-icon">
-						<div id="building_video" style="display:none; width: 90%">
-							<video controls preload="metadata">
-								<source src="assets/videos/Brock_Mountain_Sitework.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-						</div>
-						<a class="video-vemo-icon venobox vbox-item" data-autoplay="true" data-vbtype="inline" href="#building_video"><i class="bi bi-play"></i></a>							
-					</div>
-					<div class="call-do-title">
-						<h2>Sitework Division</h2>
-					</div> 
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<div class="heistory-area animate__slideInUp">
+    <div class="container" style="margin-bottom: 250px">
 
-<!--==================================================-->
-<!-- End Euildint Call Do Bg Area -->
-<!--==================================================-->
-<div class="blog-standard-area">
-    <div class="container">
-        <div class="row d-flex justify-content-around">
-            <div class="col-lg-10">
-                <!-- start blog single box -->
-                <div class="blog-standard-box">
-                    <div class="row">
-                        <div class="blog_list owl-carousel">
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal1-856.jpg" alt=" ">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal2-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal3-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal4-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal5-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal6-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal7-856.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal8-856.jpg" alt="#">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="blog-standard-thumb">
-                                    <img src="assets/images/restoration/Gal9-856.jpg" alt="">
-                                </div>
-                            </div>
+        <div class="row mt-5" id="container_sitework" style="background: 'url(assets/images/sitework/Sitework_Photo_Option_1.png)'; background-position: center; background-size: cover; transition: background 2s;">            
+            <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.6);">
+                <div class="history-content wow animate__slideInUp p-4">
+                    <div class="title mb-5">
+                        <h2 style="color: white">Sitework</h2>
+                    </div>
+                    <p class="discription p-2" style="text-align: justify;">
+                    At Brock Mountain, we understand the importance of ensuring your groundwork is in
+                    optimal condition to support subsequent construction phases. We maintain a proactive approach allowing us to anticipate potential obstacles and implement strategic solutions to keep timelines intact and costs controlled. Our equipment accessibility coupled with our proven expertise is another reason why we are trusted nationwide.
+                    </p>
+                    <div class="widget-categories-box" style="background-color: rgba(0, 0, 0, 0);">
+                        <!-- categories title -->
+                        <!-- <div class="widget-catagories-title">
+                            <h4> Popular Tags </h4>
+                        </div> -->
+                        <div class="widget-tags">
+                        <a>Stormwater Services</a>
+                        <a>Forestry Mulching</a>
+                        <a>Excavation Services</a>
+                        <a>French Drain Services</a>
+                        <a>Land Clearing</a>
+                        <a>Concrete Flatwork</a>
+                        <a>Trench Drain Services</a>
+                        <a>Disaster Clean-Up</a>
+                        <a>Curb & Gutter Services</a>
+                        <a id="building" style="visibility: hidden"></a>
                         </div>
                     </div>
-                    <!-- <div class="blog-standard-meta">
-                        <span>By Admin</span> 
-                        <span>17 Aug 2023 </span>
-                        <span class="meta">Construction</span>
-                    </div> -->
-                    <!-- <div class="blog-standard-content">
-                        <h4><a href="#">All the Greatest Moments of Thoroughbred</a></h4>
-                        <p>Why Roofing are factmake 17 Reason EasierForesee the pain & trouble that are bounds too ensue equalidea off denouncing pleasures and praising pain was borncomplete account and expound the actual teachings the great the master-builder of human happiness. In a free hour...</p>
-                    </div> -->
-                    <!-- <div class="eulding-btn standard">
-                        <a href="#">Read More <i class="bi bi-arrow-up-right-circle-fill"></i></a>
-                    </div> -->
-                </div>
-                <!-- End blog single box -->
-            </div>        
+                </div>                
+            </div>
         </div>
+
+        <div class="row mt-5" id="container_building" style="background: url('assets/images/building/Building_Photo_Option_1.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
+            <div class="col-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
+                <div class="history-content wow animate__slideInUp p-4">
+                    <div class="title mb-5">
+                        <h2 style="color: white">Building</h2>
+                    </div>
+                    <p class="discription p-2" style="text-align: justify;">
+                        Our premier project management solutions are trusted by industrial, commercial, and municipalities across the United States. Brock Mountain strives to deliver optimal performance, quality building, and results that are on time and within budget. No matter the project, we have the experience, equipment, and ability to meet your needs.
+                    </p>
+                    <div class="widget-categories-box" style="background-color: rgba(0, 0, 0, 0);">
+                        <!-- categories title -->
+                        <!-- <div class="widget-catagories-title">
+                            <h4> Popular Tags </h4>
+                        </div> -->
+                        <div class="widget-tags">
+                        <a>Turnkey Solutions</a>
+                        <a>New Construction</a>
+                        <a>Interior Fit-Outs</a>
+                        <a>Site Improvements</a>
+                        <a>Renovation Services</a>
+                        <a>Property Maintenance</a>
+                        <a>Architectural Renderings</a> 
+                        <a id="restoration" style="visibility: hidden"></a>                       
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <div class="row mt-5" id="container_restoration" style="background: url('assets/images/restoration/Restoration_Photo_Option_1.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
+            <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
+                <div class="history-content wow animate__slideInUp p-4">
+                    <div class="title mb-5">
+                        <h2 style="color: white">Restoration</h2>
+                    </div>
+                    <p class="discription p-2" style="text-align: justify;">
+                        Our restoration division is where
+                        craftsmanship meets preservation. As a first-response specialist, we can be on site at a moment's notice. We pride ourselves on our ability to repair, renovate, and return a building or environment to its original condition after suffering damage or deterioration. Our dedicated team of restoration experts ensure the integrity and aesthetics of all our projects.
+                    </p>
+                    <div class="widget-categories-box" style="background-color: rgba(0, 0, 0, 0);">
+                        <!-- categories title -->
+                        <!-- <div class="widget-catagories-title">
+                            <h4> Popular Tags </h4>
+                        </div> -->
+                        <div class="widget-tags">
+                            <a>Water Damage Services</a>                            
+                            <a>Fire Damage Services</a>
+                            <a>Mitigation Services</a>
+                            <a>Rapid Response</a>
+                            <a>Disaster Response</a>
+                            <a>Reconstruction</a>
+                            <a>Mold Remediation</a>
+                            <a>Tarp & Boarding</a>
+                            <a>Decontamination & Deodorization</a>
+                            <a style="visibility: hidden"></a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
     </div>
 </div>
+<div class="container text-center pt-5" style="background-color: #272a2c">
+    <div class="eulding-btn about">
+        <a href="{{route('contact')}}" style="background-color: #272a2c; font-size: 24px">
+            <span style="color: white">Questions?</span> <br><span style="color: #266041">Contact Us</span>
+            <!-- <i class="bi bi-arrow-up-right-circle-fill"></i> -->
+        </a>
+    </div>
+</div>
+<script>
+    //location.hash = "container_building"
+
+    var section =  window.location.hash;    
+
+    // function scrollToElement(pageElement, position) {    
+    //     var positionX = 0,         
+    //         positionY = position;    
+
+    //     while(pageElement != null){        
+    //         positionX += pageElement.offsetLeft;        
+    //         positionY += pageElement.offsetTop;                   
+    //         pageElement = pageElement.offsetParent;        
+    //         window.scrollTo(positionX, positionY);    
+    //     }        
+
+    // }
+
+    // if(section == "#building"){
+    //     console.log("bui")
+    //     var pageElement = document.getElementById("container_building");
+    //     scrollToElement(pageElement, '0');
+    // } 
+
+    
+    let target = document.getElementById("container_"+section.substring(1));
+    var margin = target.offsetTop + 200
+    window.scrollTo(target.offsetLeft, margin);    
+    
+       
+</script>
 @endsection
