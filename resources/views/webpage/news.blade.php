@@ -1,6 +1,27 @@
 @extends('layouts.website')
 @section('content') 
 <style>
+    #mybox, #mybox2{
+        position: relative;
+    }
+    #mybox:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        left: 5%;
+        width:50%;
+        border-top: 5px solid #ddd !important;        
+    }
+    #mybox2:after{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        right: 5%;
+        width:50%;
+        border-top: 5px solid #ddd !important;        
+    }
     #top-new{
         background: url(assets/images/about/Who_We_Are_News.jpg);
         background-position: center center; 
@@ -81,6 +102,7 @@
       }     
     }
 </style>
+<div class="container">
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -111,7 +133,7 @@
 <!--==================================================-->
 <!-- Start Euildint Blog Standard Area -->
 <!--==================================================-->
-<div class="blog-standard-area" style="margin-top: 50px; margin-bottom: 50px">
+<div class="blog-standard-area" style="margin-top: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -142,22 +164,28 @@
                 <div class="history-content wow animate__slideInUp" style="padding-left: 30px; padding-right: 30px;">
                     <h2 style="color: white; font-size: 20px; font-style: italic; margin-top: 0 !important">"Angels wearing hard hats"</h2>
                     <p style="color: white"><br><span style="color: green">"Brock Mountain Land Co.'s</span> crews came from North Carolina to build steel walls and rock barriers to protect homes and hotels in danger of being swallowed by the sea along the Daytona Beach area's storm-ravaged shoreline. The blessings these construction workers have brought to Family Renew Community while they're here, however, have some of us convinced they truly were sent from heaven..."</p>                        
-                    <p style="text-align: right; font-size: 12px; line-height: 1.3; color: white">"Angels Wearing Hard Hats." Family Renew Community, <br>Tue, Jun 13, 2023 at 9:15AM</p>
+                    <p style="text-align: right; font-size: 12px; line-height: 1.3; color: white">"Angels Wearing Hard Hats." Family Renew Community, <br>Tue, Jun 13, 2023 at 9:15AM
+                        <br>
+                        <a style="font-size: 12px; color: green" href="https://www.familyrenew.org/-Angels-wearing-hard-hats--1-17035.html" target="_blank">https://www.familyrenew.org/-Angels-wearing-hard-hats--1-17035.html</a>
+                    </p>
                 </div>                
             </div>           
         </div>
-        <div class="row mt-5">
-            <div class="col-lg-6 col-md-12" style="display: flex; align-items: center; padding-right: 0; padding-left: 0">                
+        <div class="row pt-5 pb-5" style="background-color: #272a2c;">
+            <div id="mybox" class="col-lg-6 col-md-12" style="display: flex; align-items: center; padding-right: 0; padding-left: 30px">                
                 <div class="history-content wow animate__slideInUp" style="padding-left: 0; padding-right: 30px">
-                    <h2 style="font-size: 20px; font-style: italic; margin: 0 !important">"Ian and Nicole: 6 months later, Volusia recovery marked by successes, frustration, hope"</h2>
+                    <h2 style="color: white; font-size: 20px; font-style: italic; margin: 0 !important">"Ian and Nicole: 6 months later, Volusia recovery marked by successes, frustration, hope"</h2>
                     <div>
-                        <p style="text-align: justify; color: black"><br><span style="color: green">"Brock Mountain</span>  is completing work on three commercial properties in Daytona Beach Shores, including the Seabreeze and Fantasy II condominiums, as well as a row of 30 residential beachfront properties that stretch from Frank Rendon Park to St. Kitts condominium..."</p>                        
-                        <p style="text-align: right; font-size: 12px; line-height: 1.3; color: black">"Ian and Nicole: 6 months later, Volusia recovery marked by successes,<br> frustration, hope" The Daytona Beach News-Journal, <br>Mon, May 8, 2023 at 01:25PM</p>
+                        <p style="text-align: justify; color: white"><br><span style="color: green">"Brock Mountain</span>  is completing work on three commercial properties in Daytona Beach Shores, including the Seabreeze and Fantasy II condominiums, as well as a row of 30 residential beachfront properties that stretch from Frank Rendon Park to St. Kitts condominium..."</p>                        
+                        <p style="text-align: right; font-size: 12px; line-height: 1.3; color: white">"Ian and Nicole: 6 months later, Volusia recovery marked by successes,<br> frustration, hope" The Daytona Beach News-Journal, <br>Mon, May 8, 2023 at 01:25PM
+                            <br>
+                            <a style="font-size: 12px; color: green" href="https://www.news-journalonline.com/story/news/2023/05/08/ian-nicole-6-months-after-tropical-storms-volusia-recovery-ongoing/70086055007/" target="_blank">https://www.news-journalonline.com/story/news/70086055007</a>
+                        </p>
                     </div>
                 </div>                
             </div>
-            <div class="col-lg-6 col-md-12"  style="padding-right: 0; padding-bottom: 15px;">
-                <img src="assets/images/about/Who_We_Are_News_3.webp" width="100%" height="90%"> 
+            <div id="mybox2" class="col-lg-6 col-md-12"  style="padding-right: 30px; padding-bottom: 15px;">
+                <img class="pt-5" src="assets/images/about/Who_We_Are_News_3.webp" width="100%" height="90%"> 
             </div>
         </div>
     </div>
@@ -166,5 +194,6 @@
 <!--==================================================-->
 <!-- End Euildint Blog Standard Area -->
 <!--==================================================-->
+</div>
 
 @endsection

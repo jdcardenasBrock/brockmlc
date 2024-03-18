@@ -21,6 +21,7 @@
         padding-right: 0 !important;
     } */
 </style>
+<div class="container" style="">
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -49,7 +50,7 @@
 <div class="heistory-area animate__slideInUp">
     <div class="container" style="margin-bottom: 250px">
 
-        <div class="row mt-5" id="container_sitework" style="background: 'url(assets/images/sitework/Sitework_Photo_Option_1.png)'; background-position: center; background-size: cover; transition: background 2s;">            
+        <div class="row" id="container_sitework" style="background: url('assets/images/sitework/Sitework_Photo_Option_7.png'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.6);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
@@ -74,14 +75,14 @@
                         <a>Trench Drain Services</a>
                         <a>Disaster Clean-Up</a>
                         <a>Curb & Gutter Services</a>
-                        <a id="building" style="visibility: hidden"></a>
+                        <!-- <a id="building" style="visibility: hidden"></a> -->
                         </div>
                     </div>
                 </div>                
             </div>
         </div>
 
-        <div class="row mt-5" id="container_building" style="background: url('assets/images/building/Building_Photo_Option_1.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
+        <div class="row" id="container_building" style="background: url('assets/images/building/Building_Photo_Option_1.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
@@ -103,22 +104,21 @@
                         <a>Renovation Services</a>
                         <a>Property Maintenance</a>
                         <a>Architectural Renderings</a> 
-                        <a id="restoration" style="visibility: hidden"></a>                       
+                        <!-- <a id="restoration" style="visibility: hidden"></a> -->
                         </div>
                     </div>
                 </div>                
             </div>
         </div>
 
-        <div class="row mt-5" id="container_restoration" style="background: url('assets/images/restoration/Restoration_Photo_Option_1.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
+        <div class="row" id="container_restoration" style="background: url('assets/images/restoration/Restoration_Photo_Option_4.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
                         <h2 style="color: white">Restoration</h2>
                     </div>
                     <p class="discription p-2" style="text-align: justify;">
-                        Our restoration division is where
-                        craftsmanship meets preservation. As a first-response specialist, we can be on site at a moment's notice. We pride ourselves on our ability to repair, renovate, and return a building or environment to its original condition after suffering damage or deterioration. Our dedicated team of restoration experts ensure the integrity and aesthetics of all our projects.
+                        As first-response specialists, we pride ourselves on our ability to mitigate, renovate, and return a property to its original condition. Our restoration division helps property owners navigate the complexities of a loss and provides a path toward rebuilding and renewal. At Brock Mountain, we specialize in minimizing our client's loss-of-use and offering peace of mind when the unthinkable happens.
                     </p>
                     <div class="widget-categories-box" style="background-color: rgba(0, 0, 0, 0);">
                         <!-- categories title -->
@@ -126,16 +126,16 @@
                             <h4> Popular Tags </h4>
                         </div> -->
                         <div class="widget-tags">
-                            <a>Water Damage Services</a>                            
-                            <a>Fire Damage Services</a>
-                            <a>Mitigation Services</a>
-                            <a>Rapid Response</a>
-                            <a>Disaster Response</a>
-                            <a>Reconstruction</a>
-                            <a>Mold Remediation</a>
-                            <a>Tarp & Boarding</a>
-                            <a>Decontamination & Deodorization</a>
-                            <a style="visibility: hidden"></a>
+                            <a>Water Damage<br> Restoration</a>                            
+                            <a>Fire Damage<br> Restoration</a>
+                            <a>Microbial<br> Remediation</a>
+                            <a>Commercial Large Loss Specialist</a>
+                            <a>National Disaster<br> Response</a>
+                            <a>Structural<br> Decontamination</a>
+                            <a>Lead & Asbestos<br> Remediation</a>
+                            <a>Reconstrucction & Renovation</a>
+                            <a>Demolition & <br>Debris Removal</a>
+                            <!-- <a style="visibility: hidden"></a> -->
                         </div>
                     </div>
                 </div>                
@@ -151,6 +151,7 @@
             <!-- <i class="bi bi-arrow-up-right-circle-fill"></i> -->
         </a>
     </div>
+</div>
 </div>
 <script>
     //location.hash = "container_building"

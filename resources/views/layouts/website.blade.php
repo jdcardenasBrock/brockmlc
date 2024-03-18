@@ -221,11 +221,11 @@
 
 
     <main>  
-    <div class="container" style="">  
+    <!-- <div class="container" style="">   -->
 
     @yield('content')
     
-    </div>
+    <!-- </div> -->
     </main>
 
 
@@ -452,56 +452,56 @@
   </script>
   <script>
     // console.log("hola")
-    var sitework = $('#container_sitework');
-    var building = $('#container_building');
-    var restoration = $('#container_restoration');
+    // var sitework = $('#container_sitework');
+    // var building = $('#container_building');
+    // var restoration = $('#container_restoration');
 
-    var backgrounds_sitework = new Array(        
-        'url(assets/images/sitework/Sitework_Photo_Option_1.png)'
-    , 'url(assets/images/sitework/Sitework_Photo_Option_2.png)'
-    , 'url(assets/images/sitework/Sitework_Photo_Option_3.png)'
-    , 'url(assets/images/sitework/Sitework_Photo_Option_4.png)'
-    , 'url(assets/images/sitework/Sitework_Photo_Option_5.png)'
-    , 'url(assets/images/sitework/Sitework_Photo_Option_6.png)'
-    , 'url(assets/images/sitework/Sitework_Photo_Option_7.png)'    
-    );
+    // var backgrounds_sitework = new Array(        
+    //     'url(assets/images/sitework/Sitework_Photo_Option_1.png)'
+    // , 'url(assets/images/sitework/Sitework_Photo_Option_2.png)'
+    // , 'url(assets/images/sitework/Sitework_Photo_Option_3.png)'
+    // , 'url(assets/images/sitework/Sitework_Photo_Option_4.png)'
+    // , 'url(assets/images/sitework/Sitework_Photo_Option_5.png)'
+    // , 'url(assets/images/sitework/Sitework_Photo_Option_6.png)'
+    // , 'url(assets/images/sitework/Sitework_Photo_Option_7.png)'    
+    // );
 
-    var backgrounds_building = new Array(        
-        'url(assets/images/building/Building_Photo_Option_1.jpg)'
-    , 'url(assets/images/building/Building_Photo_Option_2.jpg)'   
-    );
+    // var backgrounds_building = new Array(        
+    //     'url(assets/images/building/Building_Photo_Option_1.jpg)'
+    // , 'url(assets/images/building/Building_Photo_Option_2.jpg)'   
+    // );
 
-    var backgrounds_restoration = new Array(        
-        'url(assets/images/restoration/Restoration_Photo_Option_1.jpg)'
-    // , 'url(assets/images/restoration/Restoration_Photo_Option_2.jpg)'  
-    , 'url(assets/images/restoration/Restoration_Photo_Option_3.jpg)'  
-    , 'url(assets/images/restoration/Restoration_Photo_Option_4.jpg)'  
-    , 'url(assets/images/restoration/Restoration_Photo_Option_5.jpg)'  
-    );
+    // var backgrounds_restoration = new Array(        
+    //     'url(assets/images/restoration/Restoration_Photo_Option_1.jpg)'      
+    // , 'url(assets/images/restoration/Restoration_Photo_Option_3.jpg)'  
+    // , 'url(assets/images/restoration/Restoration_Photo_Option_4.jpg)'  
+    // , 'url(assets/images/restoration/Restoration_Photo_Option_5.jpg)'  
+    // );
 
-    var current_sitework = 0;
-    var current_building = 0;
-    var current_restoration = 0;
+    // var current_sitework = 0;
+    // var current_building = 0;
+    // var current_restoration = 0;
 
-    function nextBackground() {
-        //     sitework
-        current_sitework++;
-        current_sitework = current_sitework % backgrounds_sitework.length;
-        sitework.css('background-image', backgrounds_sitework[current_sitework]);
+    // function nextBackground() {
+    //     //     sitework
+    //     current_sitework++;
+    //     current_sitework = current_sitework % backgrounds_sitework.length;
+    //     sitework.css('background-image', backgrounds_sitework[current_sitework]);
 
-        // building
-        current_building++;
-        current_building = current_building % backgrounds_building.length;
-        building.css('background-image', backgrounds_building[current_building]);
+    //     // building
+    //     current_building++;
+    //     current_building = current_building % backgrounds_building.length;
+    //     building.css('background-image', backgrounds_building[current_building]);
 
-        // building
-        current_restoration++;
-        current_restoration = current_restoration % backgrounds_restoration.length;
-        restoration.css('background-image', backgrounds_restoration[current_restoration]);
-    }
-    setInterval(nextBackground, 3000);
+    //     // building
+    //     current_restoration++;
+    //     current_restoration = current_restoration % backgrounds_restoration.length;
+    //     restoration.css('background-image', backgrounds_restoration[current_restoration]);
+    // }
+    // setInterval(nextBackground, 3000);
 
-    sitework.css('background-image', backgrounds_sitework[0]);
+    // sitework.css('background-image', backgrounds_sitework[0]);
+
 </script>
 </body>
 

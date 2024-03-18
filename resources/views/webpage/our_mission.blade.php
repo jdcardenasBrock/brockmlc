@@ -1,6 +1,29 @@
 @extends('layouts.website') 
 @section('content')
 <style>
+    #mybox, #mybox2{
+        position: relative;
+    }
+    #mybox:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        left: 0%;
+        width:50%;
+        border-top: 5px solid #266041 !important;
+        border-bottom: 5px solid #266041 !important;
+    }
+    #mybox2:after{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        right: 5%;
+        width:50%;
+        border-top: 5px solid #ddd !important;
+        border-bottom: 5px solid #ddd !important;
+    }
     #top-our_mission{
         background: url(assets/images/about/Who_We_Are_About_Us_3.jpg);  
         background-position: center center; 
@@ -56,6 +79,7 @@
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
+<div class="container" style="">
 <div class="breatcome-area" id="top-our_mission">
     <div class="container">
         <div class="row">
@@ -81,10 +105,10 @@
 <div class="heistory-area animate__slideInUp" style="margin-bottom: 50px;">
     <div class="container">
         <div class="row mt-70">
-            <div class="col-lg-6 col-md-12" style="padding-left: 0">
-                <div class="history-content mb-50">
+            <div class="col-lg-6 col-md-12 d-flex align-items-center" id="mybox" style="padding-left: 0; height: 390px">
+                <div class="history-content">
                     <!-- <h4><a href="contact.php">We Started From 1999</a></h4> -->
-                    <p style="text-align: ; color: black; margin-top: 0; padding-right: 30px; text-align: justify">
+                    <p style="color: black; margin-top: 0; padding-right: 30px; text-align: justify;">
                     Established in Asheville, North Carolina,
                     Brock Mountain has proudly provided general
                     contractor services to the community. Our
@@ -100,14 +124,14 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6" style="padding-right: 0">                                
-                <img src="assets/images/about/Who_We_Are _ About_Us.png" width="100%" height="90%">                
+                <img src="assets/images/about/Who We Are _ About Us.jpg" width="100%" height="90%">                
             </div>           
-            <div class="col-lg-12" style="background-color: #272a2c; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
+            <div class="col-lg-12 mt-5" style="background-color: #272a2c; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
                 <div class="row" style="padding-top: 32px">
                     <div class="col-lg-6 col-md-6">
                         <div class="counter-area"></div>                                               
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 d-flex align-items-center" id="mybox2">
                         <div class="">
                             <div class="history-content">
                                 <!-- <h4><a href="contact.php">Some data about us</a></h4> -->
@@ -134,4 +158,5 @@
 <!--==================================================-->
 <!-- End Euildint History Area -->
 <!--==================================================--> 
+</div>
 @endsection
