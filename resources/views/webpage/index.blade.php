@@ -346,9 +346,10 @@
 <!--==================================================-->
 <section class="banner-section">
 	<video autoplay muted loop style="width:100%;">
-		<source src="assets/images/Video BM Home 02-20.mp4">
+		<source src="assets/images/BMIntro.mp4">
 	</video>
 </section>
+<div class="container" style="">
 <!--==================================================-->
 <!-- End Euildint Slider Style Two Area -->
 <!--==================================================-->	
@@ -841,5 +842,6 @@
 <!--==================================================-->
 <!-- End Euildint Brand Area -->
 <!--==================================================-->
+</div>
 
 @endsection

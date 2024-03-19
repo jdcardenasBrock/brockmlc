@@ -45,6 +45,7 @@
         }
     }
 </style>
+<div class="container" style="">
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -70,33 +71,34 @@
 <!--==================================================-->
 <!-- Start Euildint Map Area -->
 <!--==================================================-->
-<div class="heistory-area" style="margin-bottom: 50px;">
+<div class="heistory-area" style="padding-bottom:115px;">
     <div class="container">
-      <div class="row" style="padding-top: 70px; margin-bottom: 50px; padding-left: 0; padding-right: 0">
-            <div class="col-lg-6" style="border-left: 3px solid #266041">                
-                <div class="section-title">                   
-                    <p style="font-size: 20px; line-height: 30px; padding-left: 30px">
+      <div class="row" style="color: white; padding-top: 70px; padding-bottom: 50px; padding-left: 0; padding-right: 0; background-color: #272a2c;">
+            <div class="col-lg-6 offset-lg-1 d-flex align-items-end" style="font-size: 20px; line-height: 30px">                
+                <!-- <div class="section-title">                    -->
+                    <!-- <p style="font-size: 20px; line-height: 30px; padding-left: 30px"> -->
                     Our team at Brock Mountain stands out for its extensive reach and ability to tackle projects across the
                     United States. We are proud to have the capacity to mobilize swiftly, ensuring our expert teams and
                     resources are readily available wherever our projects demand. Our commitment to excellence is not
                     limited to our own communities but is available nationwide.
-                    </p>                    
-                </div>                
+                    <!-- </p>                     -->
+                <!-- </div>                 -->
             </div>
-            <div class="col-lg-6 text-center">
-                <img src="assets/images/Simplified_Logo.png" width="200px">
+            <div class="col-lg-5 text-center">
+                <img src="assets/images/logo_negativo.png" width="200px">
             </div>
         </div>
         <div class="row" style="background-color: #272a2c;">
             <div class="section-main-title text-center" style="margin-bottom: 40px; margin-top: 40px">
                 <h2 style="color: white">Locations of Our Projects Throughout The U.S.</h2>
             </div>
-            <img class="mb-5" src="assets/images/Mapa_USA.png" style="width: 90%; margin-left: 6%">
+            <img class="" src="assets/images/Mapa_USA (2).png" style="width: 90%; margin-left: 6%">
         </div>
     </div>
 </div>
 <!--==================================================-->
 <!-- End Euildint Map Area --> 
 <!--==================================================--> 
+</div>
 
 @endsection

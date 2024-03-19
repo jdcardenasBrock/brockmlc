@@ -1,6 +1,29 @@
 @extends('layouts.website') 
 @section('content')
 <style>
+    #mybox, #mybox2{
+        position: relative;
+    }
+    #mybox:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 100px;
+        right: 0%;
+        width: 40%;
+        border-top: 5px solid #266041 !important;
+        /* border-bottom: 5px solid #272a2c !important; */
+    }
+    #mybox2:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 90px;
+        left: 0%;
+        width: 35%;
+        border-top: 5px solid #266041 !important;
+        /* border-bottom: 5px solid #272a2c !important; */
+    }
     #top-vendor{
         background: url(assets/images/mountains.png), #272a2c;
         background-position: 100% 0%; 
@@ -23,6 +46,7 @@
       color: black !important;
     }
 </style>
+<div class="container" style="">
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -48,9 +72,9 @@
 <!--==================================================-->
 <!-- Start Euildint Blog Standard Area -->
 <!--==================================================-->
-<div class="blog-standard-area">
+<div class="blog-standard-area"> 
     <div class="container">
-        <div class="row" style="background: gray;">
+        <div class="row pt-150" style="background: gray;" id="mybox">
             <div class="col-lg-8 offset-lg-2 col-md-12 mt-5 mb-5">
                 <div class="row contact" style="background: #272a2c">
                     <div class="contact-box">
@@ -125,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container text-center p-5" style="background-color: gray">
+            <div id="mybox2" class="container text-center p-5" style="background-color: gray">
                 <div class="eulding-btn about">
                     <a href="{{route('contact')}}" style="background-color: gray; font-size: 24px">
                         <span style="color: black">Questions?</span> <br><span style="color: white">Contact Us</span>
@@ -135,5 +159,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
