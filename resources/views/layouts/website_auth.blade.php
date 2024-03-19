@@ -94,7 +94,7 @@
 									<ul>
 										<li><a href="{{route('about_us')}}">About Us</a></li>
 										<li><a href="{{route('national_presence')}}">National Presence</a></li>
-										<li><a href="#" onclick="mostrarAlerta()">News</a></li>
+										<li><a href="{{route('news')}}">News</a></li>
 									</ul>
 								</div> 
 							</li>

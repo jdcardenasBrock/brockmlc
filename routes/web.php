@@ -53,9 +53,9 @@ Route::get('/national_presence', function () {
     return view('webpage.national_presence');
 })->name('national_presence');
 
-// Route::get('/news', function () {
-//     return view('webpage.news');
-// })->name('news');
+Route::get('/news', function () {
+    return view('webpage.news');
+})->name('news');
 
 Route::get('/sitework', function () {
     return view('webpage.sitework');
