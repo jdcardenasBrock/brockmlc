@@ -78,7 +78,7 @@
     } */
 
 </style>
-<div class="container" style="">
+
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -104,9 +104,9 @@
 <!--==================================================-->
 <!-- End Euildint Breatcome Area -->
 <!--==================================================-->
-
+<div class="container">
 <div class="blog-standard-area">
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="row" style="background: gray;">
             <div class="col-lg-12 col-md-12">
                 <div class="row contact" style="background: #272a2c">               
@@ -210,7 +210,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    <!-- </div> -->
 </div>
 </div>
 @endsection

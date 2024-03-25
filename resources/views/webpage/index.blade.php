@@ -349,7 +349,7 @@
 		<source src="assets/images/BMIntro.mp4">
 	</video>
 </section>
-<div class="container" style="">
+<!-- <div class="container" style=""> -->
 <!--==================================================-->
 <!-- End Euildint Slider Style Two Area -->
 <!--==================================================-->	
@@ -842,6 +842,6 @@
 <!--==================================================-->
 <!-- End Euildint Brand Area -->
 <!--==================================================-->
-</div>
+<!-- </div> -->
 
 @endsection

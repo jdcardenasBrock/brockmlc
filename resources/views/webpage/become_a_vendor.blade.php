@@ -46,7 +46,7 @@
       color: black !important;
     }
 </style>
-<div class="container" style="">
+
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -69,6 +69,7 @@
         </div>
     </div>
 </div>
+<div class="container" style="">
 <!--==================================================-->
 <!-- Start Euildint Blog Standard Area -->
 <!--==================================================-->

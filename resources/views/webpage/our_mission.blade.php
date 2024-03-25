@@ -79,7 +79,7 @@
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
-<div class="container" style="">
+<!-- <div class="container" style=""> -->
 <div class="breatcome-area" id="top-our_mission">
     <div class="container">
         <div class="row">
@@ -102,7 +102,7 @@
 <!--==================================================-->
 <!-- Start Euildint History Area -->
 <!--==================================================-->
-<div class="heistory-area animate__slideInUp" style="margin-bottom: 50px;">
+<div class="animate__slideInUp" style="margin-bottom: 50px;">
     <div class="container">
         <div class="row mt-70">
             <div class="col-lg-6 col-md-12 d-flex align-items-center" id="mybox" style="padding-left: 0; height: 390px">
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6" style="padding-right: 0">                                
-                <img src="assets/images/about/Who We Are _ About Us.jpg" width="100%" height="90%">                
+                <img src="assets/images/about/Who We Are _ About Us.jpg" width="100%" height="390px">                
             </div>           
             <div class="col-lg-12 mt-5" style="background-color: #272a2c; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
                 <div class="row" style="padding-top: 32px">
@@ -158,5 +158,5 @@
 <!--==================================================-->
 <!-- End Euildint History Area -->
 <!--==================================================--> 
-</div>
+<!-- </div> -->
 @endsection
