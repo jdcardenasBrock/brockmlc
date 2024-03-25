@@ -21,7 +21,7 @@
         padding-right: 0 !important;
     } */
 </style>
-<div class="container" style="">
+<!-- <div class="container" style=""> -->
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -48,7 +48,7 @@
 <!-- Start Euildint hesitory Area -->
 <!--==================================================-->
 <div class="heistory-area animate__slideInUp">
-    <div class="container" style="margin-bottom: 250px">
+    <div class="" style="margin-bottom: 120px">
 
         <div class="row" id="container_sitework" style="background: url('assets/images/sitework/Sitework_Photo_Option_7.png'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.6);">
@@ -111,7 +111,7 @@
             </div>
         </div>
 
-        <div class="row" id="container_restoration" style="background: url('assets/images/restoration/Restoration_Photo_Option_4.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
+        <div class="row" id="container_restoration" style="background: url('assets/images/restoration/Photo for Building.png'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
@@ -144,7 +144,7 @@
 
     </div>
 </div>
-<div class="container text-center pt-5" style="background-color: #272a2c">
+<div class="text-center pt-5" style="background-color: #272a2c">
     <div class="eulding-btn about">
         <a href="{{route('contact')}}" style="background-color: #272a2c; font-size: 24px">
             <span style="color: white">Questions?</span> <br><span style="color: #266041">Contact Us</span>
@@ -152,7 +152,7 @@
         </a>
     </div>
 </div>
-</div>
+<!-- </div> -->
 <script>
     //location.hash = "container_building"
 

@@ -41,7 +41,7 @@
 </div> -->
 
     
-    <div class="container" style="">
+    <!-- <div class="container" style=""> -->
 	<!--==================================================-->
 	<!-- Start Euildint Blog Standard Area -->
 	<!--==================================================-->
@@ -123,7 +123,7 @@
 			</div>
 		</div>
 	</div>
-    </div>
+    <!-- </div> -->
 
 
 

@@ -203,7 +203,7 @@
 <!-- Start Euildint Footer Area -->
 <!--==================================================-->
 <div class="footer-area">
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="footer-wiget" style="visibility: visible;">
@@ -300,7 +300,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div>
 <!--==================================================-->
 <!-- End Euildint Footer Area -->

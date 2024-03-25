@@ -45,7 +45,7 @@
         }
     }
 </style>
-<div class="container" style="">
+<!-- <div class="container" style=""> -->
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -71,7 +71,7 @@
 <!--==================================================-->
 <!-- Start Euildint Map Area -->
 <!--==================================================-->
-<div class="heistory-area" style="padding-bottom:115px;">
+<div class="heistory-area" style="padding-bottom:115px; background-color: #272a2c;">
     <div class="container">
       <div class="row" style="color: white; padding-top: 70px; padding-bottom: 50px; padding-left: 0; padding-right: 0; background-color: #272a2c;">
             <div class="col-lg-6 offset-lg-1 d-flex align-items-end" style="font-size: 20px; line-height: 30px">                
@@ -99,6 +99,6 @@
 <!--==================================================-->
 <!-- End Euildint Map Area --> 
 <!--==================================================--> 
-</div>
+<!-- </div> -->
 
 @endsection

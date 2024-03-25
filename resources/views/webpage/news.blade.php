@@ -24,9 +24,14 @@
     }
     #top-new{
         background: url(assets/images/about/Who_We_Are_News.jpg);
-        background-position: center center; 
-        background-size: cover;
-    }    
+        background-position: center 5%; 
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-color: #001C4E;
+    }   
+    /* .breatcome-area{
+        height: 450px;
+    }  */
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
 	} 
@@ -102,7 +107,7 @@
       }     
     }
 </style>
-<div class="container">
+<!-- <div class="container"> -->
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
@@ -133,7 +138,7 @@
 <!--==================================================-->
 <!-- Start Euildint Blog Standard Area -->
 <!--==================================================-->
-<div class="blog-standard-area" style="margin-top: 50px;">
+<div class="blog-standard-area" style="margin-top: 50px; ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -194,6 +199,6 @@
 <!--==================================================-->
 <!-- End Euildint Blog Standard Area -->
 <!--==================================================-->
-</div>
+<!-- </div> -->
 
 @endsection
