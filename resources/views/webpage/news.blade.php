@@ -24,10 +24,11 @@
     }
     #top-new{
         background: url(assets/images/about/Who_We_Are_News.jpg);
-        background-position: center 5%; 
-        background-size: 50%;
+        background-position: center top; 
+        background-size: 90%;
         background-repeat: no-repeat;
         background-color: #001C4E;
+        background-attachment: fixed;
     }   
     /* .breatcome-area{
         height: 450px;

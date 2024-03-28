@@ -2207,6 +2207,7 @@ h1, h2, h3, h4, h5, h6{
     background-repeat: no-repeat;
     padding: 65px 51px 65px;
     height: 370px;
+    /* background-attachment: ; */
 }
 
 .counter-numbar h4 {
