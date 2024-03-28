@@ -9,7 +9,7 @@
         position: absolute;
         bottom: 0px;
         top: 0px;
-        left: 0%;
+        left: 5%;
         width:50%;
         border-top: 5px solid #266041 !important;
         border-bottom: 5px solid #266041 !important;
@@ -102,13 +102,13 @@
 <!--==================================================-->
 <!-- Start Euildint History Area -->
 <!--==================================================-->
-<div class="animate__slideInUp" style="margin-bottom: 50px;">
-    <div class="container">
+<div class=" animate__slideInUp" style="margin-bottom: 50px;">
+    <!-- <div class="container"> -->
         <div class="row mt-70">
-            <div class="col-lg-6 col-md-12 d-flex align-items-center" id="mybox" style="padding-left: 0; height: 390px">
+            <div class="col-lg-7 col-md-12 d-flex align-items-center" id="mybox" style="padding-left: 0; height: 390px;">
                 <div class="history-content">
                     <!-- <h4><a href="contact.php">We Started From 1999</a></h4> -->
-                    <p style="color: black; margin-top: 0; padding-right: 30px; text-align: justify;">
+                    <p style="color: black; margin-top: 0; padding-right: 30px; text-align: justify; padding-left: 60px;">
                     Established in Asheville, North Carolina,
                     Brock Mountain has proudly provided general
                     contractor services to the community. Our
@@ -123,19 +123,19 @@
                     <!-- <a href="contact.php">Discover More <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6" style="padding-right: 0">                                
+            <div class="col-lg-5 col-md-6" style="padding-right: 60px;">                                
                 <img src="assets/images/about/Who We Are _ About Us.jpg" width="100%" height="390px">                
             </div>           
             <div class="col-lg-12 mt-5" style="background-color: #272a2c; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
                 <div class="row" style="padding-top: 32px">
                     <div class="col-lg-6 col-md-6">
-                        <div class="counter-area"></div>                                               
+                        <div class="counter-area" style="margin-left: 30px"></div>                                               
                     </div>
                     <div class="col-lg-6 col-md-6 d-flex align-items-center" id="mybox2">
                         <div class="">
                             <div class="history-content">
                                 <!-- <h4><a href="contact.php">Some data about us</a></h4> -->
-                                <p style="text-align: justify; color: white; margin-top: 0; padding-left: 30px; padding-right: 23px;">
+                                <p style="text-align: justify; color: white; margin-top: 0; padding-left: 30px; padding-right: 30px;">
                                 Rooted in principles of respect and
                                 transparency, we are grateful to be in a position
                                 that allows us to build lasting structures that
@@ -153,7 +153,7 @@
                 </div>
             </div>                        
         </div>
-    </div>
+    <!-- </div> -->
 </div>
 <!--==================================================-->
 <!-- End Euildint History Area -->

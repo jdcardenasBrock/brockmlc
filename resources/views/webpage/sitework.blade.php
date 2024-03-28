@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <div class="row" id="container_building" style="background: url('assets/images/building/Building_Photo_Option_1.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
+        <div class="row" id="container_building" style="background: url('assets/images/restoration/Photo for Building.png'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
@@ -111,7 +111,7 @@
             </div>
         </div>
 
-        <div class="row" id="container_restoration" style="background: url('assets/images/restoration/Photo for Building.png'); background-position: center; background-size: cover; transition: background 2s;">            
+        <div class="row" id="container_restoration" style="background: url('assets/images/restoration/Restoration_Photo_Option_4.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
@@ -129,11 +129,11 @@
                             <a>Water Damage<br> Restoration</a>                            
                             <a>Fire Damage<br> Restoration</a>
                             <a>Microbial<br> Remediation</a>
-                            <a>Commercial Large Loss Specialist</a>
+                            <a>Commercial Large<br> Loss Specialist</a>
                             <a>National Disaster<br> Response</a>
                             <a>Structural<br> Decontamination</a>
                             <a>Lead & Asbestos<br> Remediation</a>
-                            <a>Reconstrucction & Renovation</a>
+                            <a>Reconstruction &<br> Renovation</a>
                             <a>Demolition & <br>Debris Removal</a>
                             <!-- <a style="visibility: hidden"></a> -->
                         </div>
