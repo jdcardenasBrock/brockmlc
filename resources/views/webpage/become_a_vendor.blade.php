@@ -27,7 +27,7 @@
     #top-vendor{
         background: url(assets/images/mountains.png), #272a2c;
         background-position: 100% 0%; 
-        background-size: 50%;
+        background-size: 40%;
         background-repeat: no-repeat;
     }    
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
@@ -69,12 +69,12 @@
         </div>
     </div>
 </div>
-<div class="container" style="">
+<!-- <div class="container" style=""> -->
 <!--==================================================-->
 <!-- Start Euildint Blog Standard Area -->
 <!--==================================================-->
 <div class="blog-standard-area"> 
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="row pt-150" style="background: gray;" id="mybox">
             <div class="col-lg-8 offset-lg-2 col-md-12 mt-5 mb-5">
                 <div class="row contact" style="background: #272a2c">
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div>
-</div>
+<!-- </div> -->
 @endsection

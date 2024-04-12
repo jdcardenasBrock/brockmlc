@@ -54,7 +54,7 @@
 							<!-- <div class="blog-quote-box mb-40">
 								<div class="blog-quote-conent"> -->
 									<div class="title text-center mb-5 mt-5">
-                                        <h2 style="color: white">BMLC portal</h2>
+                                        <h2 style="color: white">BMLC Portal</h2>
                                     </div>                                    
                                     <form method="POST" action="{{ route('login') }}">
                                         @csrf

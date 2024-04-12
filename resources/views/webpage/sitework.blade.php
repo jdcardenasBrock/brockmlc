@@ -3,7 +3,7 @@
 <style>
     #top-sitework{
         background: url(assets/images/mountains.png), #272a2c;
-        background-position: center 0%; 
+        background-position: 100% 0%; 
         background-size: 50%;
         background-repeat: no-repeat;
     } 
@@ -15,6 +15,20 @@
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
 		text-shadow: 1px 4px 6px black;
 	} 
+    span.no-span {
+        display: table;
+        white-space: nowrap;
+        &:before, &:after {
+        border-top: 3px solid white;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 1em;
+        width: 45%;
+        }
+        &:before { right: 1.5%; }
+        &:after { left: 1.5%; }
+    }
 
     /* div[class*='col']{
         padding-left: 0 !important;
@@ -91,7 +105,7 @@
                     <p class="discription p-2" style="text-align: justify;">
                         Our premier project management solutions are trusted by industrial, commercial, and municipalities across the United States. Brock Mountain strives to deliver optimal performance, quality building, and results that are on time and within budget. No matter the project, we have the experience, equipment, and ability to meet your needs.
                     </p>
-                    <div class="widget-categories-box" style="background-color: rgba(0, 0, 0, 0);">
+                    <div class="widget-categories-box d-flex alig-items-center" style="background-color: rgba(0, 0, 0, 0); margin-bottom: 80px; margin-top: 80px">
                         <!-- categories title -->
                         <!-- <div class="widget-catagories-title">
                             <h4> Popular Tags </h4>
@@ -126,15 +140,15 @@
                             <h4> Popular Tags </h4>
                         </div> -->
                         <div class="widget-tags">
-                            <a>Water Damage<br> Restoration</a>                            
-                            <a>Fire Damage<br> Restoration</a>
-                            <a>Microbial<br> Remediation</a>
+                            <a>Water Damage Restoration</a>                            
+                            <a>Fire Damage Restoration</a>
+                            <a>Microbial Remediation</a>
+                            <a>National Disaster Response</a>                                                        
+                            <a>Structural Decontamination</a>
+                            <a>Lead & Asbestos Remediation</a>                     
+                            <a>Reconstruction & Renovation</a>
+                            <a>Demolition & Debris Removal</a>
                             <a>Commercial Large<br> Loss Specialist</a>
-                            <a>National Disaster<br> Response</a>
-                            <a>Structural<br> Decontamination</a>
-                            <a>Lead & Asbestos<br> Remediation</a>
-                            <a>Reconstruction &<br> Renovation</a>
-                            <a>Demolition & <br>Debris Removal</a>
                             <!-- <a style="visibility: hidden"></a> -->
                         </div>
                     </div>
@@ -147,7 +161,7 @@
 <div class="text-center pt-5" style="background-color: #272a2c">
     <div class="eulding-btn about">
         <a href="{{route('contact')}}" style="background-color: #272a2c; font-size: 24px">
-            <span style="color: white">Questions?</span> <br><span style="color: #266041">Contact Us</span>
+            <span class="no-span" style="color: white">Questions?</span> <span style="color: #266041">Contact Us</span>
             <!-- <i class="bi bi-arrow-up-right-circle-fill"></i> -->
         </a>
     </div>

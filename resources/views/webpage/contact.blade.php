@@ -5,7 +5,7 @@
 	#top-contact{
         background: url(assets/images/mountains.png), #272a2c;
         background-position: 100% 0%; 
-        background-size: 50%;
+        background-size: 40%;
         background-repeat: no-repeat;
     }
 	.slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
@@ -104,11 +104,11 @@
 <!--==================================================-->
 <!-- End Euildint Breatcome Area -->
 <!--==================================================-->
-<div class="container">
+<!-- <div class="container"> -->
 <div class="blog-standard-area">
     <!-- <div class="container"> -->
-        <div class="row" style="background: gray;">
-            <div class="col-lg-12 col-md-12">
+        <div class="row" style="background: #272a2c;">
+            <div class="col-lg-8 offset-lg-2 col-md-12 mt-5 mb-5">
                 <div class="row contact" style="background: #272a2c">               
                     <div class="contact-box row">
                         <div class="contact-title">
@@ -212,5 +212,5 @@
         </div>
     <!-- </div> -->
 </div>
-</div>
+<!-- </div> -->
 @endsection
