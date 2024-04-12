@@ -2,6 +2,29 @@
 @section('content')
 <style>
 
+	#mybox, #mybox2{
+        position: relative;
+    }
+    #mybox:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 5px;
+        right: 8%;
+        width: 40%;
+        border-top: 5px solid #266041 !important;
+        /* border-bottom: 5px solid #272a2c !important; */
+    }
+    #mybox2:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        left: 1%;
+        width: 40%;
+        border-top: 5px solid #266041 !important;
+        /* border-bottom: 5px solid #272a2c !important; */
+    }
 	.testi-single-box{
 		display: -webkit-box;
 		max-height: 154px;
@@ -80,7 +103,7 @@
 	}
 
 	#description_brock{
-		padding-top: 60px;
+		/* padding-top: 60px; */
 		margin-top: -90px;
 	}
 
@@ -357,10 +380,10 @@
 <!--==================================================--> 
 <!-- Start Euildint About Area -->
 <!--==================================================-->
-<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: -10px;">
-	<div class="container" id="container_section_1">
+<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: 28px;">
+	<div class="" id="container_section_1">
 		<div class="row">
-			<div class="col-lg-6 col-md-12 d-flex justify-content-center">				
+			<div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">				
 				<div class="about-thumb style-two wow animate__slideInUp" id="logo_section_1" style="background-image: url('assets/images/Logo negativo.png'); background-position: center center; background-size: contain; background-repeat: no-repeat;">					
 				</div>
 			</div>
@@ -394,7 +417,7 @@
 <!--==================================================-->
 <!-- Start Euildint Slider Style Two Area -->
 <!--==================================================-->
-<section class="blog-standard-area" style="background-color: #272a2c;">
+<section class="blog-standard-area" style="background-color: #272a2c; margin-top: 35px">
 	<div class="blog-standard-box">
 		<div class="row">
 			<div class="blog_list owl-carousel" >
@@ -403,26 +426,31 @@
 						<img src="assets/images/home/brock_team-scaled-2.jpg" alt="" style="width: 100%;">
 					</div>
 				</div>
-				<div class="col-lg-12 row" style="padding-left: 55px; padding-right:30px;">
+				<div class="col-lg-12 row" style="padding-left: 55px; padding-right:30px; margin: 50px;">
 					<!-- <div class="blog-standard-thumb"> -->
-						<div class="col-lg-6" style="display: flex;flex-direction: row;align-items: center;">
-							<p style="color: white; font-size: 20px;font-weight: normal;line-height: 30px; margin-top: 25px; padding-right: 35px">
-							We prioritize the safety of our most valuable
-							asset — our people. This commitment is 
-							reflected in our investments of in-house
-							authorized instructors for OSHA 10-HR,
-							30-HR, and Disaster Site Workers courses.
-							Our mission is to ensure that every individual
-							feels safe and secure in their work
-							into this slide environment. We actively encourage open
-							communication, empowering individuals to
-							speak up and halt work if they identify
-							unsafe conditions or suggest safer methods.
-							</p>
-						</div>
+						<div class="col-lg-6 row" style="display: flex;flex-direction: row;align-items: center;">
+							<div class="col-12" id="mybox">
+								<p style="color: white; font-size: 27.5px; font-weight: normal;line-height: 40px; margin-top: 25px; padding-right: 35px">
+								We prioritize the safety of our most valuable
+								asset — our people. This commitment is 
+								reflected in our investments of in-house
+								authorized instructors for OSHA 10-HR,
+								30-HR, and Disaster Site Workers courses.
+								Our mission is to ensure that every individual
+								feels safe and secure in their work
+								environment. We actively encourage open
+								communication - empowering individuals to
+								speak up and halt work if they identify
+								unsafe conditions or suggest safer methods.
+								</p>
+							</div>
+							<div class="col-12" id="mybox2">
+								<span></span>
+							</div>						
+						</div>						
 						<div class="col-lg-6">
 							<img src="assets/images/Home_Page _ Safety.webp" alt="" >							
-						</div>
+						</div>						
 					<!-- </div> -->
 				</div>				
 			</div>

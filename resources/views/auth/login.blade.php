@@ -25,9 +25,7 @@
 </style>
 
 
-
-
-<div class="container" style="">
+    <!-- <div class="container" style=""> -->
     <!--==================================================-->
     <!-- Start Euildint Blog Standard Area -->
     <!--==================================================-->
@@ -40,7 +38,7 @@
                             <!-- <div class="blog-quote-box mb-40">
 								<div class="blog-quote-conent"> -->
                             <div class="title text-center mb-5 mt-5">
-                                <h2 style="color: white">BMLC portal</h2>
+                                <h2 style="color: white">BMLC Portal</h2>
                             </div>
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
@@ -91,27 +89,27 @@
                                             {{ __('Sign In') }}
                                         </button>
 
+                                        <!-- @if (Route::has('password.request'))
+                                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                        {{ __('Recuperar Contraseña') }}
+                                                    </a>
+                                                @endif -->
                                     </div>
                                 </div>
+                            </form>
 
-                            </form>x
+                            <!--                                 
+								</div>
+							</div> -->
                         </div>
                     </div>
-                    <div class="row">
-                        @if(session('message'))
-                        <div class="alert alert-warning col-10">
-                            {{ session('message') }}
-                        </div>
-                        @endif
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- </div> -->
 
 
 
 
-@endsection
+    @endsection
