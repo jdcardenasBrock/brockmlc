@@ -93,7 +93,7 @@
             <div class="section-main-title text-center" style="margin-bottom: 40px; margin-top: 40px">
                 <h2 style="color: white">Locations of Our Projects Throughout The U.S.</h2>
             </div>
-            <img class="" src="assets/images/MAPA_3.png" style="width: 100%;">
+            <img class="" src="assets/images/PNG MAPA OK.png" style="width: 100%;">
         </div>
     </div>
 </div>
