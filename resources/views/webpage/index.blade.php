@@ -2,6 +2,21 @@
 @section('content')
 <style>
 
+	.testimonial-area{
+		padding-top: 0px; 
+		margin-top: 0px
+	}
+
+	 /* estilos para tablets en adelante */
+     @media (min-width: 768px) {
+
+		.testimonial-area{
+			padding-top: 120px; 
+			margin-top: 0px
+		}
+
+	 }
+
 	#mybox, #mybox2{
         position: relative;
     }
@@ -117,9 +132,9 @@
 		margin-left: 100px;
 	} 
 	
-	.testimonial-area{
+	/* .testimonial-area{
 		margin-top: 120px;
-	}
+	} */
 
 	#logo_section_1{
 		padding-top: -150px;
@@ -247,9 +262,9 @@
 			margin: 0 !important;
 		}
 
-		.testimonial-area{
+		/* .testimonial-area{
 			margin-top: 40px;
-		}
+		} */
 
 		/* .testi-text p a{		
 			font-size: 21px !important;	
@@ -505,7 +520,7 @@
 	<div class="blog-standard-box">
 		<div class="row">
 			<div class="blog_list owl-carousel" >
-				<div class="col-lg-12" style="">
+				<div class="col-lg-12">
 					<div class="blog-standard-thumb" style="left: 0.15%">
 						<img src="assets/images/home/brock_team-scaled-2.jpg" alt="" style="width: 100%;">
 					</div>
@@ -597,7 +612,7 @@
 <!--==================================================-->
 <!-- Start Euildint Testimonial Area -->
 <!--==================================================-->
-<div class="testimonial-area wow animate__slideInUp" style="margin-bottom: 120px">
+<div class="testimonial-area wow animate__slideInUp" style="">
 	<div class="container">
 		<div class="row">
 			
@@ -911,7 +926,7 @@
 <!--==================================================-->
 <!-- Start Euildint Brand Area -->
 <!--==================================================-->
-<div class="brand-area " style="margin-bottom: 120px; margin-top: 120px; display: none">
+<div class="brand-area " style="display: none">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="brand_list owl-carousel">

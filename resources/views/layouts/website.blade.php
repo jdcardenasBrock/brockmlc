@@ -197,7 +197,7 @@
                                 <li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
                                 <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
                             </ul>
-                        </div>
+                        </div> 
                     </li>
                     <li><a href="#">Work With Us</i></a>
                         <div class="sub-menu">

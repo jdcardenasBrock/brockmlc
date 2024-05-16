@@ -138,7 +138,7 @@
                 <div class="row contact" style="background: #272a2c">               
                     <div class="contact-box row">
                         <div class="contact-title">
-                            <h2>We look forward to the opportunity to speak with you about your next project or answer any questions.</h2>
+                            <h2 style="text-align: justify; padding: 10px">We look forward to the opportunity to speak with you about your next project or answer any questions.</h2>
                         </div>
                         <form class="col-lg-9" action="https://formspree.io/f/myyleorq" method="POST" id="it-form" style="">
                             <div class="row pt-5 p-3" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(assets/images/about/Work_With_Us_Contact_Us.jpg); background-size: cover;">

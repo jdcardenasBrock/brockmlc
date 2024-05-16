@@ -98,7 +98,7 @@
                         <a>Concrete Flatwork</a>
                         <a>Trench Drain Services</a>
                         <a>Disaster Clean-Up</a>
-                        <a>Curb & Gutter Services</a>
+                        <a id="building">Curb & Gutter Services</a>
                         <!-- <a id="building" style="visibility: hidden"></a> -->
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                         <a>Site Improvements</a>
                         <a>Renovation Services</a>
                         <a>Property Maintenance</a>
-                        <a>Architectural Renderings</a> 
+                        <a id="restoration">Architectural Renderings</a> 
                         <!-- <a id="restoration" style="visibility: hidden"></a> -->
                         </div>
                     </div>

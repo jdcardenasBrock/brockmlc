@@ -167,7 +167,7 @@
 <!--==================================================-->
 <!-- Start Euildint History Area -->
 <!--==================================================-->
-<div class=" animate__slideInUp" style="margin-bottom: 50px;">
+<div class=" animate__slideInUp" style="">
     <!-- <div class="container"> -->
         <div class="row mt-70">
             <div class="col-lg-7 col-md-12 d-flex align-items-center" id="mybox">
@@ -191,7 +191,7 @@
             <div class="col-lg-5 col-md-6" id="container-image-about">                                
                 <img src="assets/images/about/Who We Are _ About Us.jpg">                
             </div>           
-            <div class="col-lg-12 mt-5" id="container-section-2">
+            <div class="col-lg-12 pt-5 mt-5" id="container-section-2">
                 <div class="row" id="container-section-2-secondary">
                     <div class="col-lg-6 col-md-6">
                         <div class="counter-area"></div>                                               
