@@ -4,8 +4,8 @@
 <style>
 	#top-contact{
         background: url(assets/images/mountains.png), #272a2c;
-        background-position: 100% 0%; 
-        background-size: 40%;
+        background-position: 95% 80%; 
+        background-size: 50%;
         background-repeat: no-repeat;
     }
 	.slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
@@ -48,6 +48,32 @@
     input::-ms-input-placeholder, textarea::-ms-input-placeholder { /* Edge 12 -18 */
       color: black !important;
     }
+
+
+    .breatcome-title h1{
+        text-align: center;
+    }    
+
+    .row.contact{
+      padding-top: 0px;
+    }
+    .blog-standard-area{
+      padding-bottom: 0px;
+    }
+    
+     /* estilos para tablets en adelante */
+     @media (min-width: 768px) {
+        .breatcome-title h1{
+            text-align: left;
+        }
+        #top-contact{
+            background-position: 100% 0%;
+        } 
+        .row.contact{
+        padding-top: 72px;
+      }              
+     }
+
     /* @media (max-width: 991.98px) {
       #top-contact{        
         background-position: 30% 105%; 

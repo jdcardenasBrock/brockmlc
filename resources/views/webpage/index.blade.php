@@ -10,7 +10,7 @@
         position: absolute;
         bottom: 0px;
         top: 5px;
-        right: 8%;
+        right: 6%;
         width: 40%;
         border-top: 5px solid #266041 !important;
         /* border-bottom: 5px solid #272a2c !important; */
@@ -20,9 +20,10 @@
         position: absolute;
         bottom: 0px;
         top: 0px;
-        left: 1%;
+        left: 6%;
         width: 40%;
         border-top: 5px solid #266041 !important;
+		margin-top: -25px;
         /* border-bottom: 5px solid #272a2c !important; */
     }
 	.testi-single-box{
@@ -130,6 +131,96 @@
 		margin-top: 120px;
 	}
 
+	#logo_section_1{
+		width: 75%;
+		margin-left: 0;
+		margin-top: 0;
+		margin-bottom: 70px;
+	}
+
+	.about-discribtion p{
+		font-size: 20px;
+		line-height: 30px;
+		text-align: justify;
+	}
+
+	#container-slide-1 p{
+		color: white;
+		font-size: 20px; 
+		text-align: justify;
+		line-height: 30px; 
+		padding: 10px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	#safety-image{
+		margin-bottom: 20px;
+	}
+
+	.blog-standard-area {
+        padding: 0 0 44px;
+    }	
+
+	.testi-text p{		
+		font-size: 20px !important;	
+		line-height: 30px;
+	}
+
+	@media (min-width: 768px) { 
+
+		#mybox:after {
+			right: 5%;
+		}
+		#mybox2:after {
+			left: 4%;
+			margin-top: 0px;
+		}
+
+		#logo_section_1{
+			width: 75%;
+			margin-left: 12%;
+			margin-top: 0;
+    		margin-bottom: 70px;
+		}	
+		
+		.about-discribtion p{
+			font-size: 27.5px;
+			line-height: 40px;
+			text-align: justify;
+		}
+
+		#container-slide-1{
+			padding-left: 55px; padding-right:30px; margin: 50px;
+		}
+
+		#container-slide-1 p{
+			color: white;
+			font-size: 27.5px; 
+			font-weight: normal;
+			line-height: 40px; 
+			margin-top: 25px; 
+			padding-right: 35px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			text-align: justify;
+		}
+
+		#safety-image{
+			margin-bottom: 0px;
+		}
+
+		.blog-standard-area {
+			padding: 78px 0 44px;
+		}			
+		
+		.testi-text p{		
+			font-size: 45px !important;	
+			line-height: 55px;
+		}
+
+	}
+
 	@media (max-width: 767px) {
 
 		/* .brand-thumb a img{
@@ -160,10 +251,10 @@
 			margin-top: 40px;
 		}
 
-		.testi-text p a{		
+		/* .testi-text p a{		
 			font-size: 21px !important;	
 			line-height: 26px;
-		}
+		} */
 
 		.about-discribtion p{
 			text-align: center;
@@ -174,14 +265,7 @@
 			width: 85px;
 			top: 5%; right: 0;
 			display: none;
-		}	
-
-		#logo_section_1{
-			width: 75%;
-			margin-left: 12%;
-			margin-top: 0;
-    		margin-bottom: 70px;
-		}
+		}			
 
 		#description_brock{
 			padding-top: 0;
@@ -380,7 +464,7 @@
 <!--==================================================--> 
 <!-- Start Euildint About Area -->
 <!--==================================================-->
-<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: 28px;">
+<div class="about-area style-two wow animate__slideInUp" style="background-color: #272a2c; margin-top: -10px">
 	<div class="" id="container_section_1">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">				
@@ -390,7 +474,7 @@
 			<div class="col-lg-5 col-md-12 text-center" id="description_brock" style="display: flex;flex-direction: row;align-items: center;">				
 				<div class="about-content wow animate__slideInUp">
 					<div class="about-discribtion">
-						<p style="color: white;">
+						<p style="color: white; text-align: justify;">
 							With over 25 years of industry experience,
 							our focus lies in fostering meaningful
 							relationships with our clients. We
@@ -417,7 +501,7 @@
 <!--==================================================-->
 <!-- Start Euildint Slider Style Two Area -->
 <!--==================================================-->
-<section class="blog-standard-area" style="background-color: #272a2c; margin-top: 35px">
+<section class="blog-standard-area" style="background-color: #272a2c;">
 	<div class="blog-standard-box">
 		<div class="row">
 			<div class="blog_list owl-carousel" >
@@ -426,11 +510,11 @@
 						<img src="assets/images/home/brock_team-scaled-2.jpg" alt="" style="width: 100%;">
 					</div>
 				</div>
-				<div class="col-lg-12 row" style="padding-left: 55px; padding-right:30px; margin: 50px;">
+				<div class="col-lg-12 row" id="container-slide-1">
 					<!-- <div class="blog-standard-thumb"> -->
 						<div class="col-lg-6 row" style="display: flex;flex-direction: row;align-items: center;">
 							<div class="col-12" id="mybox">
-								<p style="color: white; font-size: 27.5px; font-weight: normal;line-height: 40px; margin-top: 25px; padding-right: 35px">
+								<p style="">
 								We prioritize the safety of our most valuable
 								asset — our people. This commitment is 
 								reflected in our investments of in-house
@@ -449,7 +533,7 @@
 							</div>						
 						</div>						
 						<div class="col-lg-6">
-							<img src="assets/images/Home_Page _ Safety.webp" alt="" >							
+							<img id="safety-image" src="assets/images/Home_Page _ Safety.webp" alt="" >							
 						</div>						
 					<!-- </div> -->
 				</div>				

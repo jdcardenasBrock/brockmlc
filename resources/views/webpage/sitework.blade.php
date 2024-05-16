@@ -3,7 +3,7 @@
 <style>
     #top-sitework{
         background: url(assets/images/mountains.png), #272a2c;
-        background-position: 100% 0%; 
+        background-position: 95% 80%; 
         background-size: 50%;
         background-repeat: no-repeat;
     } 
@@ -30,10 +30,20 @@
         &:after { left: 1.5%; }
     }
 
-    /* div[class*='col']{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    } */
+    .breatcome-title h1{
+        text-align: center;
+    }
+    
+     /* estilos para tablets en adelante */
+     @media (min-width: 768px) {
+        .breatcome-title h1{
+            text-align: left;
+        }
+        #top-sitework{
+            background-position: 100% 0%;
+        }
+     }
+
 </style>
 <!-- <div class="container" style=""> -->
 <!--==================================================-->
@@ -100,7 +110,7 @@
             <div class="col-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
                 <div class="history-content wow animate__slideInUp p-4">
                     <div class="title mb-5">
-                        <h2 style="color: white">Building</h2>
+                        <h2 style="color: white">Building - Commercial</h2>
                     </div>
                     <p class="discription p-2" style="text-align: justify;">
                         Our premier project management solutions are trusted by industrial, commercial, and municipalities across the United States. Brock Mountain strives to deliver optimal performance, quality building, and results that are on time and within budget. No matter the project, we have the experience, equipment, and ability to meet your needs.
