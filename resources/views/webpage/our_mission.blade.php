@@ -9,20 +9,20 @@
         position: absolute;
         bottom: 0px;
         top: 0px;
-        left: 5%;
+        left: 8%;
         width:50%;
         border-top: 5px solid #266041 !important;
-        border-bottom: 5px solid #266041 !important;
+        border-bottom: 5px solid #266041 !important;        
     }
     #mybox2:after{
         content: '';
         position: absolute;
         bottom: 0px;
         top: 0px;
-        right: 5%;
+        right: 8%;
         width:50%;
         border-top: 5px solid #ddd !important;
-        border-bottom: 5px solid #ddd !important;
+        border-bottom: 5px solid #ddd !important;                
     }
     #top-our_mission{
         background: url(assets/images/about/Who_We_Are_About_Us_3.jpg);  
@@ -60,7 +60,7 @@
         line-height: 36px;
     }
     .history-content p{
-        font-size: 20px;
+        font-size: 20px; 
         line-height: 30px;
     }
     @media (max-width: 991.98px) {
@@ -75,11 +75,76 @@
             text-align: center;
         }
     }
+
+    .history-content p{
+        color: black;
+        padding: 20px;
+        text-align: justify;
+    }  
+    
+    #container-image-about{
+        margin-top: 50px;
+        padding-right: 0px;
+    }
+
+    #container-image-about img{
+        width: 100%;
+    }
+
+    #container-section-2{
+        background-color: #272a2c;
+    }
+
+    #mybox2{
+        margin-top: 50px; 
+        margin-bottom: 50px
+    }
+
+    /* estilos para tablets en adelante */
+    @media (min-width: 768px) {
+        .history-content p{
+            color: black; 
+            margin-top: 0; 
+            padding-right: 30px; 
+            text-align: justify; 
+            padding-left: 60px;
+        }
+        #container-image-about{
+            margin-top: 0px;
+            padding-right: 60px;
+        }
+        #container-image-about img{
+            width: 100%;
+            height: 390px;
+        }
+        #mybox:after {
+            left: 6%;
+        }
+        #mybox2:after {
+            right: 5%;
+        }
+        #mybox2{
+            margin-top: 0px; 
+            margin-bottom: 0px
+        }
+        #container-section-2{             
+            padding-bottom: 30px; 
+            padding-left: 30px; 
+            padding-right: 30px;
+        }
+        .counter-area{
+            margin-left: 30px
+        }
+        #container-section-2-secondary{
+            padding-top: 35px;
+        }        
+    }
+
 </style>
 <!--==================================================-->
 <!-- Start Euildint Breatcome Area -->
 <!--==================================================-->
-<!-- <div class="container" style=""> -->
+<!-- <div class="container"> -->
 <div class="breatcome-area" id="top-our_mission">
     <div class="container">
         <div class="row">
@@ -105,10 +170,10 @@
 <div class=" animate__slideInUp" style="margin-bottom: 50px;">
     <!-- <div class="container"> -->
         <div class="row mt-70">
-            <div class="col-lg-7 col-md-12 d-flex align-items-center" id="mybox" style="padding-left: 0; height: 390px;">
+            <div class="col-lg-7 col-md-12 d-flex align-items-center" id="mybox">
                 <div class="history-content">
                     <!-- <h4><a href="contact.php">We Started From 1999</a></h4> -->
-                    <p style="color: black; margin-top: 0; padding-right: 30px; text-align: justify; padding-left: 60px;">
+                    <p>
                     Established in Asheville, North Carolina,
                     Brock Mountain has proudly provided general
                     contractor services to the community. Our
@@ -123,19 +188,19 @@
                     <!-- <a href="contact.php">Discover More <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6" style="padding-right: 60px;">                                
-                <img src="assets/images/about/Who We Are _ About Us.jpg" width="100%" height="390px">                
+            <div class="col-lg-5 col-md-6" id="container-image-about">                                
+                <img src="assets/images/about/Who We Are _ About Us.jpg">                
             </div>           
-            <div class="col-lg-12 mt-5" style="background-color: #272a2c; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
-                <div class="row" style="padding-top: 32px">
+            <div class="col-lg-12 mt-5" id="container-section-2">
+                <div class="row" id="container-section-2-secondary">
                     <div class="col-lg-6 col-md-6">
-                        <div class="counter-area" style="margin-left: 30px"></div>                                               
+                        <div class="counter-area"></div>                                               
                     </div>
                     <div class="col-lg-6 col-md-6 d-flex align-items-center" id="mybox2">
                         <div class="">
                             <div class="history-content">
                                 <!-- <h4><a href="contact.php">Some data about us</a></h4> -->
-                                <p style="text-align: justify; color: white; margin-top: 0; padding-left: 30px; padding-right: 30px;">
+                                <p style="color: white">
                                 Rooted in principles of respect and
                                 transparency, we are grateful to be in a position
                                 that allows us to build lasting structures that

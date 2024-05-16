@@ -101,12 +101,89 @@
         &:before { right: 1.5%; }
         &:after { left: 1.5%; }
     }
-    @media (max-width: 991.98px) {
+    @media (max-width: 991.98px) { 
       .breatcome-content{
         top: 82px;
         text-align: center;
       }     
     }
+
+    #container-image-1{
+        padding-top:15px;
+    }
+
+    #container-new-1{
+        display: flex; 
+        align-items: center;
+    }
+    .history-content{
+        padding-left: 10px; 
+        padding-right: 10px;
+    }
+    .history-content p{
+        margin-top: 0px;
+    }
+
+    .blog-standard-area{
+        padding-top: 30px;
+        margin-top: 0px; 
+    }
+
+    #mybox{
+        display: flex; 
+        align-items: center; 
+        padding-right: 10px; 
+        padding-left: 10px;
+    }
+
+    #container-new-2-coment{
+        margin-top: 45px;
+    }
+
+    #container-image-2{
+        padding-right: 0px; 
+        padding-bottom: 0px;
+    }
+
+    /* estilos para tablets en adelante */
+    @media (min-width: 768px) {
+
+        #container-image-1{
+            padding-left: 30px; 
+            padding-top: 35px; 
+            padding-bottom: 15px;
+        }
+
+        #container-new-1{             
+            padding-top: 35px
+        }
+        .history-content{
+            padding-left: 30px; 
+            padding-right: 30px;
+        }
+        .history-content p{
+            margin-top: 20px;
+        }
+        .blog-standard-area{
+            padding-top: 78px;
+            margin-top: 50px; 
+        }
+        #mybox{
+            display: flex; 
+            align-items: center; 
+            padding-right: 0; 
+            padding-left: 30px;
+        }
+        #container-new-2-coment{
+            margin-top: 0px;
+        }
+        #container-image-2{
+            padding-right: 30px; 
+            padding-bottom: 15px;
+        }
+
+    }
+
 </style>
 <!-- <div class="container"> -->
 <!--==================================================-->
@@ -139,7 +216,7 @@
 <!--==================================================-->
 <!-- Start Euildint Blog Standard Area -->
 <!--==================================================-->
-<div class="blog-standard-area" style="margin-top: 50px; ">
+<div class="blog-standard-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -163,11 +240,11 @@
             </div>            
         </div>
         <div class="row mt-5" style="background-color: #272a2c;">
-            <div class="col-lg-5 col-md-12"  style="padding-left: 30px; padding-top: 35px; padding-bottom: 15px;">
+            <div class="col-lg-5 col-md-12" id="container-image-1" >
                 <img src="assets/images/about/Who_We_Are_News_1.jpg" width="100%" height="90%"> 
             </div>
-            <div class="col-lg-7 col-md-12" style="display: flex; align-items: center; padding-top: 35px">                
-                <div class="history-content wow animate__slideInUp" style="padding-left: 30px; padding-right: 30px;">
+            <div class="col-lg-7 col-md-12" id="container-new-1">                
+                <div class="history-content wow animate__slideInUp">
                     <h2 style="color: white; font-size: 20px; font-style: italic; margin-top: 0 !important">"Angels wearing hard hats"</h2>
                     <p style="color: white"><br><span style="color: green">"Brock Mountain Land Co.'s</span> crews came from North Carolina to build steel walls and rock barriers to protect homes and hotels in danger of being swallowed by the sea along the Daytona Beach area's storm-ravaged shoreline. The blessings these construction workers have brought to Family Renew Community while they're here, however, have some of us convinced they truly were sent from heaven..."</p>                        
                     <p style="text-align: right; font-size: 12px; line-height: 1.3; color: white">"Angels Wearing Hard Hats." Family Renew Community, <br>Tue, Jun 13, 2023 at 9:15AM
@@ -178,8 +255,8 @@
             </div>           
         </div>
         <div class="row pt-5 pb-5" style="background-color: #272a2c;">
-            <div id="mybox" class="col-lg-6 col-md-12" style="display: flex; align-items: center; padding-right: 0; padding-left: 30px">                
-                <div class="history-content wow animate__slideInUp" style="padding-left: 0; padding-right: 30px">
+            <div id="mybox" class="col-lg-6 col-md-12">                
+                <div class="history-content wow animate__slideInUp" id="container-new-2-coment">
                     <h2 style="color: white; font-size: 20px; font-style: italic; margin: 0 !important">"Ian and Nicole: 6 months later, Volusia recovery marked by successes, frustration, hope"</h2>
                     <div>
                         <p style="text-align: justify; color: white"><br><span style="color: green">"Brock Mountain</span>  is completing work on three commercial properties in Daytona Beach Shores, including the Seabreeze and Fantasy II condominiums, as well as a row of 30 residential beachfront properties that stretch from Frank Rendon Park to St. Kitts condominium..."</p>                        
@@ -190,7 +267,7 @@
                     </div>
                 </div>                
             </div>
-            <div id="mybox2" class="col-lg-6 col-md-12"  style="padding-right: 30px; padding-bottom: 15px;">
+            <div id="mybox2" class="col-lg-6 col-md-12" id="container-image-2" >
                 <img class="pt-5" src="assets/images/about/Who_We_Are_News_3.webp" width="100%" height="90%"> 
             </div>
         </div>

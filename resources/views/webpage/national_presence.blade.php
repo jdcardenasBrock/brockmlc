@@ -3,10 +3,10 @@
 <style>
     #top-national-presence{
         background: url(assets/images/about/Who_We_Are_National_Presence.jpg);
-        background-position: center bottom; 
+        background-position: bottom top; 
         background-size: cover;
         background-repeat: no-repeat; 
-        background-attachment: fixed;
+        
     }    
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
       text-shadow: 1px 4px 6px black;
@@ -45,6 +45,17 @@
             text-align: center;
         }
     }
+
+     /* estilos para tablets en adelante */
+     @media (min-width: 768px) {
+
+        #top-national-presence{
+            background-position: bottom center; 
+            background-attachment: fixed;
+        }
+     
+    }
+
 </style>
 <!-- <div class="container" style=""> -->
 <!--==================================================-->
@@ -75,7 +86,7 @@
 <div class="heistory-area" style="padding-bottom:115px; background-color: #272a2c;">
     <div class="container">
       <div class="row text-center" style="color: white; padding-top: 70px; padding-bottom: 50px; padding-left: 0; padding-right: 0; background-color: #272a2c;">
-            <div class="col-lg-12 d-flex align-items-end" style="font-size: 20px; line-height: 30px">                
+            <div class="col-lg-12 d-flex align-items-end" style="font-size: 20px; line-height: 30px; text-align: justify; padding: 20px">                
                 <!-- <div class="section-title">                    -->
                     <!-- <p style="font-size: 20px; line-height: 30px; padding-left: 30px"> -->
                     Our team at Brock Mountain stands out for its extensive reach and ability to tackle projects across the

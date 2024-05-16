@@ -3205,7 +3205,7 @@
         /* about area style two */
     
         .about-area.style-two {
-            padding: 0 0 65px;
+            padding: 0 0 0;
         }
 
         .about-counter {
@@ -3475,6 +3475,7 @@
 
     .breatcome-title h1 {
         font-size: 40px;
+        margin-left: 0px;
     }
 
     .bratcome-text {

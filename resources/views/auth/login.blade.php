@@ -5,22 +5,20 @@
 <style>
     #top-portal{
         background: url(assets/images/mountains.png), #272a2c;
-        background-position: center 0%; 
+        background-position: center 20%; 
         background-size: 85%;
         background-repeat: no-repeat;
         height: auto;
         padding-top: 330px;
-    }   
-    /* input{
-        outline: 0 !important;
-        border-width: 0 0 2px !important;
-        border-color: blue !important;
-        background-color: rgba(255, 255, 255, 0.5) !important;
-    } 
-    input:focus {
-        border-color: green;
-        outline: 1px dotted #000
-    }    */
+    }  
+
+
+    /* estilos para tablets en adelante */
+    @media (min-width: 768px) {
+        background-position: center 0%; 
+        background-size: 85%;
+    }     
+
 </style>
 
 <!-- <div class="breatcome-area" id="top-portal">

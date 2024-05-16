@@ -26,8 +26,8 @@
     }
     #top-vendor{
         background: url(assets/images/mountains.png), #272a2c;
-        background-position: 100% 0%; 
-        background-size: 40%;
+        background-position: 95% 80%; 
+        background-size: 50%;
         background-repeat: no-repeat;
     }    
     .slider-description, .slider-main-title, .section-main-title.contact, .contact-discription, .faq-title h4, .call-do-title, .counter-content h5, .counter-numbar h4, .counter-numbar span, .breatcome-title h1{
@@ -45,6 +45,31 @@
     input::-ms-input-placeholder, textarea::-ms-input-placeholder { /* Edge 12 -18 */
       color: black !important;
     }
+
+    input[type='date']:after {
+        color: black;
+        content: attr(placeholder);
+    }
+
+    .blog-standard-area{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .breatcome-title h1{
+        text-align: center;
+    }    
+    
+     /* estilos para tablets en adelante */
+     @media (min-width: 768px) {
+        .breatcome-title h1{
+            text-align: left;
+        }
+        #top-vendor{
+            background-position: 100% 0%;
+        }               
+     }
+
 </style>
 
 <!--==================================================-->
@@ -76,7 +101,7 @@
 <div class="blog-standard-area"> 
     <!-- <div class="container"> -->
         <div class="row pt-150" style="background: gray;" id="mybox">
-            <div class="col-lg-8 offset-lg-2 col-md-12 mt-5 mb-5">
+            <div class="col-lg-8 offset-lg-2 col-md-12 mt-5 mb-3">
                 <div class="row contact" style="background: #272a2c">
                     <div class="contact-box">
                         <div class="contact-title">
@@ -92,7 +117,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="form-box">
-                                        <input type="date" name="name" placeholder="Date">
+                                        <input type="date" name="name" placeholder="Select a Date">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
