@@ -127,6 +127,7 @@
     .blog-standard-area{
         padding-top: 30px;
         margin-top: 0px; 
+        padding-bottom: 0px;
     }
 
     #mybox{
@@ -138,6 +139,7 @@
 
     #container-new-2-coment{
         margin-top: 45px;
+        margin-bottom: 15px;
     }
 
     #container-image-2{
@@ -176,6 +178,7 @@
         }
         #container-new-2-coment{
             margin-top: 0px;
+            margin-bottom: 0px;
         }
         #container-image-2{
             padding-right: 30px; 

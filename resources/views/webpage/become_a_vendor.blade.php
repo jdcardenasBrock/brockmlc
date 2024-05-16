@@ -105,7 +105,7 @@
                 <div class="row contact" style="background: #272a2c">
                     <div class="contact-box">
                         <div class="contact-title">
-                            <h2>As a trusted general contractor, we are always seeking reliable vendors to collaborate with us. Becoming a vendor with us opens doors for new projects to
+                            <h2 style="text-align: justify; padding: 10px">As a trusted general contractor, we are always seeking reliable vendors to collaborate with us. Becoming a vendor with us opens doors for new projects to
                             enhance our communities. Join us today!</h2>
                         </div>
                         <form action="https://formspree.io/f/myyleorq" method="POST" id="it-form">

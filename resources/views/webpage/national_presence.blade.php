@@ -85,13 +85,13 @@
 <!--==================================================-->
 <div class="heistory-area" style="padding-bottom:115px; background-color: #272a2c;">
     <div class="container">
-      <div class="row text-center" style="color: white; padding-top: 70px; padding-bottom: 50px; padding-left: 0; padding-right: 0; background-color: #272a2c;">
+        <div class="row text-center" style="color: white; padding-top: 70px; padding-bottom: 50px; padding-left: 0; padding-right: 0; background-color: #272a2c;">
             <div class="col-lg-12 d-flex align-items-end" style="font-size: 20px; line-height: 30px; text-align: justify; padding: 20px">                
                 <!-- <div class="section-title">                    -->
                     <!-- <p style="font-size: 20px; line-height: 30px; padding-left: 30px"> -->
                     Our team at Brock Mountain stands out for its extensive reach and ability to tackle projects across the
                     United States. We are proud to have the capacity to mobilize swiftly, ensuring our expert teams and
-                    resources are readily available wherever our projects demand. Our commitment to excellence is not
+                    resources are readily available wherever our projects demand.<br> Our commitment to excellence is not
                     limited to our own communities but is available nationwide.
                     <!-- </p>                     -->
                 <!-- </div>                 -->
