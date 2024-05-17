@@ -68,6 +68,7 @@
         }
         #top-contact{
             background-position: 100% 0%;
+            background-size: 35%;
         } 
         .row.contact{
         padding-top: 72px;
