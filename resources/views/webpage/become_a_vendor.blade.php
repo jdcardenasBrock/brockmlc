@@ -67,6 +67,7 @@
         }
         #top-vendor{
             background-position: 100% 0%;
+            background-size: 35%;
         }               
      }
 

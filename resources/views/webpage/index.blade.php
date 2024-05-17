@@ -2,6 +2,9 @@
 @section('content')
 <style>
 
+	.about-discribtion p{
+		margin-top: 50px;
+	}
 	.testimonial-area{
 		padding-top: 0px; 
 		margin-top: 0px
@@ -13,6 +16,9 @@
 		.testimonial-area{
 			padding-top: 120px; 
 			margin-top: 0px
+		}
+		.about-discribtion p{
+			margin-top: 0px;
 		}
 
 	 }

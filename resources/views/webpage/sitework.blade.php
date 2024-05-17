@@ -41,6 +41,7 @@
         }
         #top-sitework{
             background-position: 100% 0%;
+            background-size: 35%;
         }
      }
 
@@ -72,7 +73,7 @@
 <!-- Start Euildint hesitory Area -->
 <!--==================================================-->
 <div class="heistory-area animate__slideInUp">
-    <div class="" style="margin-bottom: 120px">
+    <div class="" style="">
 
         <div class="row" id="container_sitework" style="background: url('assets/images/sitework/Sitework_Photo_Option_7.png'); background-position: center; background-size: cover; transition: background 2s;">            
             <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.6);">
