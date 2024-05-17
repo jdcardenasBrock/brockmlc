@@ -955,6 +955,14 @@
 					</a>					
 				</div>
 				<div class="col-lg-12 text-center">
+					<a href="https://brockmountainhomes.com/">
+						<div class="brand-thumb" style="background-image: url('assets/images/Restoration.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px;">
+							
+						</div>	
+						<h4 style="color: white">Building - Residential</h4>
+					</a>					
+				</div>
+				<div class="col-lg-12 text-center">
 					<a href="https://brockmountainhomes.com/" target="_blank">
 						<div class="brand-thumb" style="background-image: url('assets/images/Logo BM Homes NEGATIVE.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 160px; width: 190px">
 							
