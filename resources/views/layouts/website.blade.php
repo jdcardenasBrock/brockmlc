@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Brock Mountain </title>
-	<meta name="description" content="Brock Mountain">
+	<meta name="description" content="ProHound App">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="56x56" href="{{asset('assets/images/fav-icon/Favicon.png')}}">
     <!-- bootstrap CSS -->
@@ -136,8 +136,7 @@
 									<ul>
                                         <li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
                                         <li style="white-space: nowrap;"><a href="{{route('sitework')}}#building">Building - Commercial</a></li>
-                                        <li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
-										<li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
+										<li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
 									</ul>
 								</div>
 							</li>
@@ -145,13 +144,22 @@
 								<div class="sub-menu">
 									<ul>
 										<li><a href="{{route('become_a_vendor')}}">Become a Vendor</a></li>
-										
+										<!-- <li><a href="{{route('career_opportunities')}}">Career Opportunities</a></li> -->
 										<li><a href="{{route('contact')}}">Contact Us</a></li>
 										<li><a href="{{route('login')}}">BMLC portal</a></li>
 									</ul>
 								</div>
 							</li>
 						</ul>
+						<!-- <div class="header-call-section">
+							<div class="header-call-icon">
+								<i class="bi bi-telephone-plus"></i>
+							</div>
+							<div class="header-call-title">
+								<a href="#">Need help?  Call us: </a>
+								<span><a href="#"> (888) 774-6498 </a></span>
+							</div>
+						</div> -->
 					</div>
 					<!-- end header menu -->
 				</div>
@@ -182,11 +190,9 @@
                     <li><a href="#">What We Do</i></a>
                         <div class="sub-menu">
                             <ul>
-                                <!-- <li><a href="{{route('index')}}">Home</a></li> -->
                                 <li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
                                 <li><a href="{{route('sitework')}}#building">Building - Commercial</a></li>
-                                <li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
-                                <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li>
+                                <li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
                             </ul>
                         </div> 
                     </li>
@@ -252,10 +258,9 @@
                     </div>
                     <div class="footer-wiget-menu">
                         <ul>
-                            <li><a href="{{route('sitework')}}"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
-                            <li><a href="{{route('building')}}"><i class="bi bi-chevron-double-right"></i> Building - Commercial </a></li>
-                            <li><a href="{{route('restoration')}}"><i class="bi bi-chevron-double-right"></i> Restoration </a></li>
-                            <!-- <li><a href="https://brockmountainhomes.com/"><i class="bi bi-chevron-double-right"></i> Brock Mountain Homes </a></li> -->
+                            <li><a href="{{route('sitework')}}#sitework"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
+                            <li><a href="{{route('sitework')}}#building"><i class="bi bi-chevron-double-right"></i> Building - Commercial </a></li>
+                            <li><a href="https://brockmountainhomes.com/" target="_blank"><i class="bi bi-chevron-double-right"></i> Building - Residential </a></li>
                         </ul>
                     </div>
                 </div>
@@ -272,7 +277,7 @@
                             <li><a href="{{route('become_a_vendor')}}" > <i class="bi bi-chevron-double-right"></i> Become a Vendor</a></li>
                             <!-- <li><a href="{{route('career_opportunities')}}" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li> -->
                             <li><a href="{{route('contact')}}"><i class="bi bi-chevron-double-right"></i> Contact Us </a></li>
-                            <li><a href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
+                            <li><a  href="{{route('login')}}"><i class="bi bi-chevron-double-right"></i> BMLC portal </a></li>
                         </ul>
                     </div>
                 </div> 

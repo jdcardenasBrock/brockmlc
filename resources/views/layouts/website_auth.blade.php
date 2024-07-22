@@ -103,8 +103,13 @@
 									<ul>
 										<li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
 										<li><a href="{{route('sitework')}}#building">Building</a></li>
+<<<<<<< HEAD
 										<li><a href="{{route('sitework')}}#restoration">Restoration</a></li>
-										<!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Brock Mountain Homes</a></li> -->
+										<!-- <li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li> -->
+=======
+										<!-- <li><a href="{{route('sitework')}}#restoration">Restoration</a></li> -->										
+                                        <li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
+>>>>>>> 5bed2f2a8930a60242ce105deba23e765917edf4
 									</ul>
 								</div>
 							</li>
@@ -154,8 +159,7 @@
 				<ul class="nav_scroll">
 					<li><a href="{{route('index')}}">Home</a></li>
 					<li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
-                    <li><a href="{{route('sitework')}}#building">Building</a></li>
-                    <!-- <li><a href="{{route('sitework')}}#restoration">Restoration</a></li> -->
+                    <li><a href="{{route('sitework')}}#building">Building - Commercial </a></li>
                     <li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
 					<li><a href="{{route('contact')}}">Contact Us</a></li>
 				</ul>
@@ -206,9 +210,9 @@
                     </div>
                     <div class="footer-wiget-menu">
                         <ul>
-                            <li><a href="{{route('sitework')}}"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
-                            <li><a href="{{route('building')}}"><i class="bi bi-chevron-double-right"></i> Building </a></li>
-                            <li><a href="{{route('restoration')}}"><i class="bi bi-chevron-double-right"></i> Restoration </a></li>
+                            <li><a href="{{route('sitework')}}#sitework"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
+                            <li><a href="{{route('sitework')}}#building"><i class="bi bi-chevron-double-right"></i> Building - Commercial</a></li>
+                            <li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
                         </ul>
                     </div>
                 </div>
