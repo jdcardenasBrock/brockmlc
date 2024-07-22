@@ -317,7 +317,7 @@
 							<a href="https://www.realtor.com/realestateandhomes-detail/M9419213114">View Our Latest Listing on Realtor.com<i class="bi bi-arrow-up-right-circle-fill"></i></a>
 						</div>
 						<!-- <div class="eulding-btn about mt-3">
-							<a href="https://brockmountainhomes.com/">Visit Brock Mountain Homes <i class="bi bi-arrow-up-right-circle-fill"></i></a>
+							<a href="https://brockmountainhomes.com/" target="_blank">Visit Brock Mountain Homes <i class="bi bi-arrow-up-right-circle-fill"></i></a>
 						</div> -->
 					</div>
 				</div>
