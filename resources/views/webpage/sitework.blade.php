@@ -133,38 +133,7 @@
                     </div>
                 </div>                
             </div>
-        </div>
-
-        <div class="row" id="container_restoration" style="background: url('assets/images/restoration/Restoration_Photo_Option_4.jpg'); background-position: center; background-size: cover; transition: background 2s;">            
-            <div class="col-lg-6 offset-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
-                <div class="history-content wow animate__slideInUp p-4">
-                    <div class="title mb-5">
-                        <h2 style="color: white">Restoration</h2>
-                    </div>
-                    <p class="discription p-2" style="text-align: justify;">
-                        As first-response specialists, we pride ourselves on our ability to mitigate, renovate, and return a property to its original condition. Our restoration division helps property owners navigate the complexities of a loss and provides a path toward rebuilding and renewal. At Brock Mountain, we specialize in minimizing our client's loss-of-use and offering peace of mind when the unthinkable happens.
-                    </p>
-                    <div class="widget-categories-box" style="background-color: rgba(0, 0, 0, 0);">
-                        <!-- categories title -->
-                        <!-- <div class="widget-catagories-title">
-                            <h4> Popular Tags </h4>
-                        </div> -->
-                        <div class="widget-tags">
-                            <a>Water Damage Restoration</a>                            
-                            <a>Fire Damage Restoration</a>
-                            <a>Microbial Remediation</a>
-                            <a>National Disaster Response</a>                                                        
-                            <a>Structural Decontamination</a>
-                            <a>Lead & Asbestos Remediation</a>                     
-                            <a>Reconstruction & Renovation</a>
-                            <a>Demolition & Debris Removal</a>
-                            <a>Commercial Large<br> Loss Specialist</a>
-                            <!-- <a style="visibility: hidden"></a> -->
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </div>
+        </div>       
 
     </div>
 </div>
