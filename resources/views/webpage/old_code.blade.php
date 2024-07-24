@@ -3041,3 +3041,32 @@ window.initMap = initMap;
                 </div>                
             </div>
         </div>
+
+        <div class="row" id="container_building" style="background: url('assets/images/restoration/Photo for Building.png'); background-position: center; background-size: cover; transition: background 2s;">            
+            <div class="col-lg-6 col-md-12 text-center" style="height: auto; display: flex; align-items: center; background-color: rgba(0, 0, 0, 0.7);">
+                <div class="history-content wow animate__slideInUp p-4">
+                    <div class="title mb-5">
+                        <h2 style="color: white">Building - Commercial</h2>
+                    </div>
+                    <p class="discription p-2" style="text-align: justify;">
+                        Our premier project management solutions are trusted by industrial, commercial, and municipalities across the United States. Brock Mountain strives to deliver optimal performance, quality building, and results that are on time and within budget. No matter the project, we have the experience, equipment, and ability to meet your needs.
+                    </p>
+                    <div class="widget-categories-box d-flex alig-items-center" style="background-color: rgba(0, 0, 0, 0); margin-bottom: 80px; margin-top: 80px">
+                        <!-- categories title -->
+                        <!-- <div class="widget-catagories-title">
+                            <h4> Popular Tags </h4>
+                        </div> -->
+                        <div class="widget-tags">
+                        <a>Turnkey Solutions</a>
+                        <a>New Construction</a>
+                        <a>Interior Fit-Outs</a>
+                        <a>Site Improvements</a>
+                        <a>Renovation Services</a>
+                        <a>Property Maintenance</a>
+                        <a id="restoration">Architectural Renderings</a> 
+                        <!-- <a id="restoration" style="visibility: hidden"></a> -->
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>

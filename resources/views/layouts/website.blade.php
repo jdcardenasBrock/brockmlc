@@ -135,7 +135,7 @@
 								<div class="sub-menu">
 									<ul>
                                         <li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
-                                        <li style="white-space: nowrap;"><a href="{{route('sitework')}}#building">Building - Commercial</a></li>
+                                        <!-- <li style="white-space: nowrap;"><a href="{{route('sitework')}}#building">Building - Commercial</a></li> -->
 										<li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
 									</ul>
 								</div>
@@ -191,7 +191,7 @@
                         <div class="sub-menu">
                             <ul>
                                 <li><a href="{{route('sitework')}}#sitework">Sitework</a></li>
-                                <li><a href="{{route('sitework')}}#building">Building - Commercial</a></li>
+                                <!-- <li><a href="{{route('sitework')}}#building">Building - Commercial</a></li> -->
                                 <li><a href="https://brockmountainhomes.com/" target="_blank">Building - Residential</a></li>
                             </ul>
                         </div> 
@@ -259,7 +259,7 @@
                     <div class="footer-wiget-menu">
                         <ul>
                             <li><a href="{{route('sitework')}}#sitework"><i class="bi bi-chevron-double-right"></i> Sitework</a></li>
-                            <li><a href="{{route('sitework')}}#building"><i class="bi bi-chevron-double-right"></i> Building - Commercial </a></li>
+                            <!-- <li><a href="{{route('sitework')}}#building"><i class="bi bi-chevron-double-right"></i> Building - Commercial </a></li> -->
                             <li><a href="https://brockmountainhomes.com/" target="_blank"><i class="bi bi-chevron-double-right"></i> Building - Residential </a></li>
                         </ul>
                     </div>
