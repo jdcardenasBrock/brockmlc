@@ -204,7 +204,7 @@
                                 </div>
                                 <div class="contact-content">
                                   <h4>Phone Number</h4>
-                                  <span><a href="#" style="color: white !important">(888) 774-6498</span>
+                                  <span><a href="#" style="color: white !important">(888) 774-6498</a></span>
                                 </div>
                               </div>
                             </div>
