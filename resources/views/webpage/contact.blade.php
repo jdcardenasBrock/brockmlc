@@ -204,7 +204,7 @@
                                 </div>
                                 <div class="contact-content">
                                   <h4>Phone Number</h4>
-                                  <span><a href="#" style="color: white !important">(888) 774-6498</a></span>
+                                  <span><a href="tel:+1-888-774-6498" style="color: white !important">(888) 774-6498</a></span>
                                 </div>
                               </div>
                             </div>
@@ -215,7 +215,7 @@
                                 </div>
                                 <div class="contact-content">
                                   <h4>E-mail</h4>
-                                  <span>info@brockmlc.com</span>
+                                  <span><a href="mailto:info@brockmlc.com">info@brockmlc.com</a></span>
                                 </div>
                               </div>
                             </div>
