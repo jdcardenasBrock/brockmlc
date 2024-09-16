@@ -215,7 +215,7 @@
                                 </div>
                                 <div class="contact-content">
                                   <h4>E-mail</h4>
-                                  <span><a href="mailto:info@brockmlc.com">info@brockmlc.com</a></span>
+                                  <span><a href="mailto:info@brockmlc.com" style="color: white !important">info@brockmlc.com</a></span>
                                 </div>
                               </div>
                             </div>
